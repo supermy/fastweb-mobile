@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<taglib xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee web-jsptaglibrary_2_0.xsd"
+	version="2.0">
+
+	<description>myweb tag library</description>
+	<display-name>myweb tag</display-name>
+	<tlib-version>2.0</tlib-version>
+	<short-name>myweb</short-name>
+	<uri>http://www.supermy.com.cn/myweb</uri>
+
+	<tag>
+		<description>
+			block tag
+		</description>
+		<name>block</name>
+		<tag-class>com.supermy.core.web.tags.BlockTag</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<description>
+				block name
+			</description>
+			<name>name</name>
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<description>
+			override desc
+		</description>
+		<name>override</name>
+		<tag-class>com.supermy.core.web.tags.OverrideTag</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<description>
+				override name, must be equals block name for override
+			</description>
+			<name>name</name>
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<description>
+			override desc
+		</description>
+		<!-- 定义标签名 -->
+		<name>helloWorld</name>
+		<!-- 定义标签处理类 -->
+		<tag-class>com.supermy.core.web.tags.HelloWorldTag</tag-class>
+		<!-- 定义标签体为空 -->
+		<body-content>empty</body-content>
+	</tag>
+	<!-- 定义第二个标签 -->
+	<tag>
+		<!-- 定义标签名 -->
+		<name>query</name>
+		<!-- 定义标签处理类 -->
+		<tag-class>com.supermy.core.web.tags.QueryTag</tag-class>
+		<!-- 定义标签体为空 -->
+		<body-content>empty</body-content>
+		<!-- 配置标签属性:driver -->
+		<attribute>
+			<name>driver</name>
+			<required>true</required>
+			<fragment>true</fragment>
+		</attribute>
+		<!-- 配置标签属性:url -->
+		<attribute>
+			<name>url</name>
+			<required>true</required>
+			<fragment>true</fragment>
+		</attribute>
+		<!-- 配置标签属性:user -->
+		<attribute>
+			<name>user</name>
+			<required>true</required>
+			<fragment>true</fragment>
+		</attribute>
+		<!-- 配置标签属性:pass -->
+		<attribute>
+			<name>pass</name>
+			<required>true</required>
+			<fragment>true</fragment>
+		</attribute>
+		<!-- 配置标签属性:sql -->
+		<attribute>
+			<name>sql</name>
+			<required>true</required>
+			<fragment>true</fragment>
+		</attribute>
+	</tag>
+
+
+	<!-- 定义第三个标签 -->
+	<tag>
+		<!-- 定义标签名 -->
+		<name>iterator</name>
+		<!-- 定义标签处理类 -->
+		<tag-class>com.supermy.core.web.tags.IteratorTag</tag-class>
+		<!-- 定义标签体支持JSP脚本 -->
+		<body-content>scriptless</body-content>
+		<!-- 配置标签属性:collection -->
+		<attribute>
+			<name>collection</name>
+			<required>true</required>
+			<fragment>true</fragment>
+		</attribute>
+		<!-- 配置标签属性:item -->
+		<attribute>
+			<name>item</name>
+			<required>true</required>
+			<fragment>true</fragment>
+		</attribute>
+	</tag>
+
+
+
+</taglib>

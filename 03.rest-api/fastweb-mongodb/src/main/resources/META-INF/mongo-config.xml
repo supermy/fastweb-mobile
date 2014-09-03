@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:mongo="http://www.springframework.org/schema/data/mongo"
+	xsi:schemaLocation="http://www.springframework.org/schema/context
+          http://www.springframework.org/schema/context/spring-context-3.0.xsd
+          http://www.springframework.org/schema/data/mongo
+          http://www.springframework.org/schema/data/mongo/spring-mongo-1.0.xsd
+          http://www.springframework.org/schema/beans
+          http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+
+
+	 <bean id="sysProps"
+	      class="org.springframework.beans.factory.config.MethodInvokingFactoryBean">
+	      <property name="targetClass" value="java.lang.System" />
+	      <property name="targetMethod" value="getProperties" />
+	  </bean>
+	  <bean id="sysMongo"
+	      class="org.springframework.beans.factory.config.MethodInvokingFactoryBean">
+	      <property name="targetObject" ref="sysProps"/>
+	      <property name="targetMethod" value="setProperty"/>
+	      <property name="arguments">
+	          <list>
+	                <value>DEBUG.MONGO</value>
+	                <value>true</value>
+	          </list>
+	      </property>
+	  </bean>
+	  <bean id="sysDbTrace"
+	      class="org.springframework.beans.factory.config.MethodInvokingFactoryBean">
+	      <property name="targetObject" ref="sysProps"/>
+	      <property name="targetMethod" value="setProperty"/>
+	      <property name="arguments">
+	          <list>
+	                <value>DB.TRACE</value>
+	                <value>true</value>
+	          </list>
+	      </property>
+	  </bean>
+
+	<context:property-placeholder location="classpath*:META-INF/mongodb.properties"/>
+	
+	<!-- 定义mongo对象，对应的是mongodb官方jar包中的Mongo，replica-set设置集群副本的ip地址和端口 
+		 一些连接属性的设置 
+			write-number="1"
+		 	write-timeout="0"
+		>>>>count:300000 have time:30275 MS.
+		mongo的工厂，通过它来取得mongo实例,dbname为mongodb的数据库名，没有的话会自动创建 
+		默认值更快 1w 77434微秒  原生 24259微秒
+				默认值是最佳的：mongodb 链接数不释放；connections-per-host=100;threads-allowed-to-block-for-connection-multiplier=5
+		     connect-timeout="${mongo.connectTimeout}"
+		     max-wait-time="${mongo.maxWaitTime}"
+		     auto-connect-retry="${mongo.autoConnectRetry}"
+		     socket-keep-alive="${mongo.socketKeepAlive}"
+		     socket-timeout="${mongo.socketTimeout}"
+		     slave-ok="${mongo.slaveOk}"
+			 write-fsync="true"
+	-->
+			
+	<mongo:mongo id="mongo" host="${mongo.host}" port="${mongo.port}">
+		<mongo:options
+		     connections-per-host="${mongo.connectionsPerHost}"
+		     threads-allowed-to-block-for-connection-multiplier="${mongo.threadsAllowedToBlockForConnectionMultiplier}"
+		/>
+		
+	</mongo:mongo>
+	<mongo:db-factory dbname="${mongo.dbname}" mongo-ref="mongo"/>
+
+
+	<!-- mongodb的主要操作对象，所有对mongodb的增删改查的操作都是通过它完成 -->
+	<bean id="mongoTemplate" class="org.springframework.data.mongodb.core.MongoTemplate">
+	  <constructor-arg ref="mongoDbFactory"/>
+	</bean>
+	
+	<!-- MongoDB GridFS Template -->
+	<bean id="gridTemplate" class="org.springframework.data.mongodb.gridfs.GridFsTemplate">
+	  <constructor-arg ref="mongoDbFactory"/>
+	  <constructor-arg ref="converter"/>
+	</bean>
+	
+	<!-- 映射转换器，扫描back-package目录下的文件，根据注释，把它们作为mongodb的一个collection的映射 -->
+	<mongo:mapping-converter base-package="com.supermy.mongodb.domain" id="converter" />
+	
+	<!-- mongodb bean的仓库目录，会自动扫描扩展了MongoRepository接口的接口进行注入 -->
+	<mongo:repositories base-package="com.supermy.mongodb.service"/>
+
+	<!-- To translate any MongoExceptions thrown in @Repository annotated classes -->
+	<context:annotation-config />
+	
+	<context:component-scan base-package="**.service" />
+
+
+    
+</beans>

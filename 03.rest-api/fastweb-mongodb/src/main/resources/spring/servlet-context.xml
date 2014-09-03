@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:security="http://www.springframework.org/schema/security"
+		xmlns:aop="http://www.springframework.org/schema/aop"
+	
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:mvc="http://www.springframework.org/schema/mvc" xmlns:util="http://www.springframework.org/schema/util"
+	xsi:schemaLocation="http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-3.1.xsd
+		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.1.xsd
+		http://www.springframework.org/schema/aop  	http://www.springframework.org/schema/aop/spring-aop-3.1.xsd		
+		http://www.springframework.org/schema/security http://www.springframework.org/schema/security/spring-security-3.1.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.1.xsd
+		 http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd">
+
+	<bean class="org.springframework.web.servlet.view.ContentNegotiatingViewResolver">
+	    <property name="favorPathExtension" value="true"/>
+	    <property name="mediaTypes">
+	        <map>
+	            <entry key="json" value="application/json"/>
+	            <entry key="jsonp" value="application/javascript"/>
+	        </map>
+	    </property>
+	    <property name="defaultViews">
+	        <list>
+	            <bean class="org.springframework.web.servlet.view.json.MappingJacksonJsonView"/>
+	            <bean class="com.supermy.rest.web.MappingJacksonJsonpView"/>
+	        </list>
+	    </property>
+	    <property name="ignoreAcceptHeader" value="true" />
+	</bean>
+
+    <bean class ="org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter" >  
+        <property name="messageConverters">  
+      <list>  
+       <ref bean="mappingJacksonHttpMessageConverter" /><!-- json转换器 -->  
+      </list>  
+     </property>  
+    </bean> 
+    
+    <bean id="mappingJacksonHttpMessageConverter" 
+    	class="org.springframework.http.converter.json.MappingJacksonHttpMessageConverter" />
+      
+    
+	<bean
+		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+		<property name="order" value="3" />
+		<property name="prefix" value="/WEB-INF/views/" />
+		<property name="suffix" value=".jsp" />
+	</bean>
+	
+
+	<context:component-scan base-package="**.web" />
+	
+	<context:annotation-config />
+
+
+
+	<mvc:annotation-driven/>
+		
+	<!-- controller aop  拦截 -->
+	<aop:aspectj-autoproxy proxy-target-class="true"/>
+
+	<!-- 对某些静态资源，如css,图片等进行过滤 ,有引用 "/js/**" 的路径引用转到工程的/js/目录取资源 -->
+	<mvc:resources mapping="/images/**" location="/images/" />
+	<mvc:resources mapping="/styles/**" location="/styles/" />
+	<mvc:resources mapping="/js/**" location="/js/" />	
+	<mvc:resources mapping="/resources/**" location="/resources/" />
+	<mvc:resources mapping="/html5/**" location="/html5/" />
+
+	<!-- 管理员的权限拦截器 
+	<mvc:interceptor>
+		<mvc:mapping path="/admin/*" />
+		<mvc:mapping path="/roles/*" />
+		<bean class="com.interceptor.LoginInterceptor"></bean>
+	</mvc:interceptor>
+	-->
+	
+	<!--  这里申明的id必须为multipartResolver  -->
+	<bean id="multipartResolver"
+	    class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+	    <property name="maxUploadSize" value="100000000"/>
+	</bean>
+	
+
+	
+		
+</beans>
