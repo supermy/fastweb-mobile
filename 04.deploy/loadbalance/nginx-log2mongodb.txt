@@ -1,0 +1,42 @@
+nginx.conf文件中设置
+
+1.设置日志格式
+log_format  json  '{'
+                    '"remote_addr": "$remote_addr",'
+                    '"remote_user": "$remote_user",'
+                    '"time_local": "$time_local",'
+                    '"request": "$request",'
+                    '"status": $status,'
+                    '"body_bytes_sent": $body_bytes_sent,'
+                    '"http_referer": "$http_referer",'
+                    '"http_user_agent": "$http_user_agent",'
+                    '"http_x_forwarded_for": "$http_x_forwarded_for"'
+                  '}';
+
+2.设置输出文件名称
+access_log logs/access.log.json json;
+
+3.导入到mongodb
+more log2mongodb.sh 
+for i in `find /var/log/nginx -name "access.log*.gz"`
+do
+#echo $i |awk -F= '{print $1}'
+filename=`echo $i|awk -F= '{print $1}'`
+mkdir -p /var/log/nginx/done-2mongodb/
+gunzip $filename   
+lname=${filename%.*}
+echo $lname
+echo 'todo import 2 mongodb '
+mongoimport -d admin -c weblog -port 40000  $lname
+mv  $lname  /var/log/nginx/done-2mongodb/
+echo 'done $lname'
+done
+
+#定时调度
+#添加执行权限
+#chmod +x log2mongodb.sh 
+#每天0点01分启动。
+#01 00 * * * /路径/log2mongodb.sh 
+
+4.Sessions Problem with PHP-FPM on Nginx
+设置/var/lib/php/session 的读写权限  /tmp

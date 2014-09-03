@@ -1,0 +1,1757 @@
+
+
+***** SERVER RESTARTED *****
+
+
+Sun Oct 06 21:29:49 [initandlisten] MongoDB starting : pid=4596 port=27017 dbpath=db 64-bit host=jamesmo-PC
+Sun Oct 06 21:29:49 [initandlisten] db version v2.2.0, pdfile version 4.5
+Sun Oct 06 21:29:49 [initandlisten] git version: f5e83eae9cfbec7fb7a071321928f00d1b0c5207
+Sun Oct 06 21:29:49 [initandlisten] build info: windows sys.getwindowsversion(major=6, minor=1, build=7601, platform=2, service_pack='Service Pack 1') BOOST_LIB_VERSION=1_49
+Sun Oct 06 21:29:49 [initandlisten] options: { dbpath: "db", logappend: true, logpath: "logs/r0.log", oplogSize: 32, rest: true }
+Sun Oct 06 21:29:49 [initandlisten] journal dir=db/journal
+Sun Oct 06 21:29:49 [initandlisten] recover : no journal files present, no recovery needed
+Sun Oct 06 21:29:49 [initandlisten] 
+Sun Oct 06 21:29:49 [initandlisten] ERROR: Insufficient free space for journal files
+Sun Oct 06 21:29:49 [initandlisten] Please make at least 3379MB available in db/journal or use --smallfiles
+Sun Oct 06 21:29:49 [initandlisten] 
+Sun Oct 06 21:29:49 [initandlisten] exception in initAndListen: 15926 Insufficient free space for journals, terminating
+Sun Oct 06 21:29:49 dbexit: 
+Sun Oct 06 21:29:49 [initandlisten] shutdown: going to close listening sockets...
+Sun Oct 06 21:29:49 [initandlisten] shutdown: going to flush diaglog...
+Sun Oct 06 21:29:49 [initandlisten] shutdown: going to close sockets...
+Sun Oct 06 21:29:49 [initandlisten] shutdown: waiting for fs preallocator...
+Sun Oct 06 21:29:49 [initandlisten] shutdown: lock for final commit...
+Sun Oct 06 21:29:49 [initandlisten] shutdown: final commit...
+Sun Oct 06 21:29:49 [initandlisten] shutdown: closing all files...
+Sun Oct 06 21:29:49 [initandlisten] closeAllFiles() finished
+Sun Oct 06 21:29:49 [initandlisten] journalCleanup...
+Sun Oct 06 21:29:49 [initandlisten] removeJournalFiles
+Sun Oct 06 21:29:49 [initandlisten] shutdown: removing fs lock...
+Sun Oct 06 21:29:49 dbexit: really exiting now
+
+
+***** SERVER RESTARTED *****
+
+
+Sun Oct 06 21:36:02 [initandlisten] MongoDB starting : pid=7656 port=27017 dbpath=db 64-bit host=jamesmo-PC
+Sun Oct 06 21:36:02 [initandlisten] db version v2.2.0, pdfile version 4.5
+Sun Oct 06 21:36:02 [initandlisten] git version: f5e83eae9cfbec7fb7a071321928f00d1b0c5207
+Sun Oct 06 21:36:02 [initandlisten] build info: windows sys.getwindowsversion(major=6, minor=1, build=7601, platform=2, service_pack='Service Pack 1') BOOST_LIB_VERSION=1_49
+Sun Oct 06 21:36:02 [initandlisten] options: { dbpath: "db", logappend: true, logpath: "logs/r0.log", oplogSize: 32, rest: true }
+Sun Oct 06 21:36:02 [initandlisten] journal dir=db/journal
+Sun Oct 06 21:36:02 [initandlisten] recover : no journal files present, no recovery needed
+Sun Oct 06 21:36:02 [initandlisten] 
+Sun Oct 06 21:36:02 [initandlisten] ERROR: Insufficient free space for journal files
+Sun Oct 06 21:36:02 [initandlisten] Please make at least 3379MB available in db/journal or use --smallfiles
+Sun Oct 06 21:36:02 [initandlisten] 
+Sun Oct 06 21:36:02 [initandlisten] exception in initAndListen: 15926 Insufficient free space for journals, terminating
+Sun Oct 06 21:36:02 dbexit: 
+Sun Oct 06 21:36:02 [initandlisten] shutdown: going to close listening sockets...
+Sun Oct 06 21:36:02 [initandlisten] shutdown: going to flush diaglog...
+Sun Oct 06 21:36:02 [initandlisten] shutdown: going to close sockets...
+Sun Oct 06 21:36:02 [initandlisten] shutdown: waiting for fs preallocator...
+Sun Oct 06 21:36:02 [initandlisten] shutdown: lock for final commit...
+Sun Oct 06 21:36:02 [initandlisten] shutdown: final commit...
+Sun Oct 06 21:36:02 [initandlisten] shutdown: closing all files...
+Sun Oct 06 21:36:02 [initandlisten] closeAllFiles() finished
+Sun Oct 06 21:36:02 [initandlisten] journalCleanup...
+Sun Oct 06 21:36:02 [initandlisten] removeJournalFiles
+Sun Oct 06 21:36:02 [initandlisten] shutdown: removing fs lock...
+Sun Oct 06 21:36:02 dbexit: really exiting now
+
+
+***** SERVER RESTARTED *****
+
+
+Sun Oct 06 21:39:33 [initandlisten] MongoDB starting : pid=5244 port=27017 dbpath=db 64-bit host=jamesmo-PC
+Sun Oct 06 21:39:33 [initandlisten] db version v2.2.0, pdfile version 4.5
+Sun Oct 06 21:39:33 [initandlisten] git version: f5e83eae9cfbec7fb7a071321928f00d1b0c5207
+Sun Oct 06 21:39:33 [initandlisten] build info: windows sys.getwindowsversion(major=6, minor=1, build=7601, platform=2, service_pack='Service Pack 1') BOOST_LIB_VERSION=1_49
+Sun Oct 06 21:39:33 [initandlisten] options: { dbpath: "db", logappend: true, logpath: "logs/r0.log", oplogSize: 32, rest: true, smallfiles: true }
+Sun Oct 06 21:39:33 [initandlisten] journal dir=db/journal
+Sun Oct 06 21:39:33 [initandlisten] recover : no journal files present, no recovery needed
+Sun Oct 06 21:39:33 [initandlisten] waiting for connections on port 27017
+Sun Oct 06 21:39:33 [websvr] admin web console waiting for connections on port 28017
+
+
+***** SERVER RESTARTED *****
+
+
+Sun Oct 06 21:42:26 [initandlisten] MongoDB starting : pid=3184 port=27017 dbpath=db 64-bit host=jamesmo-PC
+Sun Oct 06 21:42:26 [initandlisten] db version v2.2.0, pdfile version 4.5
+Sun Oct 06 21:42:26 [initandlisten] git version: f5e83eae9cfbec7fb7a071321928f00d1b0c5207
+Sun Oct 06 21:42:26 [initandlisten] build info: windows sys.getwindowsversion(major=6, minor=1, build=7601, platform=2, service_pack='Service Pack 1') BOOST_LIB_VERSION=1_49
+Sun Oct 06 21:42:26 [initandlisten] options: { dbpath: "db", logappend: true, logpath: "logs/r0.log", oplogSize: 32, rest: true, smallfiles: true }
+Sun Oct 06 21:42:26 [initandlisten] exception in initAndListen: 13627 Unable to create/open lock file: db\mongod.lock 另一个程序正在使用此文件，进程无法访问。. Is a mongod instance already running?, terminating
+Sun Oct 06 21:42:26 dbexit: 
+Sun Oct 06 21:42:26 [initandlisten] shutdown: going to close listening sockets...
+Sun Oct 06 21:42:26 [initandlisten] shutdown: going to flush diaglog...
+Sun Oct 06 21:42:26 [initandlisten] shutdown: going to close sockets...
+Sun Oct 06 21:42:26 [initandlisten] shutdown: waiting for fs preallocator...
+Sun Oct 06 21:42:26 [initandlisten] shutdown: lock for final commit...
+Sun Oct 06 21:42:26 [initandlisten] shutdown: final commit...
+Sun Oct 06 21:42:26 [initandlisten] shutdown: closing all files...
+Sun Oct 06 21:42:26 [initandlisten] closeAllFiles() finished
+Sun Oct 06 21:42:26 dbexit: really exiting now
+Sun Oct 06 21:42:26 [initandlisten] connection accepted from 127.0.0.1:51438 #1 (1 connection now open)
+Sun Oct 06 21:48:08 [initandlisten] connection accepted from 127.0.0.1:51470 #2 (2 connections now open)
+Sun Oct 06 21:48:08 [initandlisten] connection accepted from 127.0.0.1:51471 #3 (3 connections now open)
+Sun Oct 06 21:48:08 [conn2] end connection 127.0.0.1:51470 (2 connections now open)
+Sun Oct 06 21:48:08 [conn3] end connection 127.0.0.1:51471 (1 connection now open)
+Sun Oct 06 21:48:14 [initandlisten] connection accepted from 127.0.0.1:51472 #4 (2 connections now open)
+Sun Oct 06 21:48:14 [initandlisten] connection accepted from 127.0.0.1:51473 #5 (3 connections now open)
+Sun Oct 06 21:48:14 [conn4] end connection 127.0.0.1:51472 (2 connections now open)
+Sun Oct 06 21:48:15 [conn5] end connection 127.0.0.1:51473 (1 connection now open)
+Sun Oct 06 21:56:25 [FileAllocator] allocating new datafile db/test.ns, filling with zeroes...
+Sun Oct 06 21:56:25 [FileAllocator] creating directory db/_tmp
+Sun Oct 06 21:56:25 [FileAllocator] done allocating datafile db/test.ns, size: 16MB,  took 0.084 secs
+Sun Oct 06 21:56:25 [FileAllocator] allocating new datafile db/test.0, filling with zeroes...
+Sun Oct 06 21:56:25 [FileAllocator] done allocating datafile db/test.0, size: 16MB,  took 0.083 secs
+Sun Oct 06 21:56:25 [FileAllocator] allocating new datafile db/test.1, filling with zeroes...
+Sun Oct 06 21:56:25 [conn1] build index test.fans { _id: 1 }
+Sun Oct 06 21:56:25 [conn1] build index done.  scanned 0 total records. 0.012 secs
+Sun Oct 06 21:56:25 [conn1] insert test.fans keyUpdates:0 locks(micros) w:215099 216ms
+Sun Oct 06 21:56:26 [FileAllocator] done allocating datafile db/test.1, size: 32MB,  took 0.171 secs
+Sun Oct 06 21:56:42 [conn1] insert test.fans keyUpdates:0 locks(micros) w:76 129ms
+Sun Oct 06 21:56:44 [FileAllocator] allocating new datafile db/test.2, filling with zeroes...
+Sun Oct 06 21:56:44 [FileAllocator] done allocating datafile db/test.2, size: 64MB,  took 0.321 secs
+Sun Oct 06 21:56:48 [conn1] insert test.fans keyUpdates:0 locks(micros) w:29 124ms
+Sun Oct 06 21:57:10 [FileAllocator] allocating new datafile db/test.3, filling with zeroes...
+Sun Oct 06 21:57:10 [FileAllocator] done allocating datafile db/test.3, size: 128MB,  took 0.332 secs
+Sun Oct 06 21:57:11 [conn1] insert test.fans keyUpdates:0 locks(micros) w:29 333ms
+Sun Oct 06 21:57:11 [conn1] insert test.fans keyUpdates:0 locks(micros) w:34 106ms
+Sun Oct 06 21:57:34 [conn1] insert test.fans keyUpdates:0 locks(micros) w:27 260ms
+Sun Oct 06 21:57:34 [conn1] insert test.fans keyUpdates:0 locks(micros) w:40 345ms
+Sun Oct 06 21:57:35 [conn1] insert test.fans keyUpdates:0 locks(micros) w:36 465ms
+Sun Oct 06 21:57:47 [FileAllocator] allocating new datafile db/test.4, filling with zeroes...
+Sun Oct 06 21:57:48 [FileAllocator] done allocating datafile db/test.4, size: 256MB,  took 0.769 secs
+Sun Oct 06 21:58:12 [initandlisten] connection accepted from 127.0.0.1:51528 #50 (2 connections now open)
+Sun Oct 06 21:58:12 [initandlisten] connection accepted from 127.0.0.1:51529 #51 (3 connections now open)
+Sun Oct 06 21:58:12 [conn50] end connection 127.0.0.1:51528 (2 connections now open)
+Sun Oct 06 21:58:22 [conn51] end connection 127.0.0.1:51529 (1 connection now open)
+Sun Oct 06 22:07:20 [initandlisten] connection accepted from 127.0.0.1:51554 #54 (2 connections now open)
+Sun Oct 06 22:07:20 [conn54] end connection 127.0.0.1:51554 (1 connection now open)
+Sun Oct 06 22:07:20 [initandlisten] connection accepted from 127.0.0.1:51556 #55 (2 connections now open)
+Sun Oct 06 22:07:20 [conn55] end connection 127.0.0.1:51556 (1 connection now open)
+Sun Oct 06 22:07:20 [initandlisten] connection accepted from 127.0.0.1:51558 #56 (2 connections now open)
+Sun Oct 06 22:07:20 [conn56] end connection 127.0.0.1:51558 (1 connection now open)
+Sun Oct 06 22:07:20 [initandlisten] connection accepted from 127.0.0.1:51561 #57 (2 connections now open)
+Sun Oct 06 22:07:20 [conn57] command admin.$cmd command: { $eval: CodeWScope( function (){ return db.getCollectionNames(); }, {}), args: {} } ntoreturn:1 keyUpdates:0 locks(micros) W:132962 reslen:50 133ms
+Sun Oct 06 22:07:20 [conn57] end connection 127.0.0.1:51561 (1 connection now open)
+Sun Oct 06 22:07:21 [initandlisten] connection accepted from 127.0.0.1:51562 #58 (2 connections now open)
+Sun Oct 06 22:07:21 [conn58] end connection 127.0.0.1:51562 (1 connection now open)
+Sun Oct 06 22:07:42 [initandlisten] connection accepted from 127.0.0.1:51564 #59 (2 connections now open)
+Sun Oct 06 22:07:42 [conn59] end connection 127.0.0.1:51564 (1 connection now open)
+Sun Oct 06 22:07:42 [initandlisten] connection accepted from 127.0.0.1:51566 #60 (2 connections now open)
+Sun Oct 06 22:07:42 [conn60] end connection 127.0.0.1:51566 (1 connection now open)
+Sun Oct 06 22:07:45 [initandlisten] connection accepted from 127.0.0.1:51568 #61 (2 connections now open)
+Sun Oct 06 22:07:45 [conn61] end connection 127.0.0.1:51568 (1 connection now open)
+Sun Oct 06 22:07:49 [initandlisten] connection accepted from 127.0.0.1:51571 #62 (2 connections now open)
+Sun Oct 06 22:07:49 [conn62] end connection 127.0.0.1:51571 (1 connection now open)
+Sun Oct 06 22:08:04 [initandlisten] connection accepted from 127.0.0.1:51574 #63 (2 connections now open)
+Sun Oct 06 22:08:05 [conn63] end connection 127.0.0.1:51574 (1 connection now open)
+Sun Oct 06 22:08:07 [initandlisten] connection accepted from 127.0.0.1:51576 #64 (2 connections now open)
+Sun Oct 06 22:08:07 [conn64] end connection 127.0.0.1:51576 (1 connection now open)
+Sun Oct 06 22:08:12 [initandlisten] connection accepted from 127.0.0.1:51578 #65 (2 connections now open)
+Sun Oct 06 22:08:13 [conn65] end connection 127.0.0.1:51578 (1 connection now open)
+Sun Oct 06 22:08:15 [initandlisten] connection accepted from 127.0.0.1:51580 #66 (2 connections now open)
+Sun Oct 06 22:08:15 [conn66] end connection 127.0.0.1:51580 (1 connection now open)
+Sun Oct 06 22:08:19 [initandlisten] connection accepted from 127.0.0.1:51582 #67 (2 connections now open)
+Sun Oct 06 22:08:19 [conn67] end connection 127.0.0.1:51582 (1 connection now open)
+Sun Oct 06 22:08:21 [initandlisten] connection accepted from 127.0.0.1:51584 #68 (2 connections now open)
+Sun Oct 06 22:08:21 [conn68] end connection 127.0.0.1:51584 (1 connection now open)
+Sun Oct 06 22:08:22 [initandlisten] connection accepted from 127.0.0.1:51586 #69 (2 connections now open)
+Sun Oct 06 22:08:22 [conn69] end connection 127.0.0.1:51586 (1 connection now open)
+Sun Oct 06 22:08:24 [initandlisten] connection accepted from 127.0.0.1:51588 #70 (2 connections now open)
+Sun Oct 06 22:08:24 [conn70] end connection 127.0.0.1:51588 (1 connection now open)
+Sun Oct 06 22:08:28 [initandlisten] connection accepted from 127.0.0.1:51590 #71 (2 connections now open)
+Sun Oct 06 22:08:28 [conn71] end connection 127.0.0.1:51590 (1 connection now open)
+Sun Oct 06 22:08:31 [initandlisten] connection accepted from 127.0.0.1:51592 #72 (2 connections now open)
+Sun Oct 06 22:08:31 [conn72] end connection 127.0.0.1:51592 (1 connection now open)
+Sun Oct 06 22:09:04 [initandlisten] connection accepted from 127.0.0.1:51595 #73 (2 connections now open)
+Sun Oct 06 22:09:04 [conn73] end connection 127.0.0.1:51595 (1 connection now open)
+Sun Oct 06 22:09:14 [initandlisten] connection accepted from 127.0.0.1:51597 #74 (2 connections now open)
+Sun Oct 06 22:09:14 [conn74] end connection 127.0.0.1:51597 (1 connection now open)
+Sun Oct 06 22:09:20 [initandlisten] connection accepted from 127.0.0.1:51599 #75 (2 connections now open)
+Sun Oct 06 22:09:21 [conn75] end connection 127.0.0.1:51599 (1 connection now open)
+Sun Oct 06 22:09:27 [initandlisten] connection accepted from 127.0.0.1:51601 #76 (2 connections now open)
+Sun Oct 06 22:09:27 [conn76] end connection 127.0.0.1:51601 (1 connection now open)
+Sun Oct 06 22:09:33 [initandlisten] connection accepted from 127.0.0.1:51603 #77 (2 connections now open)
+Sun Oct 06 22:09:33 [conn77] end connection 127.0.0.1:51603 (1 connection now open)
+Sun Oct 06 22:09:36 [initandlisten] connection accepted from 127.0.0.1:51605 #78 (2 connections now open)
+Sun Oct 06 22:09:36 [conn78] end connection 127.0.0.1:51605 (1 connection now open)
+Sun Oct 06 22:09:42 [initandlisten] connection accepted from 127.0.0.1:51607 #79 (2 connections now open)
+Sun Oct 06 22:09:42 [conn79] end connection 127.0.0.1:51607 (1 connection now open)
+Sun Oct 06 22:09:43 [initandlisten] connection accepted from 127.0.0.1:51609 #80 (2 connections now open)
+Sun Oct 06 22:09:43 [conn80] end connection 127.0.0.1:51609 (1 connection now open)
+Sun Oct 06 22:09:45 [initandlisten] connection accepted from 127.0.0.1:51611 #81 (2 connections now open)
+Sun Oct 06 22:09:45 [conn81] end connection 127.0.0.1:51611 (1 connection now open)
+Sun Oct 06 22:09:50 [initandlisten] connection accepted from 127.0.0.1:51613 #82 (2 connections now open)
+Sun Oct 06 22:09:50 [conn82] end connection 127.0.0.1:51613 (1 connection now open)
+Sun Oct 06 22:09:55 [initandlisten] connection accepted from 127.0.0.1:51615 #83 (2 connections now open)
+Sun Oct 06 22:09:55 [conn83] end connection 127.0.0.1:51615 (1 connection now open)
+Sun Oct 06 22:10:00 [initandlisten] connection accepted from 127.0.0.1:51618 #84 (2 connections now open)
+Sun Oct 06 22:10:00 [conn84] CMD: validate test.fans
+Sun Oct 06 22:10:00 [conn84] validating index 0: test.fans.$_id_
+Sun Oct 06 22:10:00 [conn84] end connection 127.0.0.1:51618 (1 connection now open)
+Sun Oct 06 22:10:06 [initandlisten] connection accepted from 127.0.0.1:51620 #85 (2 connections now open)
+Sun Oct 06 22:10:06 [conn85] end connection 127.0.0.1:51620 (1 connection now open)
+Sun Oct 06 22:10:09 [initandlisten] connection accepted from 127.0.0.1:51622 #86 (2 connections now open)
+Sun Oct 06 22:10:10 [conn86] end connection 127.0.0.1:51622 (1 connection now open)
+Sun Oct 06 22:10:13 [initandlisten] connection accepted from 127.0.0.1:51624 #87 (2 connections now open)
+Sun Oct 06 22:10:13 [conn87] end connection 127.0.0.1:51624 (1 connection now open)
+Sun Oct 06 22:10:20 [initandlisten] connection accepted from 127.0.0.1:51626 #88 (2 connections now open)
+Sun Oct 06 22:10:20 [conn88] end connection 127.0.0.1:51626 (1 connection now open)
+Sun Oct 06 22:10:22 [initandlisten] connection accepted from 127.0.0.1:51628 #89 (2 connections now open)
+Sun Oct 06 22:10:22 [conn89] end connection 127.0.0.1:51628 (1 connection now open)
+Sun Oct 06 22:10:26 [initandlisten] connection accepted from 127.0.0.1:51630 #90 (2 connections now open)
+Sun Oct 06 22:10:26 [conn90] end connection 127.0.0.1:51630 (1 connection now open)
+Sun Oct 06 22:14:17 [initandlisten] connection accepted from 127.0.0.1:51664 #118 (2 connections now open)
+Sun Oct 06 22:14:17 [conn118] end connection 127.0.0.1:51664 (1 connection now open)
+Sun Oct 06 22:14:33 [initandlisten] connection accepted from 127.0.0.1:51666 #119 (2 connections now open)
+Sun Oct 06 22:14:33 [conn119] end connection 127.0.0.1:51666 (1 connection now open)
+Sun Oct 06 22:15:08 [initandlisten] connection accepted from 127.0.0.1:51669 #120 (2 connections now open)
+Sun Oct 06 22:15:08 [conn120] end connection 127.0.0.1:51669 (1 connection now open)
+Sun Oct 06 22:36:42 [conn1] query test.fans query: { uname: "nosqlfnas0" } ntoreturn:0 ntoskip:0 nscanned:1000100 keyUpdates:0 numYields: 1 locks(micros) r:1395850 nreturned:0 reslen:20 1087ms
+Sun Oct 06 22:36:53 [conn1] query test.fans query: { uname: "nosqlfans0" } ntoreturn:0 ntoskip:0 nscanned:1000100 keyUpdates:0 numYields: 1 locks(micros) r:1672356 nreturned:2 reslen:134 960ms
+Sun Oct 06 22:42:26 [conn1] query test.fans query: { uname: "nosqlfansabc" } ntoreturn:0 ntoskip:0 nscanned:1000101 keyUpdates:0 numYields: 1 locks(micros) r:1678529 nreturned:1 reslen:75 1055ms
+Sun Oct 06 22:43:36 [websvr] don't know how to handle a [PUT]
+Sun Oct 06 22:44:32 [websvr] don't know how to handle a [DELETE]
+Sun Oct 06 22:44:41 [websvr] don't know how to handle a [HEAD]
+Sun Oct 06 22:44:55 [websvr] don't know how to handle a [OPTIONS]
+Sun Oct 06 22:45:00 [websvr] don't know how to handle a [HEAD]
+Sun Oct 06 22:45:06 [websvr] don't know how to handle a [PUT]
+Sun Oct 06 22:45:24 [conn1] query test.fans query: { uname: "nosqlfansabc" } ntoreturn:0 ntoskip:0 nscanned:1000102 keyUpdates:0 numYields: 1 locks(micros) r:1662385 nreturned:2 reslen:130 1054ms
+Sun Oct 06 22:46:38 [websvr] don't know how to handle a [DELETE]
+Sun Oct 06 22:57:56 [websvr] don't know how to handle a [OPTIONS]
+Sun Oct 06 22:59:19 [websvr] don't know how to handle a [OPTIONS]
+Sun Oct 06 23:00:41 [websvr] don't know how to handle a [OPTIONS]
+Sun Oct 06 23:00:55 [websvr] don't know how to handle a [OPTIONS]
+Sun Oct 06 23:01:38 Ctrl-C signal
+Sun Oct 06 23:01:38 [consoleTerminate] got CTRL_C_EVENT, will terminate after current cmd ends
+Sun Oct 06 23:01:38 [consoleTerminate] now exiting
+Sun Oct 06 23:01:38 dbexit: 
+Sun Oct 06 23:01:38 [consoleTerminate] shutdown: going to close listening sockets...
+Sun Oct 06 23:01:38 [consoleTerminate] closing listening socket: 512
+Sun Oct 06 23:01:38 [consoleTerminate] closing listening socket: 516
+Sun Oct 06 23:01:38 [consoleTerminate] shutdown: going to flush diaglog...
+Sun Oct 06 23:01:38 [consoleTerminate] shutdown: going to close sockets...
+Sun Oct 06 23:01:38 [consoleTerminate] shutdown: waiting for fs preallocator...
+Sun Oct 06 23:01:38 [consoleTerminate] shutdown: lock for final commit...
+Sun Oct 06 23:01:38 [consoleTerminate] shutdown: final commit...
+Sun Oct 06 23:01:38 [conn1] end connection 127.0.0.1:51438 (0 connections now open)
+Sun Oct 06 23:01:38 [consoleTerminate] shutdown: closing all files...
+Sun Oct 06 23:01:38 [consoleTerminate] closeAllFiles() finished
+Sun Oct 06 23:01:38 [consoleTerminate] journalCleanup...
+Sun Oct 06 23:01:38 [consoleTerminate] removeJournalFiles
+Sun Oct 06 23:01:38 [consoleTerminate] shutdown: removing fs lock...
+Sun Oct 06 23:01:38 dbexit: really exiting now
+
+
+***** SERVER RESTARTED *****
+
+
+Sun Oct 06 23:03:13 [initandlisten] MongoDB starting : pid=5308 port=27017 dbpath=db 64-bit host=jamesmo-PC
+Sun Oct 06 23:03:13 [initandlisten] db version v2.2.0, pdfile version 4.5
+Sun Oct 06 23:03:13 [initandlisten] git version: f5e83eae9cfbec7fb7a071321928f00d1b0c5207
+Sun Oct 06 23:03:13 [initandlisten] build info: windows sys.getwindowsversion(major=6, minor=1, build=7601, platform=2, service_pack='Service Pack 1') BOOST_LIB_VERSION=1_49
+Sun Oct 06 23:03:13 [initandlisten] options: { dbpath: "db", jsonp: true, logappend: true, logpath: "logs/r0.log", oplogSize: 32, rest: true, smallfiles: true }
+Sun Oct 06 23:03:13 [initandlisten] Assertion: 14043:clear tmp files caught exception exception: boost::filesystem::is_directory: 拒绝访问。: "db\_tmp"
+Sun Oct 06 23:03:13 [initandlisten] mongod.exe      ???
+Sun Oct 06 23:03:13 [initandlisten] mongod.exe      ???
+Sun Oct 06 23:03:13 [initandlisten] mongod.exe      ???
+Sun Oct 06 23:03:13 [initandlisten] mongod.exe      ???
+Sun Oct 06 23:03:13 [initandlisten] mongod.exe      ???
+Sun Oct 06 23:03:13 [initandlisten] ntdll.dll       RtlRestoreContext+0x2e2
+Sun Oct 06 23:03:13 [initandlisten] mongod.exe      ???
+Sun Oct 06 23:03:13 [initandlisten] mongod.exe      ???
+Sun Oct 06 23:03:13 [initandlisten] mongod.exe      ???
+Sun Oct 06 23:03:13 [initandlisten] mongod.exe      ???
+Sun Oct 06 23:03:13 [initandlisten] mongod.exe      ???
+Sun Oct 06 23:03:13 [initandlisten] kernel32.dll    BaseThreadInitThunk+0xd
+Sun Oct 06 23:03:13 [initandlisten] exception in initAndListen: 14043 clear tmp files caught exception exception: boost::filesystem::is_directory: 拒绝访问。: "db\_tmp", terminating
+Sun Oct 06 23:03:13 dbexit: 
+Sun Oct 06 23:03:13 [initandlisten] shutdown: going to close listening sockets...
+Sun Oct 06 23:03:13 [initandlisten] shutdown: going to flush diaglog...
+Sun Oct 06 23:03:13 [initandlisten] shutdown: going to close sockets...
+Sun Oct 06 23:03:13 [initandlisten] shutdown: waiting for fs preallocator...
+Sun Oct 06 23:03:13 [initandlisten] shutdown: lock for final commit...
+Sun Oct 06 23:03:13 [initandlisten] shutdown: final commit...
+Sun Oct 06 23:03:13 [initandlisten] shutdown: closing all files...
+Sun Oct 06 23:03:13 [initandlisten] closeAllFiles() finished
+Sun Oct 06 23:03:13 [initandlisten] shutdown: removing fs lock...
+Sun Oct 06 23:03:13 dbexit: really exiting now
+
+
+***** SERVER RESTARTED *****
+
+
+Sun Oct 06 23:04:15 [initandlisten] MongoDB starting : pid=6352 port=27017 dbpath=db 64-bit host=jamesmo-PC
+Sun Oct 06 23:04:15 [initandlisten] db version v2.2.0, pdfile version 4.5
+Sun Oct 06 23:04:15 [initandlisten] git version: f5e83eae9cfbec7fb7a071321928f00d1b0c5207
+Sun Oct 06 23:04:15 [initandlisten] build info: windows sys.getwindowsversion(major=6, minor=1, build=7601, platform=2, service_pack='Service Pack 1') BOOST_LIB_VERSION=1_49
+Sun Oct 06 23:04:15 [initandlisten] options: { dbpath: "db", jsonp: true, logappend: true, logpath: "logs/r0.log", oplogSize: 32, rest: true, smallfiles: true }
+Sun Oct 06 23:04:15 [initandlisten] journal dir=db/journal
+Sun Oct 06 23:04:15 [initandlisten] recover : no journal files present, no recovery needed
+Sun Oct 06 23:04:15 [initandlisten] waiting for connections on port 27017
+Sun Oct 06 23:04:15 [websvr] admin web console waiting for connections on port 28017
+Sun Oct 06 23:04:29 [websvr] don't know how to handle a [OPTIONS]
+Sun Oct 06 23:06:32 [initandlisten] connection accepted from 127.0.0.1:51869 #11 (1 connection now open)
+Sun Oct 06 23:06:38 [FileAllocator] allocating new datafile db/test.ns, filling with zeroes...
+Sun Oct 06 23:06:38 [FileAllocator] creating directory db/_tmp
+Sun Oct 06 23:06:38 [FileAllocator] done allocating datafile db/test.ns, size: 16MB,  took 0.085 secs
+Sun Oct 06 23:06:38 [FileAllocator] allocating new datafile db/test.0, filling with zeroes...
+Sun Oct 06 23:06:38 [FileAllocator] done allocating datafile db/test.0, size: 16MB,  took 0.085 secs
+Sun Oct 06 23:06:38 [FileAllocator] allocating new datafile db/test.1, filling with zeroes...
+Sun Oct 06 23:06:38 [conn11] build index test.fans { _id: 1 }
+Sun Oct 06 23:06:38 [conn11] build index done.  scanned 0 total records. 0.002 secs
+Sun Oct 06 23:06:38 [conn11] insert test.fans keyUpdates:0 locks(micros) w:181276 181ms
+Sun Oct 06 23:06:38 [FileAllocator] done allocating datafile db/test.1, size: 32MB,  took 0.17 secs
+Sun Oct 06 23:07:52 [websvr] don't know how to handle a [OPTIONS]
+Sun Oct 06 23:12:01 [websvr] don't know how to handle a [OPTIONS]
+Sun Oct 06 23:18:46 [initandlisten] connection accepted from 127.0.0.1:51915 #29 (2 connections now open)
+Sun Oct 06 23:18:47 [initandlisten] connection accepted from 127.0.0.1:51916 #30 (3 connections now open)
+Sun Oct 06 23:18:47 [conn29] end connection 127.0.0.1:51915 (2 connections now open)
+Sun Oct 06 23:18:47 [conn30] end connection 127.0.0.1:51916 (1 connection now open)
+Sun Oct 06 23:18:48 [initandlisten] connection accepted from 127.0.0.1:51918 #31 (2 connections now open)
+Sun Oct 06 23:18:48 [conn31] end connection 127.0.0.1:51918 (1 connection now open)
+Mon Oct 07 00:15:32 [initandlisten] connection accepted from 127.0.0.1:52115 #107 (2 connections now open)
+Mon Oct 07 00:15:32 [conn107] end connection 127.0.0.1:52115 (1 connection now open)
+Mon Oct 07 00:15:32 [initandlisten] connection accepted from 127.0.0.1:52116 #108 (2 connections now open)
+Mon Oct 07 00:15:32 [conn108] end connection 127.0.0.1:52116 (1 connection now open)
+Mon Oct 07 00:15:35 [initandlisten] connection accepted from 127.0.0.1:52118 #109 (2 connections now open)
+Mon Oct 07 00:15:35 [conn109] end connection 127.0.0.1:52118 (1 connection now open)
+Mon Oct 07 00:15:43 [initandlisten] connection accepted from 127.0.0.1:52120 #110 (2 connections now open)
+Mon Oct 07 00:15:43 [conn110] end connection 127.0.0.1:52120 (1 connection now open)
+Mon Oct 07 00:15:44 [initandlisten] connection accepted from 127.0.0.1:52122 #111 (2 connections now open)
+Mon Oct 07 00:15:44 [conn111] end connection 127.0.0.1:52122 (1 connection now open)
+Mon Oct 07 00:15:51 [initandlisten] connection accepted from 127.0.0.1:52124 #112 (2 connections now open)
+Mon Oct 07 00:15:51 [conn112] end connection 127.0.0.1:52124 (1 connection now open)
+Mon Oct 07 00:15:55 [initandlisten] connection accepted from 127.0.0.1:52126 #113 (2 connections now open)
+Mon Oct 07 00:15:55 [conn113] end connection 127.0.0.1:52126 (1 connection now open)
+Mon Oct 07 09:04:53 [initandlisten] connection accepted from 127.0.0.1:52525 #166 (2 connections now open)
+Mon Oct 07 09:04:53 [FileAllocator] allocating new datafile db/mymobile.ns, filling with zeroes...
+Mon Oct 07 09:04:53 [FileAllocator] done allocating datafile db/mymobile.ns, size: 16MB,  took 0.086 secs
+Mon Oct 07 09:04:53 [FileAllocator] allocating new datafile db/mymobile.0, filling with zeroes...
+Mon Oct 07 09:04:53 [FileAllocator] done allocating datafile db/mymobile.0, size: 16MB,  took 0.079 secs
+Mon Oct 07 09:04:53 [FileAllocator] allocating new datafile db/mymobile.1, filling with zeroes...
+Mon Oct 07 09:04:53 [conn166] build index mymobile.person { _id: 1 }
+Mon Oct 07 09:04:53 [conn166] build index done.  scanned 0 total records. 0.001 secs
+Mon Oct 07 09:04:53 [conn166] info: creating collection mymobile.person on add index
+Mon Oct 07 09:04:53 [conn166] build index mymobile.person { name: 1, age: -1 }
+Mon Oct 07 09:04:53 [conn166] build index done.  scanned 0 total records. 0.001 secs
+Mon Oct 07 09:04:53 [conn166] insert mymobile.system.indexes keyUpdates:0 locks(micros) w:177197 187ms
+Mon Oct 07 09:04:53 [conn166] build index mymobile.person { ssn: 1 }
+Mon Oct 07 09:04:53 [conn166] build index done.  scanned 0 total records. 0.002 secs
+Mon Oct 07 09:04:53 [conn166] build index mymobile.person { name: 1 }
+Mon Oct 07 09:04:53 [conn166] build index done.  scanned 0 total records. 0.002 secs
+Mon Oct 07 09:04:53 [FileAllocator] done allocating datafile db/mymobile.1, size: 32MB,  took 0.201 secs
+Mon Oct 07 09:05:51 [initandlisten] connection accepted from 127.0.0.1:52545 #168 (3 connections now open)
+Mon Oct 07 09:05:51 [conn168] end connection 127.0.0.1:52545 (2 connections now open)
+Mon Oct 07 09:05:52 [initandlisten] connection accepted from 127.0.0.1:52549 #169 (3 connections now open)
+Mon Oct 07 09:05:52 [conn169] end connection 127.0.0.1:52549 (2 connections now open)
+Mon Oct 07 09:05:52 [initandlisten] connection accepted from 127.0.0.1:52550 #170 (3 connections now open)
+Mon Oct 07 09:05:52 [conn170] end connection 127.0.0.1:52550 (2 connections now open)
+Mon Oct 07 09:05:52 [initandlisten] connection accepted from 127.0.0.1:52551 #171 (4 connections now open)
+Mon Oct 07 09:05:52 [conn171] end connection 127.0.0.1:52551 (3 connections now open)
+Mon Oct 07 09:32:46 [conn166] end connection 127.0.0.1:52525 (1 connection now open)
+Mon Oct 07 09:33:06 [initandlisten] connection accepted from 127.0.0.1:52582 #173 (2 connections now open)
+Mon Oct 07 09:34:17 [initandlisten] connection accepted from 127.0.0.1:52587 #174 (3 connections now open)
+Mon Oct 07 09:38:27 [initandlisten] connection accepted from 127.0.0.1:52594 #175 (4 connections now open)
+Mon Oct 07 09:38:27 [conn175] build index mymobile.menuitem { _id: 1 }
+Mon Oct 07 09:38:27 [conn175] build index done.  scanned 0 total records. 0.002 secs
+Mon Oct 07 09:38:27 [conn175] build index mymobile.menu { _id: 1 }
+Mon Oct 07 09:38:27 [conn175] build index done.  scanned 0 total records. 0.001 secs
+Mon Oct 07 09:38:28 [conn175] end connection 127.0.0.1:52594 (3 connections now open)
+Mon Oct 07 09:42:35 [conn173] end connection 127.0.0.1:52582 (2 connections now open)
+Mon Oct 07 09:42:35 [conn174] end connection 127.0.0.1:52587 (2 connections now open)
+Mon Oct 07 09:42:37 [conn11] end connection 127.0.0.1:51869 (0 connections now open)
+Mon Oct 07 21:17:39 [initandlisten] connection accepted from 127.0.0.1:52693 #178 (1 connection now open)
+Mon Oct 07 21:17:39 [conn178] end connection 127.0.0.1:52693 (0 connections now open)
+Mon Oct 07 21:17:40 [initandlisten] connection accepted from 127.0.0.1:52695 #179 (1 connection now open)
+Mon Oct 07 21:17:40 [conn179] end connection 127.0.0.1:52695 (0 connections now open)
+Mon Oct 07 21:17:40 [initandlisten] connection accepted from 127.0.0.1:52699 #180 (1 connection now open)
+Mon Oct 07 21:17:41 [conn180] command admin.$cmd command: { $eval: CodeWScope( function (){ return db.getCollectionNames(); }, {}), args: {} } ntoreturn:1 keyUpdates:0 locks(micros) W:317028 reslen:50 317ms
+Mon Oct 07 21:17:41 [conn180] query mymobile.system.js ntoreturn:0 ntoskip:0 nscanned:0 keyUpdates:0  nreturned:0 reslen:20 392ms
+Mon Oct 07 21:17:41 [conn180] command mymobile.$cmd command: { $eval: CodeWScope( function (){ return db.getCollectionNames(); }, {}), args: {} } ntoreturn:1 keyUpdates:0 locks(micros) W:426760 reslen:114 427ms
+Mon Oct 07 21:17:41 [conn180] end connection 127.0.0.1:52699 (0 connections now open)
+Mon Oct 07 21:17:41 [initandlisten] connection accepted from 127.0.0.1:52702 #181 (1 connection now open)
+Mon Oct 07 21:17:41 [conn181] end connection 127.0.0.1:52702 (0 connections now open)
+Mon Oct 07 23:21:03 CTRL_CLOSE_EVENT signal
+Mon Oct 07 23:21:03 [consoleTerminate] got CTRL_CLOSE_EVENT, will terminate after current cmd ends
+Mon Oct 07 23:21:03 [consoleTerminate] now exiting
+Mon Oct 07 23:21:03 dbexit: 
+Mon Oct 07 23:21:03 [consoleTerminate] shutdown: going to close listening sockets...
+Mon Oct 07 23:21:03 [consoleTerminate] closing listening socket: 508
+Mon Oct 07 23:21:03 [consoleTerminate] closing listening socket: 512
+Mon Oct 07 23:21:03 [consoleTerminate] shutdown: going to flush diaglog...
+Mon Oct 07 23:21:03 [consoleTerminate] shutdown: going to close sockets...
+Mon Oct 07 23:21:03 [consoleTerminate] shutdown: waiting for fs preallocator...
+Mon Oct 07 23:21:03 [consoleTerminate] shutdown: lock for final commit...
+Mon Oct 07 23:21:03 [consoleTerminate] shutdown: final commit...
+Mon Oct 07 23:21:03 [consoleTerminate] shutdown: closing all files...
+Mon Oct 07 23:21:03 [consoleTerminate] closeAllFiles() finished
+Mon Oct 07 23:21:03 [consoleTerminate] journalCleanup...
+Mon Oct 07 23:21:03 [consoleTerminate] removeJournalFiles
+Mon Oct 07 23:21:03 [consoleTerminate] shutdown: removing fs lock...
+Mon Oct 07 23:21:03 dbexit: really exiting now
+
+
+***** SERVER RESTARTED *****
+
+
+Tue Oct 08 16:52:30 [initandlisten] MongoDB starting : pid=7292 port=27017 dbpath=db 64-bit host=jamesmo-PC
+Tue Oct 08 16:52:30 [initandlisten] db version v2.2.0, pdfile version 4.5
+Tue Oct 08 16:52:30 [initandlisten] git version: f5e83eae9cfbec7fb7a071321928f00d1b0c5207
+Tue Oct 08 16:52:30 [initandlisten] build info: windows sys.getwindowsversion(major=6, minor=1, build=7601, platform=2, service_pack='Service Pack 1') BOOST_LIB_VERSION=1_49
+Tue Oct 08 16:52:30 [initandlisten] options: { dbpath: "db", jsonp: true, logappend: true, logpath: "logs/r0.log", oplogSize: 32, rest: true, smallfiles: true }
+Tue Oct 08 16:52:30 [initandlisten] journal dir=db/journal
+Tue Oct 08 16:52:30 [initandlisten] recover : no journal files present, no recovery needed
+Tue Oct 08 16:52:34 [initandlisten] waiting for connections on port 27017
+Tue Oct 08 16:52:34 [websvr] admin web console waiting for connections on port 28017
+Tue Oct 08 16:52:39 [initandlisten] connection accepted from 127.0.0.1:55459 #1 (1 connection now open)
+Tue Oct 08 16:57:31 [initandlisten] connection accepted from 127.0.0.1:55494 #2 (2 connections now open)
+Tue Oct 08 16:57:32 [conn2] build index mymobile.news { _id: 1 }
+Tue Oct 08 16:57:32 [conn2] build index done.  scanned 0 total records. 0.024 secs
+Tue Oct 08 16:57:42 [conn2] end connection 127.0.0.1:55494 (1 connection now open)
+Tue Oct 08 16:58:10 [initandlisten] connection accepted from 127.0.0.1:55497 #3 (2 connections now open)
+Tue Oct 08 17:05:27 [initandlisten] connection accepted from 127.0.0.1:55530 #4 (3 connections now open)
+Tue Oct 08 17:05:52 [initandlisten] connection accepted from 127.0.0.1:55540 #5 (4 connections now open)
+Tue Oct 08 17:14:28 [conn3] CMD: drop mymobile.news
+Tue Oct 08 17:14:47 [initandlisten] connection accepted from 127.0.0.1:55600 #6 (5 connections now open)
+Tue Oct 08 17:14:47 [conn6] build index mymobile.news { _id: 1 }
+Tue Oct 08 17:14:47 [conn6] build index done.  scanned 0 total records. 0.001 secs
+Tue Oct 08 17:14:56 [FileAllocator] allocating new datafile db/mymobile.2, filling with zeroes...
+Tue Oct 08 17:14:56 [FileAllocator] done allocating datafile db/mymobile.2, size: 64MB,  took 0.206 secs
+Tue Oct 08 17:14:58 [conn6] insert mymobile.news keyUpdates:0 locks(micros) w:110750 111ms
+Tue Oct 08 17:14:58 [conn6] end connection 127.0.0.1:55600 (4 connections now open)
+Tue Oct 08 17:17:54 [conn5] end connection 127.0.0.1:55540 (3 connections now open)
+Tue Oct 08 17:17:54 [conn4] end connection 127.0.0.1:55530 (2 connections now open)
+Tue Oct 08 17:17:54 [conn1] end connection 127.0.0.1:55459 (2 connections now open)
+Tue Oct 08 17:18:09 [initandlisten] connection accepted from 127.0.0.1:55640 #7 (2 connections now open)
+Tue Oct 08 17:18:18 [initandlisten] connection accepted from 127.0.0.1:55644 #8 (3 connections now open)
+Tue Oct 08 17:19:14 [conn7] end connection 127.0.0.1:55640 (2 connections now open)
+Tue Oct 08 17:19:14 [conn8] end connection 127.0.0.1:55644 (1 connection now open)
+Tue Oct 08 17:19:27 [initandlisten] connection accepted from 127.0.0.1:55653 #9 (2 connections now open)
+Tue Oct 08 17:19:30 [initandlisten] connection accepted from 127.0.0.1:55660 #10 (3 connections now open)
+Tue Oct 08 17:20:29 [initandlisten] connection accepted from 127.0.0.1:55666 #11 (4 connections now open)
+Tue Oct 08 17:21:54 [conn9] end connection 127.0.0.1:55653 (3 connections now open)
+Tue Oct 08 17:21:54 [conn10] end connection 127.0.0.1:55660 (2 connections now open)
+Tue Oct 08 17:21:54 [conn11] end connection 127.0.0.1:55666 (1 connection now open)
+Tue Oct 08 17:22:09 [initandlisten] connection accepted from 127.0.0.1:55678 #12 (2 connections now open)
+Tue Oct 08 17:22:15 [initandlisten] connection accepted from 127.0.0.1:55682 #13 (3 connections now open)
+Tue Oct 08 17:23:18 [conn12] end connection 127.0.0.1:55678 (2 connections now open)
+Tue Oct 08 17:23:18 [conn13] end connection 127.0.0.1:55682 (1 connection now open)
+Tue Oct 08 17:23:32 [initandlisten] connection accepted from 127.0.0.1:55689 #14 (2 connections now open)
+Tue Oct 08 17:23:37 [initandlisten] connection accepted from 127.0.0.1:55692 #15 (3 connections now open)
+Tue Oct 08 17:25:09 [conn14] end connection 127.0.0.1:55689 (2 connections now open)
+Tue Oct 08 17:25:09 [conn15] end connection 127.0.0.1:55692 (1 connection now open)
+Tue Oct 08 17:25:27 [initandlisten] connection accepted from 127.0.0.1:55712 #16 (2 connections now open)
+Tue Oct 08 17:26:09 [initandlisten] connection accepted from 127.0.0.1:55723 #17 (3 connections now open)
+Tue Oct 08 17:29:43 [initandlisten] connection accepted from 127.0.0.1:55744 #18 (4 connections now open)
+Tue Oct 08 17:32:19 [conn18] end connection 127.0.0.1:55744 (3 connections now open)
+Tue Oct 08 17:32:19 [conn16] end connection 127.0.0.1:55712 (2 connections now open)
+Tue Oct 08 17:32:19 [conn17] end connection 127.0.0.1:55723 (1 connection now open)
+Tue Oct 08 17:32:37 [initandlisten] connection accepted from 127.0.0.1:55760 #19 (2 connections now open)
+Tue Oct 08 17:39:29 [initandlisten] connection accepted from 127.0.0.1:55856 #20 (3 connections now open)
+Tue Oct 08 17:39:47 [initandlisten] connection accepted from 127.0.0.1:55863 #21 (4 connections now open)
+Tue Oct 08 17:41:53 [initandlisten] connection accepted from 127.0.0.1:55886 #22 (5 connections now open)
+Tue Oct 08 17:46:29 [conn21] end connection 127.0.0.1:55863 (4 connections now open)
+Tue Oct 08 17:46:29 [conn20] end connection 127.0.0.1:55856 (3 connections now open)
+Tue Oct 08 17:46:29 [conn19] end connection 127.0.0.1:55760 (2 connections now open)
+Tue Oct 08 17:46:29 [conn22] end connection 127.0.0.1:55886 (1 connection now open)
+Tue Oct 08 17:47:06 [initandlisten] connection accepted from 127.0.0.1:55992 #23 (2 connections now open)
+Tue Oct 08 17:47:20 [initandlisten] connection accepted from 127.0.0.1:55997 #24 (3 connections now open)
+Tue Oct 08 17:48:31 [initandlisten] connection accepted from 127.0.0.1:56012 #25 (4 connections now open)
+Tue Oct 08 17:49:20 [conn23] end connection 127.0.0.1:55992 (3 connections now open)
+Tue Oct 08 17:49:20 [conn24] end connection 127.0.0.1:55997 (2 connections now open)
+Tue Oct 08 17:49:20 [conn25] end connection 127.0.0.1:56012 (1 connection now open)
+Tue Oct 08 17:49:34 [initandlisten] connection accepted from 127.0.0.1:56028 #26 (2 connections now open)
+Tue Oct 08 17:49:43 [initandlisten] connection accepted from 127.0.0.1:56046 #27 (3 connections now open)
+Tue Oct 08 17:50:00 [initandlisten] connection accepted from 127.0.0.1:56049 #28 (4 connections now open)
+Tue Oct 08 18:32:13 [conn27] end connection 127.0.0.1:56046 (3 connections now open)
+Tue Oct 08 18:32:13 [conn28] end connection 127.0.0.1:56049 (3 connections now open)
+Tue Oct 08 18:32:13 [conn26] end connection 127.0.0.1:56028 (3 connections now open)
+Tue Oct 08 18:32:15 [conn3] end connection 127.0.0.1:55497 (0 connections now open)
+
+
+***** SERVER RESTARTED *****
+
+
+Tue Oct 08 21:27:48 [initandlisten] MongoDB starting : pid=364 port=27017 dbpath=db 64-bit host=jamesmo-PC
+Tue Oct 08 21:27:48 [initandlisten] db version v2.2.0, pdfile version 4.5
+Tue Oct 08 21:27:48 [initandlisten] git version: f5e83eae9cfbec7fb7a071321928f00d1b0c5207
+Tue Oct 08 21:27:48 [initandlisten] build info: windows sys.getwindowsversion(major=6, minor=1, build=7601, platform=2, service_pack='Service Pack 1') BOOST_LIB_VERSION=1_49
+Tue Oct 08 21:27:48 [initandlisten] options: { dbpath: "db", jsonp: true, logappend: true, logpath: "logs/r0.log", oplogSize: 32, rest: true, smallfiles: true }
+Tue Oct 08 21:27:48 [initandlisten] journal dir=db/journal
+Tue Oct 08 21:27:48 [initandlisten] recover begin
+Tue Oct 08 21:27:48 [initandlisten] recover lsn: 1304945
+Tue Oct 08 21:27:48 [initandlisten] recover db/journal/j._0
+Tue Oct 08 21:27:48 [initandlisten] recover skipping application of section seq:293301 < lsn:1304945
+Tue Oct 08 21:27:48 [initandlisten] recover skipping application of section seq:1245785 < lsn:1304945
+Tue Oct 08 21:27:50 [initandlisten] recover create file db/mymobile.1 32MB
+Tue Oct 08 21:27:52 [initandlisten] recover cleaning up
+Tue Oct 08 21:27:52 [initandlisten] removeJournalFiles
+Tue Oct 08 21:27:53 [initandlisten] recover done
+Tue Oct 08 21:27:54 [initandlisten] waiting for connections on port 27017
+Tue Oct 08 21:27:54 [websvr] admin web console waiting for connections on port 28017
+Tue Oct 08 21:27:55 [initandlisten] connection accepted from 127.0.0.1:50551 #1 (1 connection now open)
+Tue Oct 08 21:29:25 [initandlisten] connection accepted from 127.0.0.1:50583 #2 (2 connections now open)
+Tue Oct 08 21:39:38 [initandlisten] connection accepted from 127.0.0.1:50687 #3 (3 connections now open)
+Wed Oct 09 00:46:57 CTRL_CLOSE_EVENT signal
+Wed Oct 09 00:46:57 [consoleTerminate] got CTRL_CLOSE_EVENT, will terminate after current cmd ends
+Wed Oct 09 00:46:57 [consoleTerminate] now exiting
+Wed Oct 09 00:46:57 dbexit: 
+Wed Oct 09 00:46:57 [consoleTerminate] shutdown: going to close listening sockets...
+Wed Oct 09 00:46:57 [consoleTerminate] closing listening socket: 504
+Wed Oct 09 00:46:57 [consoleTerminate] closing listening socket: 516
+Wed Oct 09 00:46:57 [consoleTerminate] shutdown: going to flush diaglog...
+Wed Oct 09 00:46:57 [consoleTerminate] shutdown: going to close sockets...
+Wed Oct 09 00:46:57 [consoleTerminate] shutdown: waiting for fs preallocator...
+Wed Oct 09 00:46:57 [consoleTerminate] shutdown: lock for final commit...
+Wed Oct 09 00:46:57 [consoleTerminate] shutdown: final commit...
+Wed Oct 09 00:46:57 [conn3] end connection 127.0.0.1:50687 (2 connections now open)
+Wed Oct 09 00:46:57 [conn1] end connection 127.0.0.1:50551 (2 connections now open)
+Wed Oct 09 00:46:57 [conn2] end connection 127.0.0.1:50583 (2 connections now open)
+Wed Oct 09 00:46:57 [consoleTerminate] shutdown: closing all files...
+Wed Oct 09 00:46:57 [consoleTerminate] closeAllFiles() finished
+Wed Oct 09 00:46:57 [consoleTerminate] journalCleanup...
+Wed Oct 09 00:46:57 [consoleTerminate] removeJournalFiles
+Wed Oct 09 00:46:57 [consoleTerminate] shutdown: removing fs lock...
+Wed Oct 09 00:46:57 dbexit: really exiting now
+
+
+***** SERVER RESTARTED *****
+
+
+Mon Oct 14 11:33:07 [initandlisten] MongoDB starting : pid=13156 port=27017 dbpath=db 64-bit host=jamesmo-PC
+Mon Oct 14 11:33:07 [initandlisten] db version v2.2.0, pdfile version 4.5
+Mon Oct 14 11:33:07 [initandlisten] git version: f5e83eae9cfbec7fb7a071321928f00d1b0c5207
+Mon Oct 14 11:33:07 [initandlisten] build info: windows sys.getwindowsversion(major=6, minor=1, build=7601, platform=2, service_pack='Service Pack 1') BOOST_LIB_VERSION=1_49
+Mon Oct 14 11:33:07 [initandlisten] options: { dbpath: "db", jsonp: true, logappend: true, logpath: "logs/r0.log", oplogSize: 32, rest: true, smallfiles: true }
+Mon Oct 14 11:33:07 [initandlisten] journal dir=db/journal
+Mon Oct 14 11:33:07 [initandlisten] recover : no journal files present, no recovery needed
+Mon Oct 14 11:33:08 [initandlisten] query mymobile.system.namespaces query: { options.temp: { $in: [ true, 1 ] } } ntoreturn:0 ntoskip:0 nscanned:12 keyUpdates:0  nreturned:0 reslen:20 130ms
+Mon Oct 14 11:33:08 [initandlisten] waiting for connections on port 27017
+Mon Oct 14 11:33:08 [websvr] admin web console waiting for connections on port 28017
+Mon Oct 14 11:33:59 [initandlisten] connection accepted from 127.0.0.1:55205 #1 (1 connection now open)
+Mon Oct 14 11:35:01 [initandlisten] connection accepted from 127.0.0.1:55218 #2 (2 connections now open)
+Mon Oct 14 11:46:54 [conn2] query mymobile.news ntoreturn:25 ntoskip:29975 nscanned:30000 keyUpdates:0 locks(micros) r:141763 nreturned:25 reslen:3070 167ms
+Mon Oct 14 16:51:23 [initandlisten] connection accepted from 127.0.0.1:59435 #3 (3 connections now open)
+Mon Oct 14 17:33:41 [initandlisten] connection accepted from 127.0.0.1:60296 #4 (4 connections now open)
+Mon Oct 14 19:15:08 [conn3] end connection 127.0.0.1:59435 (3 connections now open)
+Mon Oct 14 19:15:08 [conn2] end connection 127.0.0.1:55218 (3 connections now open)
+Mon Oct 14 19:15:08 [conn4] end connection 127.0.0.1:60296 (1 connection now open)
+Mon Oct 14 19:15:08 [conn1] end connection 127.0.0.1:55205 (0 connections now open)
+Mon Oct 14 19:15:11 CTRL_CLOSE_EVENT signal
+Mon Oct 14 19:15:11 [consoleTerminate] got CTRL_CLOSE_EVENT, will terminate after current cmd ends
+Mon Oct 14 19:15:11 [consoleTerminate] now exiting
+Mon Oct 14 19:15:11 dbexit: 
+Mon Oct 14 19:15:11 [consoleTerminate] shutdown: going to close listening sockets...
+Mon Oct 14 19:15:11 [consoleTerminate] closing listening socket: 464
+Mon Oct 14 19:15:11 [consoleTerminate] closing listening socket: 508
+Mon Oct 14 19:15:11 [consoleTerminate] shutdown: going to flush diaglog...
+Mon Oct 14 19:15:11 [consoleTerminate] shutdown: going to close sockets...
+Mon Oct 14 19:15:11 [consoleTerminate] shutdown: waiting for fs preallocator...
+Mon Oct 14 19:15:11 [consoleTerminate] shutdown: lock for final commit...
+Mon Oct 14 19:15:11 [consoleTerminate] shutdown: final commit...
+Mon Oct 14 19:15:11 [consoleTerminate] shutdown: closing all files...
+Mon Oct 14 19:15:11 [consoleTerminate] closeAllFiles() finished
+Mon Oct 14 19:15:11 [consoleTerminate] journalCleanup...
+Mon Oct 14 19:15:11 [consoleTerminate] removeJournalFiles
+Mon Oct 14 19:15:11 [consoleTerminate] shutdown: removing fs lock...
+Mon Oct 14 19:15:11 dbexit: really exiting now
+
+
+***** SERVER RESTARTED *****
+
+
+Tue Oct 15 18:32:15 [initandlisten] MongoDB starting : pid=5300 port=27017 dbpath=db 64-bit host=jamesmo-PC
+Tue Oct 15 18:32:15 [initandlisten] db version v2.2.0, pdfile version 4.5
+Tue Oct 15 18:32:15 [initandlisten] git version: f5e83eae9cfbec7fb7a071321928f00d1b0c5207
+Tue Oct 15 18:32:15 [initandlisten] build info: windows sys.getwindowsversion(major=6, minor=1, build=7601, platform=2, service_pack='Service Pack 1') BOOST_LIB_VERSION=1_49
+Tue Oct 15 18:32:15 [initandlisten] options: { dbpath: "db", jsonp: true, logappend: true, logpath: "logs/r0.log", oplogSize: 32, rest: true, smallfiles: true }
+Tue Oct 15 18:32:15 [initandlisten] journal dir=db/journal
+Tue Oct 15 18:32:15 [initandlisten] recover : no journal files present, no recovery needed
+Tue Oct 15 18:32:16 [initandlisten] waiting for connections on port 27017
+Tue Oct 15 18:32:16 [websvr] admin web console waiting for connections on port 28017
+Tue Oct 15 18:35:10 [initandlisten] connection accepted from 127.0.0.1:53456 #1 (1 connection now open)
+Tue Oct 15 18:40:16 [initandlisten] connection accepted from 127.0.0.1:53564 #2 (2 connections now open)
+Tue Oct 15 18:40:41 [initandlisten] connection accepted from 127.0.0.1:53581 #3 (3 connections now open)
+Tue Oct 15 18:48:49 [conn3] end connection 127.0.0.1:53581 (2 connections now open)
+Tue Oct 15 18:48:49 [conn1] end connection 127.0.0.1:53456 (1 connection now open)
+Tue Oct 15 18:48:49 [conn2] end connection 127.0.0.1:53564 (0 connections now open)
+Tue Oct 15 18:49:01 [initandlisten] connection accepted from 127.0.0.1:53747 #4 (1 connection now open)
+Tue Oct 15 18:50:23 [initandlisten] connection accepted from 127.0.0.1:53760 #5 (2 connections now open)
+Tue Oct 15 19:01:59 [initandlisten] connection accepted from 127.0.0.1:53875 #6 (3 connections now open)
+Tue Oct 15 19:01:59 [initandlisten] connection accepted from 127.0.0.1:53876 #7 (4 connections now open)
+Tue Oct 15 19:01:59 [initandlisten] connection accepted from 127.0.0.1:53877 #8 (5 connections now open)
+Tue Oct 15 19:09:31 [conn4] end connection 127.0.0.1:53747 (4 connections now open)
+Tue Oct 15 19:09:31 [conn6] end connection 127.0.0.1:53875 (3 connections now open)
+Tue Oct 15 19:09:31 [conn8] end connection 127.0.0.1:53877 (3 connections now open)
+Tue Oct 15 19:09:31 [conn7] end connection 127.0.0.1:53876 (1 connection now open)
+Tue Oct 15 19:09:31 [conn5] end connection 127.0.0.1:53760 (1 connection now open)
+Tue Oct 15 19:09:45 [initandlisten] connection accepted from 127.0.0.1:54028 #9 (1 connection now open)
+Tue Oct 15 19:10:53 [initandlisten] connection accepted from 127.0.0.1:54038 #10 (2 connections now open)
+Tue Oct 15 19:23:05 [conn10] query mymobile.news ntoreturn:25 ntoskip:30000 nscanned:30002 keyUpdates:0 locks(micros) r:173428 nreturned:2 reslen:336 200ms
+Tue Oct 15 19:54:00 [initandlisten] connection accepted from 127.0.0.1:54933 #11 (3 connections now open)
+Tue Oct 15 20:20:49 [initandlisten] connection accepted from 127.0.0.1:55600 #12 (4 connections now open)
+Tue Oct 15 20:20:49 [initandlisten] connection accepted from 127.0.0.1:55601 #13 (5 connections now open)
+Tue Oct 15 20:35:10 CTRL_CLOSE_EVENT signal
+Tue Oct 15 20:35:10 [consoleTerminate] got CTRL_CLOSE_EVENT, will terminate after current cmd ends
+Tue Oct 15 20:35:10 [consoleTerminate] now exiting
+Tue Oct 15 20:35:10 dbexit: 
+Tue Oct 15 20:35:10 [consoleTerminate] shutdown: going to close listening sockets...
+Tue Oct 15 20:35:10 [consoleTerminate] closing listening socket: 464
+Tue Oct 15 20:35:10 [consoleTerminate] closing listening socket: 508
+Tue Oct 15 20:35:10 [consoleTerminate] shutdown: going to flush diaglog...
+Tue Oct 15 20:35:10 [consoleTerminate] shutdown: going to close sockets...
+Tue Oct 15 20:35:10 [consoleTerminate] shutdown: waiting for fs preallocator...
+Tue Oct 15 20:35:10 [consoleTerminate] shutdown: lock for final commit...
+Tue Oct 15 20:35:10 [consoleTerminate] shutdown: final commit...
+Tue Oct 15 20:35:10 [conn10] end connection 127.0.0.1:54038 (4 connections now open)
+Tue Oct 15 20:35:10 [conn13] end connection 127.0.0.1:55601 (4 connections now open)
+Tue Oct 15 20:35:10 [conn9] end connection 127.0.0.1:54028 (4 connections now open)
+Tue Oct 15 20:35:10 [conn12] end connection 127.0.0.1:55600 (4 connections now open)
+Tue Oct 15 20:35:10 [conn11] end connection 127.0.0.1:54933 (2 connections now open)
+Tue Oct 15 20:35:10 [consoleTerminate] shutdown: closing all files...
+Tue Oct 15 20:35:10 [consoleTerminate] closeAllFiles() finished
+Tue Oct 15 20:35:10 [consoleTerminate] journalCleanup...
+Tue Oct 15 20:35:10 [consoleTerminate] removeJournalFiles
+Tue Oct 15 20:35:10 [consoleTerminate] shutdown: removing fs lock...
+Tue Oct 15 20:35:10 dbexit: really exiting now
+
+
+***** SERVER RESTARTED *****
+
+
+Tue Oct 15 22:58:27 [initandlisten] MongoDB starting : pid=2864 port=27017 dbpath=db 64-bit host=jamesmo-PC
+Tue Oct 15 22:58:27 [initandlisten] db version v2.2.0, pdfile version 4.5
+Tue Oct 15 22:58:27 [initandlisten] git version: f5e83eae9cfbec7fb7a071321928f00d1b0c5207
+Tue Oct 15 22:58:27 [initandlisten] build info: windows sys.getwindowsversion(major=6, minor=1, build=7601, platform=2, service_pack='Service Pack 1') BOOST_LIB_VERSION=1_49
+Tue Oct 15 22:58:27 [initandlisten] options: { dbpath: "db", jsonp: true, logappend: true, logpath: "logs/r0.log", oplogSize: 32, rest: true, smallfiles: true }
+Tue Oct 15 22:58:28 [initandlisten] journal dir=db/journal
+Tue Oct 15 22:58:28 [initandlisten] recover : no journal files present, no recovery needed
+Tue Oct 15 22:58:28 [initandlisten] waiting for connections on port 27017
+Tue Oct 15 22:58:28 [websvr] admin web console waiting for connections on port 28017
+Tue Oct 15 23:09:59 [initandlisten] connection accepted from 127.0.0.1:50986 #1 (1 connection now open)
+Tue Oct 15 23:10:15 [initandlisten] connection accepted from 127.0.0.1:51021 #2 (2 connections now open)
+Tue Oct 15 23:10:15 [initandlisten] connection accepted from 127.0.0.1:51022 #3 (3 connections now open)
+Tue Oct 15 23:24:50 [initandlisten] connection accepted from 127.0.0.1:51634 #4 (4 connections now open)
+Tue Oct 15 23:24:50 [initandlisten] connection accepted from 127.0.0.1:51638 #5 (5 connections now open)
+Tue Oct 15 23:24:50 [initandlisten] connection accepted from 127.0.0.1:51639 #6 (6 connections now open)
+Tue Oct 15 23:24:50 [initandlisten] connection accepted from 127.0.0.1:51645 #7 (7 connections now open)
+Wed Oct 16 01:08:03 [conn1] end connection 127.0.0.1:50986 (6 connections now open)
+Wed Oct 16 01:08:03 [conn4] end connection 127.0.0.1:51634 (6 connections now open)
+Wed Oct 16 01:08:03 [conn3] end connection 127.0.0.1:51022 (4 connections now open)
+Wed Oct 16 01:08:03 [conn5] end connection 127.0.0.1:51638 (4 connections now open)
+Wed Oct 16 01:08:03 [conn7] end connection 127.0.0.1:51645 (2 connections now open)
+Wed Oct 16 01:08:03 [conn2] end connection 127.0.0.1:51021 (1 connection now open)
+Wed Oct 16 01:08:03 [conn6] end connection 127.0.0.1:51639 (6 connections now open)
+
+
+***** SERVER RESTARTED *****
+
+
+Thu Oct 31 22:24:14 [initandlisten] MongoDB starting : pid=6240 port=27017 dbpath=db 64-bit host=jamesmo-PC
+Thu Oct 31 22:24:14 [initandlisten] db version v2.2.0, pdfile version 4.5
+Thu Oct 31 22:24:14 [initandlisten] git version: f5e83eae9cfbec7fb7a071321928f00d1b0c5207
+Thu Oct 31 22:24:14 [initandlisten] build info: windows sys.getwindowsversion(major=6, minor=1, build=7601, platform=2, service_pack='Service Pack 1') BOOST_LIB_VERSION=1_49
+Thu Oct 31 22:24:14 [initandlisten] options: { dbpath: "db", jsonp: true, logappend: true, logpath: "logs/r0.log", oplogSize: 32, rest: true, smallfiles: true }
+Thu Oct 31 22:24:14 [initandlisten] journal dir=db/journal
+Thu Oct 31 22:24:14 [initandlisten] recover begin
+Thu Oct 31 22:24:14 [initandlisten] recover lsn: 5243727
+Thu Oct 31 22:24:14 [initandlisten] recover db/journal/j._0
+Thu Oct 31 22:24:14 [initandlisten] recover skipping application of section seq:772573 < lsn:5243727
+Thu Oct 31 22:24:14 [initandlisten] recover skipping application of section seq:1071663 < lsn:5243727
+Thu Oct 31 22:24:14 [initandlisten] recover skipping application of section seq:1250913 < lsn:5243727
+Thu Oct 31 22:24:14 [initandlisten] recover skipping application of section seq:1370493 < lsn:5243727
+Thu Oct 31 22:24:14 [initandlisten] recover skipping application of section seq:1550193 < lsn:5243727
+Thu Oct 31 22:24:14 [initandlisten] recover skipping application of section seq:2324847 < lsn:5243727
+Thu Oct 31 22:24:14 [initandlisten] recover skipping application of section seq:2682417 < lsn:5243727
+Thu Oct 31 22:24:14 [initandlisten] recover skipping application of section seq:2861317 < lsn:5243727
+Thu Oct 31 22:24:14 [initandlisten] recover skipping application of section seq:2980617 < lsn:5243727
+Thu Oct 31 22:24:14 [initandlisten] recover skipping application of section more...
+Thu Oct 31 22:24:15 [initandlisten] recover cleaning up
+Thu Oct 31 22:24:15 [initandlisten] removeJournalFiles
+Thu Oct 31 22:24:15 [initandlisten] recover done
+Thu Oct 31 22:24:15 [initandlisten] query mymobile.system.namespaces query: { options.temp: { $in: [ true, 1 ] } } ntoreturn:0 ntoskip:0 nscanned:12 keyUpdates:0  nreturned:0 reslen:20 130ms
+Thu Oct 31 22:24:16 [websvr] admin web console waiting for connections on port 28017
+Thu Oct 31 22:24:16 [initandlisten] waiting for connections on port 27017
+Thu Oct 31 22:25:22 [initandlisten] connection accepted from 127.0.0.1:50641 #1 (1 connection now open)
+Thu Oct 31 22:28:04 [initandlisten] connection accepted from 127.0.0.1:50680 #2 (2 connections now open)
+Thu Oct 31 22:28:04 [initandlisten] connection accepted from 127.0.0.1:50681 #3 (3 connections now open)
+Thu Oct 31 22:28:39 [conn3] update mymobile.news query: { _id: ObjectId('5253cd07c07d01fcfe01adf1') } update: { _id: ObjectId('5253cd07c07d01fcfe01adf1'), _class: "News", title: "7", content: "7鍐呭1", newdate: new Date(1381190400000), author: "7author" } idhack:1 nupdated:1 keyUpdates:0 locks(micros) w:95350 115ms
+Thu Oct 31 23:04:57 [conn2] query mymobile.news ntoreturn:25 ntoskip:30000 nscanned:30012 keyUpdates:0 locks(micros) r:130443 nreturned:12 reslen:1945 156ms
+Thu Oct 31 23:05:03 [initandlisten] connection accepted from 127.0.0.1:51542 #4 (4 connections now open)
+Thu Oct 31 23:05:03 [initandlisten] connection accepted from 127.0.0.1:51543 #5 (5 connections now open)
+Thu Oct 31 23:05:03 [initandlisten] connection accepted from 127.0.0.1:51544 #6 (6 connections now open)
+Thu Oct 31 23:05:03 [initandlisten] connection accepted from 127.0.0.1:51549 #7 (7 connections now open)
+Thu Oct 31 23:05:03 [initandlisten] connection accepted from 127.0.0.1:51552 #8 (8 connections now open)
+Fri Nov 01 01:26:44 [conn8] end connection 127.0.0.1:51552 (7 connections now open)
+Fri Nov 01 01:26:44 [conn4] end connection 127.0.0.1:51542 (7 connections now open)
+Fri Nov 01 01:26:44 [conn1] end connection 127.0.0.1:50641 (5 connections now open)
+Fri Nov 01 01:26:44 [conn2] end connection 127.0.0.1:50680 (4 connections now open)
+Fri Nov 01 01:26:44 [conn3] end connection 127.0.0.1:50681 (3 connections now open)
+Fri Nov 01 01:26:44 [conn7] end connection 127.0.0.1:51549 (2 connections now open)
+Fri Nov 01 01:26:44 [conn5] end connection 127.0.0.1:51543 (1 connection now open)
+Fri Nov 01 01:26:44 [conn6] end connection 127.0.0.1:51544 (0 connections now open)
+Fri Nov 01 09:04:08 CTRL_CLOSE_EVENT signal
+Fri Nov 01 09:04:08 [consoleTerminate] got CTRL_CLOSE_EVENT, will terminate after current cmd ends
+Fri Nov 01 09:04:08 [consoleTerminate] now exiting
+Fri Nov 01 09:04:08 dbexit: 
+Fri Nov 01 09:04:08 [consoleTerminate] shutdown: going to close listening sockets...
+Fri Nov 01 09:04:08 [consoleTerminate] closing listening socket: 496
+Fri Nov 01 09:04:08 [consoleTerminate] closing listening socket: 516
+Fri Nov 01 09:04:08 [consoleTerminate] shutdown: going to flush diaglog...
+Fri Nov 01 09:04:08 [consoleTerminate] shutdown: going to close sockets...
+Fri Nov 01 09:04:08 [consoleTerminate] shutdown: waiting for fs preallocator...
+Fri Nov 01 09:04:08 [consoleTerminate] shutdown: lock for final commit...
+Fri Nov 01 09:04:08 [consoleTerminate] shutdown: final commit...
+Fri Nov 01 09:04:08 [consoleTerminate] shutdown: closing all files...
+Fri Nov 01 09:04:08 [consoleTerminate] closeAllFiles() finished
+Fri Nov 01 09:04:08 [consoleTerminate] journalCleanup...
+Fri Nov 01 09:04:08 [consoleTerminate] removeJournalFiles
+Fri Nov 01 09:04:08 [consoleTerminate] shutdown: removing fs lock...
+Fri Nov 01 09:04:08 dbexit: really exiting now
+
+
+***** SERVER RESTARTED *****
+
+
+Sat Nov 02 04:24:21 [initandlisten] MongoDB starting : pid=7392 port=27017 dbpath=db 64-bit host=jamesmo-PC
+Sat Nov 02 04:24:21 [initandlisten] db version v2.2.0, pdfile version 4.5
+Sat Nov 02 04:24:21 [initandlisten] git version: f5e83eae9cfbec7fb7a071321928f00d1b0c5207
+Sat Nov 02 04:24:21 [initandlisten] build info: windows sys.getwindowsversion(major=6, minor=1, build=7601, platform=2, service_pack='Service Pack 1') BOOST_LIB_VERSION=1_49
+Sat Nov 02 04:24:21 [initandlisten] options: { dbpath: "db", jsonp: true, logappend: true, logpath: "logs/r0.log", oplogSize: 32, rest: true, smallfiles: true }
+Sat Nov 02 04:24:21 [initandlisten] journal dir=db/journal
+Sat Nov 02 04:24:21 [initandlisten] recover : no journal files present, no recovery needed
+Sat Nov 02 04:24:22 [websvr] admin web console waiting for connections on port 28017
+Sat Nov 02 04:24:22 [initandlisten] waiting for connections on port 27017
+
+
+***** SERVER RESTARTED *****
+
+
+Sat Nov 02 04:46:12 [initandlisten] MongoDB starting : pid=5184 port=27017 dbpath=db 64-bit host=jamesmo-PC
+Sat Nov 02 04:46:12 [initandlisten] db version v2.2.0, pdfile version 4.5
+Sat Nov 02 04:46:12 [initandlisten] git version: f5e83eae9cfbec7fb7a071321928f00d1b0c5207
+Sat Nov 02 04:46:12 [initandlisten] build info: windows sys.getwindowsversion(major=6, minor=1, build=7601, platform=2, service_pack='Service Pack 1') BOOST_LIB_VERSION=1_49
+Sat Nov 02 04:46:12 [initandlisten] options: { dbpath: "db", jsonp: true, logappend: true, logpath: "logs/r0.log", oplogSize: 32, rest: true, smallfiles: true }
+Sat Nov 02 04:46:12 [initandlisten] exception in initAndListen: 13627 Unable to create/open lock file: db\mongod.lock 另一个程序正在使用此文件，进程无法访问。. Is a mongod instance already running?, terminating
+Sat Nov 02 04:46:12 dbexit: 
+Sat Nov 02 04:46:12 [initandlisten] shutdown: going to close listening sockets...
+Sat Nov 02 04:46:12 [initandlisten] shutdown: going to flush diaglog...
+Sat Nov 02 04:46:12 [initandlisten] shutdown: going to close sockets...
+Sat Nov 02 04:46:12 [initandlisten] shutdown: waiting for fs preallocator...
+Sat Nov 02 04:46:12 [initandlisten] shutdown: lock for final commit...
+Sat Nov 02 04:46:12 [initandlisten] shutdown: final commit...
+Sat Nov 02 04:46:12 [initandlisten] shutdown: closing all files...
+Sat Nov 02 04:46:12 [initandlisten] closeAllFiles() finished
+Sat Nov 02 04:46:12 dbexit: really exiting now
+
+
+***** SERVER RESTARTED *****
+
+
+Sat Nov 02 04:50:41 [initandlisten] MongoDB starting : pid=10132 port=27017 dbpath=db 64-bit host=jamesmo-PC
+Sat Nov 02 04:50:41 [initandlisten] db version v2.2.0, pdfile version 4.5
+Sat Nov 02 04:50:41 [initandlisten] git version: f5e83eae9cfbec7fb7a071321928f00d1b0c5207
+Sat Nov 02 04:50:41 [initandlisten] build info: windows sys.getwindowsversion(major=6, minor=1, build=7601, platform=2, service_pack='Service Pack 1') BOOST_LIB_VERSION=1_49
+Sat Nov 02 04:50:41 [initandlisten] options: { dbpath: "db", jsonp: true, logappend: true, logpath: "logs/r0.log", oplogSize: 32, rest: true, smallfiles: true }
+Sat Nov 02 04:50:41 [initandlisten] exception in initAndListen: 13627 Unable to create/open lock file: db\mongod.lock 另一个程序正在使用此文件，进程无法访问。. Is a mongod instance already running?, terminating
+Sat Nov 02 04:50:41 dbexit: 
+Sat Nov 02 04:50:41 [initandlisten] shutdown: going to close listening sockets...
+Sat Nov 02 04:50:41 [initandlisten] shutdown: going to flush diaglog...
+Sat Nov 02 04:50:41 [initandlisten] shutdown: going to close sockets...
+Sat Nov 02 04:50:41 [initandlisten] shutdown: waiting for fs preallocator...
+Sat Nov 02 04:50:41 [initandlisten] shutdown: lock for final commit...
+Sat Nov 02 04:50:41 [initandlisten] shutdown: final commit...
+Sat Nov 02 04:50:41 [initandlisten] shutdown: closing all files...
+Sat Nov 02 04:50:41 [initandlisten] closeAllFiles() finished
+Sat Nov 02 04:50:41 dbexit: really exiting now
+
+
+***** SERVER RESTARTED *****
+
+
+Sat Nov 02 04:53:16 [initandlisten] MongoDB starting : pid=10136 port=27017 dbpath=db 64-bit host=jamesmo-PC
+Sat Nov 02 04:53:16 [initandlisten] db version v2.2.0, pdfile version 4.5
+Sat Nov 02 04:53:16 [initandlisten] git version: f5e83eae9cfbec7fb7a071321928f00d1b0c5207
+Sat Nov 02 04:53:16 [initandlisten] build info: windows sys.getwindowsversion(major=6, minor=1, build=7601, platform=2, service_pack='Service Pack 1') BOOST_LIB_VERSION=1_49
+Sat Nov 02 04:53:16 [initandlisten] options: { dbpath: "db", jsonp: true, logappend: true, logpath: "logs/r0.log", oplogSize: 32, rest: true, smallfiles: true }
+Sat Nov 02 04:53:16 [initandlisten] journal dir=db/journal
+Sat Nov 02 04:53:16 [initandlisten] recover begin
+Sat Nov 02 04:53:16 [initandlisten] info no lsn file in journal/ directory
+Sat Nov 02 04:53:16 [initandlisten] recover lsn: 0
+Sat Nov 02 04:53:16 [initandlisten] recover db/journal/j._0
+Sat Nov 02 04:53:16 [initandlisten] recover cleaning up
+Sat Nov 02 04:53:16 [initandlisten] removeJournalFiles
+Sat Nov 02 04:53:16 [initandlisten] recover done
+Sat Nov 02 04:53:16 [initandlisten] waiting for connections on port 27017
+Sat Nov 02 04:53:16 [websvr] admin web console waiting for connections on port 28017
+Sat Nov 02 04:55:08 [initandlisten] connection accepted from 127.0.0.1:51970 #1 (1 connection now open)
+Sat Nov 02 04:55:08 [FileAllocator] allocating new datafile db/mymobile.ns, filling with zeroes...
+Sat Nov 02 04:55:08 [FileAllocator] creating directory db/_tmp
+Sat Nov 02 04:55:08 [FileAllocator] done allocating datafile db/mymobile.ns, size: 16MB,  took 0.076 secs
+Sat Nov 02 04:55:08 [FileAllocator] allocating new datafile db/mymobile.0, filling with zeroes...
+Sat Nov 02 04:55:08 [FileAllocator] done allocating datafile db/mymobile.0, size: 16MB,  took 0.068 secs
+Sat Nov 02 04:55:08 [FileAllocator] allocating new datafile db/mymobile.1, filling with zeroes...
+Sat Nov 02 04:55:08 [conn1] build index mymobile.person { _id: 1 }
+Sat Nov 02 04:55:08 [conn1] build index done.  scanned 0 total records. 0.006 secs
+Sat Nov 02 04:55:08 [conn1] info: creating collection mymobile.person on add index
+Sat Nov 02 04:55:08 [conn1] build index mymobile.person { name: 1, age: -1 }
+Sat Nov 02 04:55:08 [conn1] build index done.  scanned 0 total records. 0.001 secs
+Sat Nov 02 04:55:08 [conn1] insert mymobile.system.indexes keyUpdates:0 locks(micros) w:179677 180ms
+Sat Nov 02 04:55:08 [conn1] build index mymobile.person { ssn: 1 }
+Sat Nov 02 04:55:08 [conn1] build index done.  scanned 0 total records. 0.001 secs
+Sat Nov 02 04:55:08 [conn1] build index mymobile.person { name: 1 }
+Sat Nov 02 04:55:08 [conn1] build index done.  scanned 0 total records. 0.001 secs
+Sat Nov 02 04:55:08 [FileAllocator] done allocating datafile db/mymobile.1, size: 32MB,  took 0.171 secs
+Sat Nov 02 05:01:35 [initandlisten] connection accepted from 127.0.0.1:52108 #2 (2 connections now open)
+Sat Nov 02 05:02:28 [initandlisten] connection accepted from 127.0.0.1:52130 #3 (3 connections now open)
+Sat Nov 02 05:02:28 [conn3] build index mymobile.news { _id: 1 }
+Sat Nov 02 05:02:28 [conn3] build index done.  scanned 0 total records. 0.002 secs
+Sat Nov 02 05:02:30 [conn3] insert mymobile.news keyUpdates:0 locks(micros) w:82 101ms
+Sat Nov 02 05:02:30 [conn3] insert mymobile.news keyUpdates:0 locks(micros) w:82 107ms
+Sat Nov 02 05:02:41 [conn3] build index mymobile.fs.files { _id: 1 }
+Sat Nov 02 05:02:41 [conn3] build index done.  scanned 0 total records. 0.001 secs
+Sat Nov 02 05:02:41 [conn3] info: creating collection mymobile.fs.files on add index
+Sat Nov 02 05:02:41 [conn3] build index mymobile.fs.files { filename: 1, uploadDate: 1 }
+Sat Nov 02 05:02:41 [conn3] build index done.  scanned 0 total records. 0.001 secs
+Sat Nov 02 05:02:41 [conn3] build index mymobile.fs.chunks { _id: 1 }
+Sat Nov 02 05:02:41 [conn3] build index done.  scanned 0 total records. 0.001 secs
+Sat Nov 02 05:02:41 [conn3] info: creating collection mymobile.fs.chunks on add index
+Sat Nov 02 05:02:41 [conn3] build index mymobile.fs.chunks { files_id: 1, n: 1 }
+Sat Nov 02 05:02:41 [conn3] build index done.  scanned 0 total records. 0 secs
+Sat Nov 02 05:02:41 [conn3] end connection 127.0.0.1:52130 (2 connections now open)
+Mon Nov 04 09:13:22 CTRL_CLOSE_EVENT signal
+Mon Nov 04 09:13:22 [consoleTerminate] got CTRL_CLOSE_EVENT, will terminate after current cmd ends
+Mon Nov 04 09:13:22 [consoleTerminate] now exiting
+Mon Nov 04 09:13:22 dbexit: 
+Mon Nov 04 09:13:22 [consoleTerminate] shutdown: going to close listening sockets...
+Mon Nov 04 09:13:22 [consoleTerminate] closing listening socket: 508
+Mon Nov 04 09:13:22 [consoleTerminate] closing listening socket: 512
+Mon Nov 04 09:13:22 [consoleTerminate] shutdown: going to flush diaglog...
+Mon Nov 04 09:13:22 [consoleTerminate] shutdown: going to close sockets...
+Mon Nov 04 09:13:22 [consoleTerminate] shutdown: waiting for fs preallocator...
+Mon Nov 04 09:13:22 [consoleTerminate] shutdown: lock for final commit...
+Mon Nov 04 09:13:22 [consoleTerminate] shutdown: final commit...
+Mon Nov 04 09:13:22 [consoleTerminate] shutdown: closing all files...
+Mon Nov 04 09:13:22 [consoleTerminate] closeAllFiles() finished
+Mon Nov 04 09:13:22 [consoleTerminate] journalCleanup...
+Mon Nov 04 09:13:22 [consoleTerminate] removeJournalFiles
+Mon Nov 04 09:13:22 [conn1] end connection 127.0.0.1:51970 (1 connection now open)
+Mon Nov 04 09:13:22 [conn2] end connection 127.0.0.1:52108 (1 connection now open)
+Mon Nov 04 09:13:22 [consoleTerminate] shutdown: removing fs lock...
+Mon Nov 04 09:13:22 dbexit: really exiting now
+
+
+***** SERVER RESTARTED *****
+
+
+Mon Nov 18 15:35:32 [initandlisten] MongoDB starting : pid=7864 port=27017 dbpath=db 64-bit host=jamesmo-PC
+Mon Nov 18 15:35:32 [initandlisten] db version v2.2.0, pdfile version 4.5
+Mon Nov 18 15:35:32 [initandlisten] git version: f5e83eae9cfbec7fb7a071321928f00d1b0c5207
+Mon Nov 18 15:35:32 [initandlisten] build info: windows sys.getwindowsversion(major=6, minor=1, build=7601, platform=2, service_pack='Service Pack 1') BOOST_LIB_VERSION=1_49
+Mon Nov 18 15:35:32 [initandlisten] options: { dbpath: "db", jsonp: true, logappend: true, logpath: "logs/r0.log", oplogSize: 32, rest: true, smallfiles: true }
+Mon Nov 18 15:35:32 [initandlisten] journal dir=db/journal
+Mon Nov 18 15:35:32 [initandlisten] recover : no journal files present, no recovery needed
+Mon Nov 18 15:35:32 [initandlisten] waiting for connections on port 27017
+Mon Nov 18 15:35:32 [websvr] admin web console waiting for connections on port 28017
+Mon Nov 18 15:36:29 [initandlisten] connection accepted from 127.0.0.1:53078 #1 (1 connection now open)
+Mon Nov 18 15:41:23 [initandlisten] connection accepted from 127.0.0.1:53193 #2 (2 connections now open)
+Mon Nov 18 16:02:25 [conn1] end connection 127.0.0.1:53078 (1 connection now open)
+Mon Nov 18 16:02:25 [conn2] end connection 127.0.0.1:53193 (0 connections now open)
+Mon Nov 18 16:02:42 [initandlisten] connection accepted from 127.0.0.1:53604 #3 (1 connection now open)
+Mon Nov 18 16:03:33 [initandlisten] connection accepted from 127.0.0.1:53635 #4 (2 connections now open)
+Mon Nov 18 16:03:33 [initandlisten] connection accepted from 127.0.0.1:53636 #5 (3 connections now open)
+Mon Nov 18 16:03:34 [conn5] query mymobile.news query: { query: {}, orderby: { newdate: -1 } } ntoreturn:25 ntoskip:0 nscanned:30009 scanAndOrder:1 keyUpdates:0 numYields: 1 locks(micros) r:416306 nreturned:25 reslen:3450 294ms
+Mon Nov 18 16:03:34 [conn4] query mymobile.news query: { query: {}, orderby: { newdate: -1 } } ntoreturn:25 ntoskip:0 nscanned:30009 scanAndOrder:1 keyUpdates:0 numYields: 1 locks(micros) r:413695 nreturned:25 reslen:3450 293ms
+Mon Nov 18 16:04:10 [conn5] query mymobile.news query: { query: {}, orderby: { newdate: -1 } } ntoreturn:25 ntoskip:0 nscanned:30008 scanAndOrder:1 keyUpdates:0 locks(micros) r:164334 nreturned:25 reslen:3414 165ms
+Mon Nov 18 16:04:24 [conn5] query mymobile.news query: { query: {}, orderby: { newdate: -1 } } ntoreturn:25 ntoskip:25 nscanned:30008 scanAndOrder:1 keyUpdates:0 locks(micros) r:164577 nreturned:25 reslen:3070 164ms
+Mon Nov 18 16:04:34 [conn5] query mymobile.news query: { query: {}, orderby: { newdate: -1 } } ntoreturn:25 ntoskip:30000 nscanned:30008 scanAndOrder:1 keyUpdates:0 numYields: 1 locks(micros) r:1323756 nreturned:8 reslen:918 684ms
+Mon Nov 18 16:08:23 [conn4] end connection 127.0.0.1:53635 (2 connections now open)
+Mon Nov 18 16:08:23 [conn5] end connection 127.0.0.1:53636 (1 connection now open)
+Mon Nov 18 16:08:23 [conn3] end connection 127.0.0.1:53604 (0 connections now open)
+Mon Nov 18 16:08:41 [initandlisten] connection accepted from 127.0.0.1:53695 #6 (1 connection now open)
+Mon Nov 18 16:09:04 [initandlisten] connection accepted from 127.0.0.1:53745 #7 (2 connections now open)
+Mon Nov 18 16:09:04 [initandlisten] connection accepted from 127.0.0.1:53746 #8 (3 connections now open)
+Mon Nov 18 16:09:04 [conn8] query mymobile.news query: { query: {}, orderby: { newdate: -1 } } ntoreturn:25 ntoskip:0 nscanned:30008 scanAndOrder:1 keyUpdates:0 locks(micros) r:153920 nreturned:25 reslen:3414 154ms
+Mon Nov 18 16:09:04 [conn7] query mymobile.news query: { query: {}, orderby: { newdate: -1 } } ntoreturn:25 ntoskip:0 nscanned:30008 scanAndOrder:1 keyUpdates:0 locks(micros) r:159276 nreturned:25 reslen:3414 159ms
+Mon Nov 18 16:09:54 [conn7] query mymobile.news query: { query: {}, orderby: { [{"property":"newdate","direction":"DESC"}]: -1 } } ntoreturn:25 ntoskip:0 nscanned:30008 scanAndOrder:1 keyUpdates:0 locks(micros) r:156967 nreturned:25 reslen:2815 157ms
+Mon Nov 18 16:10:11 [conn7] query mymobile.news query: { query: {}, orderby: { [{"property":"newdate","direction":"DESC"}]: -1 } } ntoreturn:25 ntoskip:30000 nscanned:30008 scanAndOrder:1 keyUpdates:0 numYields: 1 locks(micros) r:745798 nreturned:8 reslen:1340 507ms
+Mon Nov 18 16:10:14 [conn7] query mymobile.news query: { query: {}, orderby: { [{"property":"newdate","direction":"DESC"}]: -1 } } ntoreturn:25 ntoskip:0 nscanned:30008 scanAndOrder:1 keyUpdates:0 locks(micros) r:176695 nreturned:25 reslen:2815 177ms
+Mon Nov 18 16:10:32 [conn7] query mymobile.news query: { query: {}, orderby: { [{"property":"newdate","direction":"ASC"}]: -1 } } ntoreturn:25 ntoskip:0 nscanned:30008 scanAndOrder:1 keyUpdates:0 numYields: 1 locks(micros) r:322815 nreturned:25 reslen:2815 187ms
+Mon Nov 18 16:10:44 [conn7] query mymobile.news query: { query: {}, orderby: { [{"property":"newdate","direction":"ASC"}]: -1 } } ntoreturn:25 ntoskip:0 nscanned:30008 scanAndOrder:1 keyUpdates:0 locks(micros) r:165285 nreturned:25 reslen:2815 165ms
+Mon Nov 18 16:10:46 [conn7] query mymobile.news query: { query: {}, orderby: { [{"property":"newdate","direction":"ASC"}]: -1 } } ntoreturn:25 ntoskip:30000 nscanned:30008 scanAndOrder:1 keyUpdates:0 locks(micros) r:456926 nreturned:8 reslen:1340 457ms
+Mon Nov 18 16:10:51 [conn7] query mymobile.news query: { query: {}, orderby: { [{"property":"newdate","direction":"DESC"}]: -1 } } ntoreturn:25 ntoskip:30000 nscanned:30008 scanAndOrder:1 keyUpdates:0 numYields: 1 locks(micros) r:806910 nreturned:8 reslen:1340 496ms
+Mon Nov 18 16:10:55 [conn7] query mymobile.news query: { query: {}, orderby: { [{"property":"newdate","direction":"DESC"}]: -1 } } ntoreturn:25 ntoskip:0 nscanned:30008 scanAndOrder:1 keyUpdates:0 locks(micros) r:157682 nreturned:25 reslen:2815 158ms
+Mon Nov 18 16:11:16 [conn7] query mymobile.news query: { query: {}, orderby: { [{"property":"newdate","direction":"DESC"}]: -1 } } ntoreturn:25 ntoskip:30000 nscanned:30008 scanAndOrder:1 keyUpdates:0 numYields: 1 locks(micros) r:586466 nreturned:8 reslen:1340 518ms
+Mon Nov 18 16:11:25 [conn7] query mymobile.news query: { query: {}, orderby: { [{"property":"newdate","direction":"DESC"}]: -1 } } ntoreturn:25 ntoskip:0 nscanned:30007 scanAndOrder:1 keyUpdates:0 locks(micros) r:165324 nreturned:25 reslen:2815 165ms
+Mon Nov 18 16:11:42 [conn7] query mymobile.news query: { query: {}, orderby: { [{"property":"title","direction":"ASC"}]: -1 } } ntoreturn:25 ntoskip:30000 nscanned:30007 scanAndOrder:1 keyUpdates:0 locks(micros) r:456543 nreturned:7 reslen:1182 457ms
+Mon Nov 18 16:11:54 [conn7] query mymobile.news query: { query: {}, orderby: { [{"property":"title","direction":"ASC"}]: -1 } } ntoreturn:25 ntoskip:30000 nscanned:30006 scanAndOrder:1 keyUpdates:0 locks(micros) r:485807 nreturned:6 reslen:1024 486ms
+Mon Nov 18 16:12:11 [conn7] query mymobile.news query: { query: {}, orderby: { [{"property":"id","direction":"ASC"}]: -1 } } ntoreturn:25 ntoskip:30000 nscanned:30006 scanAndOrder:1 keyUpdates:0 locks(micros) r:530825 nreturned:6 reslen:1024 531ms
+Mon Nov 18 16:12:12 [conn7] query mymobile.news query: { query: {}, orderby: { [{"property":"id","direction":"ASC"}]: -1 } } ntoreturn:25 ntoskip:0 nscanned:30006 scanAndOrder:1 keyUpdates:0 locks(micros) r:155481 nreturned:25 reslen:2815 155ms
+Mon Nov 18 16:12:17 [conn7] query mymobile.news query: { query: {}, orderby: { [{"property":"id","direction":"DESC"}]: -1 } } ntoreturn:25 ntoskip:0 nscanned:30006 scanAndOrder:1 keyUpdates:0 locks(micros) r:152143 nreturned:25 reslen:2815 152ms
+Mon Nov 18 16:12:27 [conn7] query mymobile.news query: { query: {}, orderby: { [{"property":"title","direction":"ASC"}]: -1 } } ntoreturn:25 ntoskip:0 nscanned:30006 scanAndOrder:1 keyUpdates:0 locks(micros) r:157994 nreturned:25 reslen:2815 158ms
+Mon Nov 18 16:13:26 [conn7] query mymobile.news query: { query: {}, orderby: { [{"property":"title","direction":"ASC"}]: -1 } } ntoreturn:25 ntoskip:0 nscanned:30006 scanAndOrder:1 keyUpdates:0 locks(micros) r:155138 nreturned:25 reslen:2815 156ms
+Mon Nov 18 16:13:29 [conn7] query mymobile.news query: { query: {}, orderby: { [{"property":"title","direction":"ASC"}]: -1 } } ntoreturn:25 ntoskip:25 nscanned:30006 scanAndOrder:1 keyUpdates:0 numYields: 1 locks(micros) r:208447 nreturned:25 reslen:2845 196ms
+Mon Nov 18 16:13:31 [conn7] query mymobile.news query: { query: {}, orderby: { [{"property":"title","direction":"ASC"}]: -1 } } ntoreturn:25 ntoskip:50 nscanned:30006 scanAndOrder:1 keyUpdates:0 locks(micros) r:161309 nreturned:25 reslen:2845 161ms
+Mon Nov 18 16:13:32 [conn7] query mymobile.news query: { query: {}, orderby: { [{"property":"title","direction":"ASC"}]: -1 } } ntoreturn:25 ntoskip:30000 nscanned:30006 scanAndOrder:1 keyUpdates:0 locks(micros) r:465253 nreturned:6 reslen:1024 466ms
+Mon Nov 18 16:13:58 [conn7] query mymobile.news query: { query: {}, orderby: { [{"property":"title","direction":"ASC"}]: -1 } } ntoreturn:25 ntoskip:30000 nscanned:30006 scanAndOrder:1 keyUpdates:0 numYields: 1 locks(micros) r:708296 nreturned:6 reslen:1024 464ms
+Mon Nov 18 16:14:02 [conn7] query mymobile.news query: { query: {}, orderby: { [{"property":"title","direction":"ASC"}]: -1 } } ntoreturn:25 ntoskip:29975 nscanned:30006 scanAndOrder:1 keyUpdates:0 locks(micros) r:535470 nreturned:25 reslen:3070 536ms
+Mon Nov 18 16:14:06 [conn7] query mymobile.news query: { query: {}, orderby: { [{"property":"title","direction":"ASC"}]: -1 } } ntoreturn:25 ntoskip:0 nscanned:30006 scanAndOrder:1 keyUpdates:0 locks(micros) r:168310 nreturned:25 reslen:2815 168ms
+Mon Nov 18 16:14:11 [conn7] query mymobile.news query: { query: {}, orderby: { [{"property":"title","direction":"ASC"}]: -1 } } ntoreturn:25 ntoskip:0 nscanned:30005 scanAndOrder:1 keyUpdates:0 locks(micros) r:161292 nreturned:25 reslen:2818 161ms
+Mon Nov 18 16:14:20 [conn7] query mymobile.news query: { query: {}, orderby: { [{"property":"title","direction":"ASC"}]: -1 } } ntoreturn:25 ntoskip:0 nscanned:30004 scanAndOrder:1 keyUpdates:0 locks(micros) r:179799 nreturned:25 reslen:2821 180ms
+Mon Nov 18 16:14:22 [conn7] query mymobile.news query: { query: {}, orderby: { [{"property":"title","direction":"ASC"}]: -1 } } ntoreturn:25 ntoskip:30000 nscanned:30004 scanAndOrder:1 keyUpdates:0 locks(micros) r:466600 nreturned:4 reslen:708 466ms
+Mon Nov 18 16:14:34 [conn7] query mymobile.news query: { query: {}, orderby: { [{"property":"title","direction":"ASC"}]: -1 } } ntoreturn:25 ntoskip:30000 nscanned:30003 scanAndOrder:1 keyUpdates:0 locks(micros) r:583568 nreturned:3 reslen:550 583ms
+Mon Nov 18 16:14:38 [conn7] query mymobile.news query: { query: {}, orderby: { [{"property":"title","direction":"ASC"}]: -1 } } ntoreturn:25 ntoskip:29975 nscanned:30003 scanAndOrder:1 keyUpdates:0 numYields: 1 locks(micros) r:607561 nreturned:25 reslen:3142 470ms
+Mon Nov 18 16:14:46 [conn7] query mymobile.news query: { query: {}, orderby: { [{"property":"title","direction":"ASC"}]: -1 } } ntoreturn:25 ntoskip:29975 nscanned:30002 scanAndOrder:1 keyUpdates:0 locks(micros) r:506006 nreturned:25 reslen:3142 506ms
+Mon Nov 18 16:14:54 [conn7] query mymobile.news query: { query: {}, orderby: { [{"property":"title","direction":"ASC"}]: -1 } } ntoreturn:25 ntoskip:30000 nscanned:30001 scanAndOrder:1 keyUpdates:0 numYields: 1 locks(micros) r:948311 nreturned:1 reslen:205 501ms
+Mon Nov 18 16:14:56 [conn7] query mymobile.news query: { query: {}, orderby: { [{"property":"title","direction":"ASC"}]: -1 } } ntoreturn:25 ntoskip:30000 nscanned:30001 scanAndOrder:1 keyUpdates:0 numYields: 1 locks(micros) r:512715 nreturned:1 reslen:205 508ms
+Mon Nov 18 16:14:57 [conn7] query mymobile.news query: { query: {}, orderby: { [{"property":"title","direction":"ASC"}]: -1 } } ntoreturn:25 ntoskip:29975 nscanned:30001 scanAndOrder:1 keyUpdates:0 locks(micros) r:483866 nreturned:25 reslen:3171 484ms
+Mon Nov 18 16:14:58 [conn7] query mymobile.news query: { query: {}, orderby: { [{"property":"title","direction":"ASC"}]: -1 } } ntoreturn:25 ntoskip:29975 nscanned:30001 scanAndOrder:1 keyUpdates:0 locks(micros) r:495473 nreturned:25 reslen:3171 496ms
+Mon Nov 18 16:15:05 [conn7] query mymobile.news query: { query: {}, orderby: { [{"property":"title","direction":"ASC"}]: -1 } } ntoreturn:25 ntoskip:29975 nscanned:30000 scanAndOrder:1 keyUpdates:0 locks(micros) r:527866 nreturned:25 reslen:3198 528ms
+Mon Nov 18 16:15:14 [conn7] query mymobile.news query: { query: {}, orderby: { [{"property":"title","direction":"ASC"}]: -1 } } ntoreturn:25 ntoskip:29975 nscanned:30000 scanAndOrder:1 keyUpdates:0 locks(micros) r:525006 nreturned:25 reslen:3198 525ms
+Mon Nov 18 16:15:23 [conn7] query mymobile.news query: { query: {}, orderby: { [{"property":"title","direction":"ASC"}]: -1 } } ntoreturn:25 ntoskip:29975 nscanned:30000 scanAndOrder:1 keyUpdates:0 numYields: 1 locks(micros) r:562479 nreturned:25 reslen:3198 457ms
+Mon Nov 18 16:15:49 [conn7] query mymobile.news query: { query: {}, orderby: { [{"property":"title","direction":"ASC"}]: -1 } } ntoreturn:25 ntoskip:0 nscanned:30000 scanAndOrder:1 keyUpdates:0 locks(micros) r:176866 nreturned:25 reslen:2821 177ms
+Mon Nov 18 16:16:00 [conn7] query mymobile.news query: { query: {}, orderby: { [{"property":"title","direction":"ASC"}]: -1 } } ntoreturn:25 ntoskip:0 nscanned:30001 scanAndOrder:1 keyUpdates:0 locks(micros) r:164026 nreturned:25 reslen:2821 164ms
+Mon Nov 18 16:16:05 [conn7] query mymobile.news query: { query: {}, orderby: { [{"property":"title","direction":"DESC"}]: -1 } } ntoreturn:25 ntoskip:0 nscanned:30001 scanAndOrder:1 keyUpdates:0 locks(micros) r:155493 nreturned:25 reslen:2821 156ms
+Mon Nov 18 16:16:12 [conn7] query mymobile.news query: { query: {}, orderby: { [{"property":"title","direction":"ASC"}]: -1 } } ntoreturn:25 ntoskip:0 nscanned:30001 scanAndOrder:1 keyUpdates:0 locks(micros) r:163355 nreturned:25 reslen:2821 163ms
+Mon Nov 18 16:16:14 [conn7] query mymobile.news query: { query: {}, orderby: { [{"property":"title","direction":"ASC"}]: -1 } } ntoreturn:25 ntoskip:30000 nscanned:30001 scanAndOrder:1 keyUpdates:0 numYields: 1 locks(micros) r:679341 nreturned:1 reslen:190 479ms
+Mon Nov 18 16:16:19 [conn7] query mymobile.news query: { query: {}, orderby: { [{"property":"title","direction":"DESC"}]: -1 } } ntoreturn:25 ntoskip:30000 nscanned:30001 scanAndOrder:1 keyUpdates:0 locks(micros) r:496053 nreturned:1 reslen:190 496ms
+Mon Nov 18 16:16:20 [conn7] query mymobile.news query: { query: {}, orderby: { [{"property":"title","direction":"DESC"}]: -1 } } ntoreturn:25 ntoskip:0 nscanned:30001 scanAndOrder:1 keyUpdates:0 numYields: 1 locks(micros) r:291642 nreturned:25 reslen:2821 178ms
+Mon Nov 18 16:16:22 [conn7] query mymobile.news query: { query: {}, orderby: { [{"property":"title","direction":"DESC"}]: -1 } } ntoreturn:25 ntoskip:0 nscanned:30001 scanAndOrder:1 keyUpdates:0 locks(micros) r:156949 nreturned:25 reslen:2821 157ms
+Mon Nov 18 16:16:35 [conn7] query mymobile.news query: { query: {}, orderby: { [{"property":"newdate","direction":"ASC"}]: -1 } } ntoreturn:25 ntoskip:0 nscanned:30001 scanAndOrder:1 keyUpdates:0 locks(micros) r:245904 nreturned:25 reslen:2821 246ms
+Mon Nov 18 16:16:42 [conn7] query mymobile.news query: { query: {}, orderby: { [{"property":"newdate","direction":"ASC"}]: -1 } } ntoreturn:25 ntoskip:0 nscanned:30001 scanAndOrder:1 keyUpdates:0 locks(micros) r:168247 nreturned:25 reslen:2821 169ms
+Mon Nov 18 16:16:47 [conn7] query mymobile.news query: { query: {}, orderby: { [{"property":"newdate","direction":"DESC"}]: -1 } } ntoreturn:25 ntoskip:0 nscanned:30001 scanAndOrder:1 keyUpdates:0 locks(micros) r:148840 nreturned:25 reslen:2821 149ms
+Mon Nov 18 16:16:49 [conn7] query mymobile.news query: { query: {}, orderby: { [{"property":"newdate","direction":"DESC"}]: -1 } } ntoreturn:25 ntoskip:30000 nscanned:30001 scanAndOrder:1 keyUpdates:0 locks(micros) r:495283 nreturned:1 reslen:190 495ms
+Mon Nov 18 16:16:51 [conn7] query mymobile.news query: { query: {}, orderby: { [{"property":"newdate","direction":"DESC"}]: -1 } } ntoreturn:25 ntoskip:0 nscanned:30001 scanAndOrder:1 keyUpdates:0 locks(micros) r:158452 nreturned:25 reslen:2821 158ms
+Mon Nov 18 16:16:59 [conn7] query mymobile.news query: { query: {}, orderby: { [{"property":"newdate","direction":"DESC"}]: -1 } } ntoreturn:25 ntoskip:0 nscanned:30001 scanAndOrder:1 keyUpdates:0 locks(micros) r:144133 nreturned:25 reslen:2821 144ms
+Mon Nov 18 16:17:04 [conn7] query mymobile.news query: { query: {}, orderby: { [{"property":"newdate","direction":"ASC"}]: -1 } } ntoreturn:25 ntoskip:0 nscanned:30001 scanAndOrder:1 keyUpdates:0 locks(micros) r:158305 nreturned:25 reslen:2821 158ms
+Mon Nov 18 16:17:10 [conn7] query mymobile.news query: { query: {}, orderby: { [{"property":"newdate","direction":"ASC"}]: -1 } } ntoreturn:25 ntoskip:30000 nscanned:30001 scanAndOrder:1 keyUpdates:0 locks(micros) r:459927 nreturned:1 reslen:190 460ms
+Mon Nov 18 16:17:13 [conn7] query mymobile.news query: { query: {}, orderby: { [{"property":"newdate","direction":"ASC"}]: -1 } } ntoreturn:25 ntoskip:29975 nscanned:30001 scanAndOrder:1 keyUpdates:0 locks(micros) r:517497 nreturned:25 reslen:3198 517ms
+Mon Nov 18 16:17:20 [conn7] query mymobile.news query: { query: {}, orderby: { [{"property":"content","direction":"ASC"}]: -1 } } ntoreturn:25 ntoskip:29975 nscanned:30001 scanAndOrder:1 keyUpdates:0 locks(micros) r:494834 nreturned:25 reslen:3198 495ms
+Mon Nov 18 16:17:26 [conn7] query mymobile.news query: { query: {}, orderby: { [{"property":"content","direction":"DESC"}]: -1 } } ntoreturn:25 ntoskip:29975 nscanned:30001 scanAndOrder:1 keyUpdates:0 numYields: 1 locks(micros) r:808217 nreturned:25 reslen:3198 471ms
+Mon Nov 18 16:17:28 [conn7] query mymobile.news query: { query: {}, orderby: { [{"property":"content","direction":"DESC"}]: -1 } } ntoreturn:25 ntoskip:0 nscanned:30001 scanAndOrder:1 keyUpdates:0 locks(micros) r:160834 nreturned:25 reslen:2821 161ms
+Mon Nov 18 16:17:31 [conn7] query mymobile.news query: { query: {}, orderby: { [{"property":"content","direction":"DESC"}]: -1 } } ntoreturn:25 ntoskip:0 nscanned:30001 scanAndOrder:1 keyUpdates:0 numYields: 1 locks(micros) r:279477 nreturned:25 reslen:2821 176ms
+Mon Nov 18 16:17:36 [conn7] query mymobile.news query: { query: {}, orderby: { newdate: -1 } } ntoreturn:25 ntoskip:0 nscanned:30001 scanAndOrder:1 keyUpdates:0 locks(micros) r:210952 nreturned:25 reslen:3246 211ms
+Mon Nov 18 16:17:36 [conn8] query mymobile.news query: { query: {}, orderby: { newdate: -1 } } ntoreturn:25 ntoskip:0 nscanned:30001 scanAndOrder:1 keyUpdates:0 locks(micros) r:184846 nreturned:25 reslen:3246 184ms
+Mon Nov 18 16:18:30 [conn8] query mymobile.news query: { query: {}, orderby: { [{"property":"newdate","direction":"ASC"}]: -1 } } ntoreturn:25 ntoskip:0 nscanned:30001 scanAndOrder:1 keyUpdates:0 numYields: 1 locks(micros) r:403517 nreturned:25 reslen:2821 216ms
+Mon Nov 18 16:18:33 [conn8] query mymobile.news query: { query: {}, orderby: { [{"property":"newdate","direction":"ASC"}]: -1 } } ntoreturn:25 ntoskip:30000 nscanned:30001 scanAndOrder:1 keyUpdates:0 numYields: 1 locks(micros) r:805396 nreturned:1 reslen:190 496ms
+Mon Nov 18 16:18:36 [conn8] query mymobile.news query: { query: {}, orderby: { [{"property":"newdate","direction":"ASC"}]: -1 } } ntoreturn:25 ntoskip:0 nscanned:30001 scanAndOrder:1 keyUpdates:0 locks(micros) r:221575 nreturned:25 reslen:2821 221ms
+Mon Nov 18 16:19:15 [conn8] query mymobile.news query: { query: {}, orderby: { [{"property":"newdate","direction":"DESC"}]: -1 } } ntoreturn:25 ntoskip:0 nscanned:30001 scanAndOrder:1 keyUpdates:0 locks(micros) r:157750 nreturned:25 reslen:2821 158ms
+Mon Nov 18 16:19:24 [conn8] query mymobile.news query: { query: {}, orderby: { [{"property":"newdate","direction":"DESC"}]: -1 } } ntoreturn:25 ntoskip:0 nscanned:30001 scanAndOrder:1 keyUpdates:0 locks(micros) r:158944 nreturned:25 reslen:2821 159ms
+Mon Nov 18 16:19:27 [conn8] query mymobile.news query: { query: {}, orderby: { [{"property":"newdate","direction":"DESC"}]: -1 } } ntoreturn:25 ntoskip:30000 nscanned:30001 scanAndOrder:1 keyUpdates:0 locks(micros) r:498474 nreturned:1 reslen:190 498ms
+Mon Nov 18 16:19:29 [conn8] query mymobile.news query: { query: {}, orderby: { [{"property":"newdate","direction":"DESC"}]: -1 } } ntoreturn:25 ntoskip:0 nscanned:30001 scanAndOrder:1 keyUpdates:0 locks(micros) r:157484 nreturned:25 reslen:2821 158ms
+Mon Nov 18 16:20:13 [conn8] query mymobile.news query: { query: {}, orderby: { newdate: -1 } } ntoreturn:25 ntoskip:0 nscanned:30001 scanAndOrder:1 keyUpdates:0 locks(micros) r:196337 nreturned:25 reslen:3246 196ms
+Mon Nov 18 16:20:13 [conn7] query mymobile.news query: { query: {}, orderby: { newdate: -1 } } ntoreturn:25 ntoskip:0 nscanned:30001 scanAndOrder:1 keyUpdates:0 locks(micros) r:207619 nreturned:25 reslen:3246 208ms
+Mon Nov 18 16:21:18 [conn7] query mymobile.news query: { query: {}, orderby: { [{"property":"newdate","direction":"ASC"}]: -1 } } ntoreturn:25 ntoskip:0 nscanned:30001 scanAndOrder:1 keyUpdates:0 numYields: 1 locks(micros) r:180196 nreturned:25 reslen:2821 173ms
+Mon Nov 18 16:32:39 [conn6] end connection 127.0.0.1:53695 (2 connections now open)
+Mon Nov 18 16:32:39 [conn7] end connection 127.0.0.1:53745 (1 connection now open)
+Mon Nov 18 16:32:39 [conn8] end connection 127.0.0.1:53746 (0 connections now open)
+Mon Nov 18 16:32:54 [initandlisten] connection accepted from 127.0.0.1:54137 #9 (1 connection now open)
+Mon Nov 18 16:38:24 [conn9] end connection 127.0.0.1:54137 (0 connections now open)
+Mon Nov 18 16:38:38 [initandlisten] connection accepted from 127.0.0.1:54267 #10 (1 connection now open)
+Mon Nov 18 16:50:29 [conn10] end connection 127.0.0.1:54267 (0 connections now open)
+Mon Nov 18 16:50:45 [initandlisten] connection accepted from 127.0.0.1:54449 #11 (1 connection now open)
+Mon Nov 18 17:13:58 [conn11] end connection 127.0.0.1:54449 (0 connections now open)
+Mon Nov 18 17:14:14 [initandlisten] connection accepted from 127.0.0.1:54805 #12 (1 connection now open)
+Mon Nov 18 17:28:22 [conn12] end connection 127.0.0.1:54805 (0 connections now open)
+Mon Nov 18 17:28:43 [initandlisten] connection accepted from 127.0.0.1:54956 #13 (1 connection now open)
+Mon Nov 18 17:48:56 [conn13] end connection 127.0.0.1:54956 (0 connections now open)
+Mon Nov 18 17:49:10 [initandlisten] connection accepted from 127.0.0.1:55359 #14 (1 connection now open)
+Mon Nov 18 18:20:53 CTRL_CLOSE_EVENT signal
+Mon Nov 18 18:20:53 [consoleTerminate] got CTRL_CLOSE_EVENT, will terminate after current cmd ends
+Mon Nov 18 18:20:53 [consoleTerminate] now exiting
+Mon Nov 18 18:20:53 dbexit: 
+Mon Nov 18 18:20:53 [consoleTerminate] shutdown: going to close listening sockets...
+Mon Nov 18 18:20:53 [consoleTerminate] closing listening socket: 504
+Mon Nov 18 18:20:53 [consoleTerminate] closing listening socket: 520
+Mon Nov 18 18:20:53 [consoleTerminate] shutdown: going to flush diaglog...
+Mon Nov 18 18:20:53 [consoleTerminate] shutdown: going to close sockets...
+Mon Nov 18 18:20:53 [consoleTerminate] shutdown: waiting for fs preallocator...
+Mon Nov 18 18:20:53 [consoleTerminate] shutdown: lock for final commit...
+Mon Nov 18 18:20:53 [consoleTerminate] shutdown: final commit...
+Mon Nov 18 18:20:53 [consoleTerminate] shutdown: closing all files...
+Mon Nov 18 18:20:53 [consoleTerminate] closeAllFiles() finished
+Mon Nov 18 18:20:53 [consoleTerminate] journalCleanup...
+Mon Nov 18 18:20:53 [consoleTerminate] removeJournalFiles
+Mon Nov 18 18:20:53 [conn14] end connection 127.0.0.1:55359 (0 connections now open)
+Mon Nov 18 18:20:53 [consoleTerminate] shutdown: removing fs lock...
+Mon Nov 18 18:20:53 dbexit: really exiting now
+
+
+***** SERVER RESTARTED *****
+
+
+Tue Nov 19 10:47:47 [initandlisten] MongoDB starting : pid=6300 port=27017 dbpath=db 64-bit host=jamesmo-PC
+Tue Nov 19 10:47:47 [initandlisten] db version v2.2.0, pdfile version 4.5
+Tue Nov 19 10:47:47 [initandlisten] git version: f5e83eae9cfbec7fb7a071321928f00d1b0c5207
+Tue Nov 19 10:47:47 [initandlisten] build info: windows sys.getwindowsversion(major=6, minor=1, build=7601, platform=2, service_pack='Service Pack 1') BOOST_LIB_VERSION=1_49
+Tue Nov 19 10:47:47 [initandlisten] options: { dbpath: "db", jsonp: true, logappend: true, logpath: "logs/r0.log", oplogSize: 32, rest: true, smallfiles: true }
+Tue Nov 19 10:47:47 [initandlisten] journal dir=db/journal
+Tue Nov 19 10:47:47 [initandlisten] recover : no journal files present, no recovery needed
+Tue Nov 19 10:47:47 [initandlisten] waiting for connections on port 27017
+Tue Nov 19 10:47:47 [websvr] admin web console waiting for connections on port 28017
+Tue Nov 19 10:48:19 [initandlisten] connection accepted from 127.0.0.1:53387 #1 (1 connection now open)
+Tue Nov 19 11:27:55 [conn1] end connection 127.0.0.1:53387 (0 connections now open)
+Tue Nov 19 11:28:10 [initandlisten] connection accepted from 127.0.0.1:55167 #2 (1 connection now open)
+Tue Nov 19 11:29:40 [conn2] end connection 127.0.0.1:55167 (0 connections now open)
+Tue Nov 19 11:29:52 [initandlisten] connection accepted from 127.0.0.1:55274 #3 (1 connection now open)
+Tue Nov 19 11:30:14 [conn3] end connection 127.0.0.1:55274 (0 connections now open)
+Tue Nov 19 11:30:34 [initandlisten] connection accepted from 127.0.0.1:55278 #4 (1 connection now open)
+Tue Nov 19 11:30:48 [initandlisten] connection accepted from 127.0.0.1:55300 #5 (2 connections now open)
+Tue Nov 19 11:30:48 [initandlisten] connection accepted from 127.0.0.1:55301 #6 (3 connections now open)
+Tue Nov 19 11:30:48 [conn5] query mymobile.news cursorid:28571974832099 ntoreturn:25 ntoskip:0 nscanned:26 keyUpdates:0 locks(micros) r:120733 nreturned:25 reslen:2821 133ms
+Tue Nov 19 11:39:41 [conn4] end connection 127.0.0.1:55278 (2 connections now open)
+Tue Nov 19 11:39:41 [conn5] end connection 127.0.0.1:55300 (1 connection now open)
+Tue Nov 19 11:39:41 [conn6] end connection 127.0.0.1:55301 (0 connections now open)
+Tue Nov 19 11:39:54 [initandlisten] connection accepted from 127.0.0.1:55494 #7 (1 connection now open)
+Tue Nov 19 11:40:44 [initandlisten] connection accepted from 127.0.0.1:55514 #8 (2 connections now open)
+Tue Nov 19 11:40:44 [initandlisten] connection accepted from 127.0.0.1:55515 #9 (3 connections now open)
+Tue Nov 19 11:54:38 [conn9] end connection 127.0.0.1:55515 (2 connections now open)
+Tue Nov 19 11:54:38 [conn7] end connection 127.0.0.1:55494 (1 connection now open)
+Tue Nov 19 11:54:38 [conn8] end connection 127.0.0.1:55514 (0 connections now open)
+Tue Nov 19 11:54:51 [initandlisten] connection accepted from 127.0.0.1:56265 #10 (1 connection now open)
+Tue Nov 19 13:56:50 [initandlisten] connection accepted from 127.0.0.1:57304 #11 (2 connections now open)
+Tue Nov 19 14:09:38 [conn10] end connection 127.0.0.1:56265 (1 connection now open)
+Tue Nov 19 14:09:38 [conn11] end connection 127.0.0.1:57304 (0 connections now open)
+Tue Nov 19 14:09:53 [initandlisten] connection accepted from 127.0.0.1:57935 #12 (1 connection now open)
+Tue Nov 19 14:10:00 [initandlisten] connection accepted from 127.0.0.1:57939 #13 (2 connections now open)
+Tue Nov 19 14:11:59 [conn12] end connection 127.0.0.1:57935 (1 connection now open)
+Tue Nov 19 14:11:59 [conn13] end connection 127.0.0.1:57939 (0 connections now open)
+Tue Nov 19 14:12:13 [initandlisten] connection accepted from 127.0.0.1:57962 #14 (1 connection now open)
+Tue Nov 19 14:12:59 [initandlisten] connection accepted from 127.0.0.1:58009 #15 (2 connections now open)
+Tue Nov 19 14:15:05 [conn14] end connection 127.0.0.1:57962 (1 connection now open)
+Tue Nov 19 14:15:05 [conn15] end connection 127.0.0.1:58009 (0 connections now open)
+Tue Nov 19 14:15:31 [initandlisten] connection accepted from 127.0.0.1:58059 #16 (1 connection now open)
+Tue Nov 19 14:15:36 [initandlisten] connection accepted from 127.0.0.1:58067 #17 (2 connections now open)
+Tue Nov 19 14:17:26 [conn16] end connection 127.0.0.1:58059 (1 connection now open)
+Tue Nov 19 14:17:26 [conn17] end connection 127.0.0.1:58067 (0 connections now open)
+Tue Nov 19 14:17:39 [initandlisten] connection accepted from 127.0.0.1:58078 #18 (1 connection now open)
+Tue Nov 19 14:17:54 [initandlisten] connection accepted from 127.0.0.1:58081 #19 (2 connections now open)
+Tue Nov 19 14:18:30 [conn18] end connection 127.0.0.1:58078 (1 connection now open)
+Tue Nov 19 14:18:30 [conn19] end connection 127.0.0.1:58081 (0 connections now open)
+Tue Nov 19 14:18:42 [initandlisten] connection accepted from 127.0.0.1:58092 #20 (1 connection now open)
+Tue Nov 19 14:19:03 [initandlisten] connection accepted from 127.0.0.1:58147 #21 (2 connections now open)
+Tue Nov 19 14:19:03 [initandlisten] connection accepted from 127.0.0.1:58148 #22 (3 connections now open)
+Tue Nov 19 14:19:38 [conn21] end connection 127.0.0.1:58147 (2 connections now open)
+Tue Nov 19 14:19:38 [conn20] end connection 127.0.0.1:58092 (2 connections now open)
+Tue Nov 19 14:19:38 [conn22] end connection 127.0.0.1:58148 (0 connections now open)
+Tue Nov 19 14:19:53 [initandlisten] connection accepted from 127.0.0.1:58159 #23 (1 connection now open)
+Tue Nov 19 14:30:27 [initandlisten] connection accepted from 127.0.0.1:58259 #24 (2 connections now open)
+Tue Nov 19 15:39:42 [conn23] end connection 127.0.0.1:58159 (1 connection now open)
+Tue Nov 19 15:39:42 [conn24] end connection 127.0.0.1:58259 (0 connections now open)
+Tue Nov 19 15:40:02 [initandlisten] connection accepted from 127.0.0.1:59291 #25 (1 connection now open)
+Tue Nov 19 15:41:17 [conn25] end connection 127.0.0.1:59291 (0 connections now open)
+Tue Nov 19 16:23:39 [initandlisten] connection accepted from 127.0.0.1:59745 #26 (1 connection now open)
+Tue Nov 19 16:42:49 [initandlisten] connection accepted from 127.0.0.1:60115 #27 (2 connections now open)
+Tue Nov 19 16:44:43 [conn26] end connection 127.0.0.1:59745 (1 connection now open)
+Tue Nov 19 16:44:43 [conn27] end connection 127.0.0.1:60115 (0 connections now open)
+Tue Nov 19 16:44:57 [initandlisten] connection accepted from 127.0.0.1:60136 #28 (1 connection now open)
+Tue Nov 19 18:29:43 CTRL_CLOSE_EVENT signal
+Tue Nov 19 18:29:43 [consoleTerminate] got CTRL_CLOSE_EVENT, will terminate after current cmd ends
+Tue Nov 19 18:29:43 [consoleTerminate] now exiting
+Tue Nov 19 18:29:43 dbexit: 
+Tue Nov 19 18:29:43 [consoleTerminate] shutdown: going to close listening sockets...
+Tue Nov 19 18:29:43 [consoleTerminate] closing listening socket: 492
+Tue Nov 19 18:29:43 [consoleTerminate] closing listening socket: 508
+Tue Nov 19 18:29:43 [consoleTerminate] shutdown: going to flush diaglog...
+Tue Nov 19 18:29:43 [consoleTerminate] shutdown: going to close sockets...
+Tue Nov 19 18:29:43 [consoleTerminate] shutdown: waiting for fs preallocator...
+Tue Nov 19 18:29:43 [consoleTerminate] shutdown: lock for final commit...
+Tue Nov 19 18:29:43 [consoleTerminate] shutdown: final commit...
+Tue Nov 19 18:29:43 [consoleTerminate] shutdown: closing all files...
+Tue Nov 19 18:29:43 [consoleTerminate] closeAllFiles() finished
+Tue Nov 19 18:29:43 [consoleTerminate] journalCleanup...
+Tue Nov 19 18:29:43 [consoleTerminate] removeJournalFiles
+Tue Nov 19 18:29:43 [consoleTerminate] shutdown: removing fs lock...
+Tue Nov 19 18:29:43 dbexit: really exiting now
+
+
+***** SERVER RESTARTED *****
+
+
+Tue Nov 19 18:31:33 [initandlisten] MongoDB starting : pid=5868 port=27017 dbpath=db 64-bit host=jamesmo-PC
+Tue Nov 19 18:31:33 [initandlisten] db version v2.2.0, pdfile version 4.5
+Tue Nov 19 18:31:33 [initandlisten] git version: f5e83eae9cfbec7fb7a071321928f00d1b0c5207
+Tue Nov 19 18:31:33 [initandlisten] build info: windows sys.getwindowsversion(major=6, minor=1, build=7601, platform=2, service_pack='Service Pack 1') BOOST_LIB_VERSION=1_49
+Tue Nov 19 18:31:33 [initandlisten] options: { dbpath: "db", jsonp: true, logappend: true, logpath: "logs/r0.log", oplogSize: 32, rest: true, smallfiles: true }
+Tue Nov 19 18:31:33 [initandlisten] journal dir=db/journal
+Tue Nov 19 18:31:33 [initandlisten] recover : no journal files present, no recovery needed
+Tue Nov 19 18:31:33 [initandlisten] waiting for connections on port 27017
+Tue Nov 19 18:31:33 [websvr] admin web console waiting for connections on port 28017
+Tue Nov 19 18:35:47 [initandlisten] connection accepted from 127.0.0.1:62363 #1 (1 connection now open)
+Tue Nov 19 18:35:52 [initandlisten] connection accepted from 127.0.0.1:62366 #2 (2 connections now open)
+Tue Nov 19 18:37:10 [conn1] end connection 127.0.0.1:62363 (1 connection now open)
+Tue Nov 19 18:37:10 [conn2] end connection 127.0.0.1:62366 (0 connections now open)
+Tue Nov 19 18:37:22 [initandlisten] connection accepted from 127.0.0.1:64407 #3 (1 connection now open)
+Tue Nov 19 18:37:27 [initandlisten] connection accepted from 127.0.0.1:64412 #4 (2 connections now open)
+Tue Nov 19 18:43:19 [conn3] end connection 127.0.0.1:64407 (1 connection now open)
+Tue Nov 19 18:43:19 [conn4] end connection 127.0.0.1:64412 (0 connections now open)
+Tue Nov 19 18:43:31 [initandlisten] connection accepted from 127.0.0.1:64452 #5 (1 connection now open)
+Tue Nov 19 18:43:37 [initandlisten] connection accepted from 127.0.0.1:64456 #6 (2 connections now open)
+Tue Nov 19 18:43:37 [conn6] query mymobile.news query: { query: {}, orderby: { title: 1 } } ntoreturn:25 ntoskip:0 nscanned:30001 scanAndOrder:1 keyUpdates:0 locks(micros) r:308671 nreturned:25 reslen:3046 309ms
+Tue Nov 19 18:43:43 [conn6] query mymobile.news query: { query: {}, orderby: { title: -1 } } ntoreturn:25 ntoskip:0 nscanned:30001 scanAndOrder:1 keyUpdates:0 locks(micros) r:132709 nreturned:25 reslen:3174 133ms
+Tue Nov 19 18:43:45 [conn6] query mymobile.news query: { query: {}, orderby: { title: 1 } } ntoreturn:25 ntoskip:0 nscanned:30001 scanAndOrder:1 keyUpdates:0 locks(micros) r:130396 nreturned:25 reslen:3046 130ms
+Tue Nov 19 18:43:46 [conn6] query mymobile.news query: { query: {}, orderby: { content: 1 } } ntoreturn:25 ntoskip:0 nscanned:30001 scanAndOrder:1 keyUpdates:0 locks(micros) r:139160 nreturned:25 reslen:3064 139ms
+Tue Nov 19 18:43:48 [conn6] query mymobile.news query: { query: {}, orderby: { content: -1 } } ntoreturn:25 ntoskip:0 nscanned:30001 scanAndOrder:1 keyUpdates:0 locks(micros) r:129069 nreturned:25 reslen:3159 129ms
+Tue Nov 19 18:44:04 [conn6] query mymobile.news query: { query: {}, orderby: { content: 1 } } ntoreturn:25 ntoskip:0 nscanned:30001 scanAndOrder:1 keyUpdates:0 locks(micros) r:136500 nreturned:25 reslen:3064 136ms
+Tue Nov 19 18:44:08 [conn6] query mymobile.news query: { query: {}, orderby: { newdate: 1 } } ntoreturn:25 ntoskip:0 nscanned:30001 scanAndOrder:1 keyUpdates:0 locks(micros) r:147448 nreturned:25 reslen:2821 148ms
+Tue Nov 19 18:44:13 [conn6] query mymobile.news query: { query: {}, orderby: { newdate: -1 } } ntoreturn:25 ntoskip:0 nscanned:30001 scanAndOrder:1 keyUpdates:0 locks(micros) r:171331 nreturned:25 reslen:3246 171ms
+Tue Nov 19 18:44:16 [conn6] query mymobile.news query: { query: {}, orderby: { author: 1 } } ntoreturn:25 ntoskip:0 nscanned:30001 scanAndOrder:1 keyUpdates:0 locks(micros) r:155822 nreturned:25 reslen:3064 156ms
+Tue Nov 19 18:44:18 [conn6] query mymobile.news query: { query: {}, orderby: { author: -1 } } ntoreturn:25 ntoskip:0 nscanned:30001 scanAndOrder:1 keyUpdates:0 locks(micros) r:153933 nreturned:25 reslen:3159 154ms
+Tue Nov 19 18:44:19 [conn6] query mymobile.news query: { query: {}, orderby: { title: 1 } } ntoreturn:25 ntoskip:0 nscanned:30001 scanAndOrder:1 keyUpdates:0 locks(micros) r:134628 nreturned:25 reslen:3046 134ms
+Tue Nov 19 18:44:20 [conn6] query mymobile.news query: { query: {}, orderby: { title: -1 } } ntoreturn:25 ntoskip:0 nscanned:30001 scanAndOrder:1 keyUpdates:0 locks(micros) r:133324 nreturned:25 reslen:3174 133ms
+Tue Nov 19 18:44:21 [conn6] query mymobile.news query: { query: {}, orderby: { id: 1 } } ntoreturn:25 ntoskip:0 nscanned:30001 scanAndOrder:1 keyUpdates:0 locks(micros) r:128875 nreturned:25 reslen:2821 129ms
+Tue Nov 19 18:44:22 [conn6] query mymobile.news query: { query: {}, orderby: { id: -1 } } ntoreturn:25 ntoskip:0 nscanned:30001 scanAndOrder:1 keyUpdates:0 locks(micros) r:131999 nreturned:25 reslen:2821 132ms
+Tue Nov 19 18:44:24 [conn6] query mymobile.news query: { query: {}, orderby: { newdate: 1 } } ntoreturn:25 ntoskip:0 nscanned:30001 scanAndOrder:1 keyUpdates:0 locks(micros) r:147344 nreturned:25 reslen:2821 147ms
+Tue Nov 19 18:44:26 [conn6] query mymobile.news query: { query: {}, orderby: { newdate: -1 } } ntoreturn:25 ntoskip:0 nscanned:30001 scanAndOrder:1 keyUpdates:0 locks(micros) r:152231 nreturned:25 reslen:3246 152ms
+Tue Nov 19 18:44:27 [conn6] query mymobile.news query: { query: {}, orderby: { content: 1 } } ntoreturn:25 ntoskip:0 nscanned:30001 scanAndOrder:1 keyUpdates:0 locks(micros) r:140693 nreturned:25 reslen:3064 141ms
+Tue Nov 19 18:44:28 [conn6] query mymobile.news query: { query: {}, orderby: { content: -1 } } ntoreturn:25 ntoskip:0 nscanned:30001 scanAndOrder:1 keyUpdates:0 locks(micros) r:140415 nreturned:25 reslen:3159 141ms
+Tue Nov 19 18:45:40 [conn6] query mymobile.news query: { query: {}, orderby: { content: -1 } } ntoreturn:25 ntoskip:0 nscanned:30001 scanAndOrder:1 keyUpdates:0 locks(micros) r:124886 nreturned:25 reslen:3159 125ms
+Tue Nov 19 18:45:51 [conn6] query mymobile.news query: { query: {}, orderby: { newdate: 1 } } ntoreturn:25 ntoskip:0 nscanned:30001 scanAndOrder:1 keyUpdates:0 locks(micros) r:147473 nreturned:25 reslen:2821 147ms
+Tue Nov 19 18:45:52 [conn6] query mymobile.news query: { query: {}, orderby: { newdate: -1 } } ntoreturn:25 ntoskip:0 nscanned:30001 scanAndOrder:1 keyUpdates:0 locks(micros) r:158405 nreturned:25 reslen:3246 158ms
+Tue Nov 19 18:45:59 [conn6] query mymobile.news query: { query: {}, orderby: { newdate: 1 } } ntoreturn:25 ntoskip:0 nscanned:30001 scanAndOrder:1 keyUpdates:0 locks(micros) r:148713 nreturned:25 reslen:2821 149ms
+Tue Nov 19 18:46:09 [conn6] query mymobile.news query: { query: {}, orderby: { newdate: -1 } } ntoreturn:25 ntoskip:0 nscanned:30001 scanAndOrder:1 keyUpdates:0 locks(micros) r:153335 nreturned:25 reslen:3246 153ms
+Tue Nov 19 18:46:11 [conn6] query mymobile.news query: { query: {}, orderby: { id: 1 } } ntoreturn:25 ntoskip:0 nscanned:30001 scanAndOrder:1 keyUpdates:0 locks(micros) r:130535 nreturned:25 reslen:2821 131ms
+Tue Nov 19 18:46:12 [conn6] query mymobile.news query: { query: {}, orderby: { id: -1 } } ntoreturn:25 ntoskip:0 nscanned:30001 scanAndOrder:1 keyUpdates:0 locks(micros) r:141216 nreturned:25 reslen:2821 141ms
+Tue Nov 19 18:46:14 [conn6] query mymobile.news query: { query: {}, orderby: { id: -1 } } ntoreturn:25 ntoskip:30000 nscanned:30001 scanAndOrder:1 keyUpdates:0 locks(micros) r:385059 nreturned:1 reslen:190 386ms
+Tue Nov 19 18:47:08 [conn5] end connection 127.0.0.1:64452 (1 connection now open)
+Tue Nov 19 18:47:08 [conn6] end connection 127.0.0.1:64456 (0 connections now open)
+Tue Nov 19 18:47:17 CTRL_CLOSE_EVENT signal
+Tue Nov 19 18:47:17 [consoleTerminate] got CTRL_CLOSE_EVENT, will terminate after current cmd ends
+Tue Nov 19 18:47:17 [consoleTerminate] now exiting
+Tue Nov 19 18:47:17 dbexit: 
+Tue Nov 19 18:47:17 [consoleTerminate] shutdown: going to close listening sockets...
+Tue Nov 19 18:47:17 [consoleTerminate] closing listening socket: 508
+Tue Nov 19 18:47:17 [consoleTerminate] closing listening socket: 512
+Tue Nov 19 18:47:17 [consoleTerminate] shutdown: going to flush diaglog...
+Tue Nov 19 18:47:17 [consoleTerminate] shutdown: going to close sockets...
+Tue Nov 19 18:47:17 [consoleTerminate] shutdown: waiting for fs preallocator...
+Tue Nov 19 18:47:17 [consoleTerminate] shutdown: lock for final commit...
+Tue Nov 19 18:47:17 [consoleTerminate] shutdown: final commit...
+Tue Nov 19 18:47:17 [consoleTerminate] shutdown: closing all files...
+Tue Nov 19 18:47:17 [consoleTerminate] closeAllFiles() finished
+Tue Nov 19 18:47:17 [consoleTerminate] journalCleanup...
+Tue Nov 19 18:47:17 [consoleTerminate] removeJournalFiles
+Tue Nov 19 18:47:17 [consoleTerminate] shutdown: removing fs lock...
+Tue Nov 19 18:47:17 dbexit: really exiting now
+
+
+***** SERVER RESTARTED *****
+
+
+Wed Nov 20 10:01:35 [initandlisten] MongoDB starting : pid=6904 port=27017 dbpath=db 64-bit host=jamesmo-PC
+Wed Nov 20 10:01:35 [initandlisten] db version v2.2.0, pdfile version 4.5
+Wed Nov 20 10:01:35 [initandlisten] git version: f5e83eae9cfbec7fb7a071321928f00d1b0c5207
+Wed Nov 20 10:01:35 [initandlisten] build info: windows sys.getwindowsversion(major=6, minor=1, build=7601, platform=2, service_pack='Service Pack 1') BOOST_LIB_VERSION=1_49
+Wed Nov 20 10:01:35 [initandlisten] options: { dbpath: "db", jsonp: true, logappend: true, logpath: "logs/r0.log", oplogSize: 32, rest: true, smallfiles: true }
+Wed Nov 20 10:01:35 [initandlisten] journal dir=db/journal
+Wed Nov 20 10:01:35 [initandlisten] recover : no journal files present, no recovery needed
+Wed Nov 20 10:01:35 [initandlisten] waiting for connections on port 27017
+Wed Nov 20 10:01:35 [websvr] admin web console waiting for connections on port 28017
+Wed Nov 20 10:01:58 [initandlisten] connection accepted from 127.0.0.1:65347 #1 (1 connection now open)
+Wed Nov 20 10:02:20 [initandlisten] connection accepted from 127.0.0.1:65370 #2 (2 connections now open)
+Wed Nov 20 10:02:20 [initandlisten] connection accepted from 127.0.0.1:65371 #3 (3 connections now open)
+Wed Nov 20 10:02:21 [conn2] query mymobile.news query: { query: {}, orderby: { content: 1 } } ntoreturn:25 ntoskip:0 nscanned:30001 scanAndOrder:1 keyUpdates:0 locks(micros) r:172452 nreturned:25 reslen:3064 172ms
+Wed Nov 20 10:02:21 [conn3] query mymobile.news query: { query: {}, orderby: { content: 1 } } ntoreturn:25 ntoskip:0 nscanned:30001 scanAndOrder:1 keyUpdates:0 locks(micros) r:174883 nreturned:25 reslen:3064 175ms
+Wed Nov 20 10:02:35 [conn2] query mymobile.news query: { query: {}, orderby: { id: 1 } } ntoreturn:25 ntoskip:0 nscanned:30001 scanAndOrder:1 keyUpdates:0 numYields: 1 locks(micros) r:153760 nreturned:25 reslen:2821 123ms
+Wed Nov 20 10:02:37 [conn2] query mymobile.news query: { query: {}, orderby: { id: -1 } } ntoreturn:25 ntoskip:0 nscanned:30001 scanAndOrder:1 keyUpdates:0 locks(micros) r:129845 nreturned:25 reslen:2821 130ms
+Wed Nov 20 10:02:39 [conn2] query mymobile.news query: { query: {}, orderby: { id: 1 } } ntoreturn:25 ntoskip:0 nscanned:30001 scanAndOrder:1 keyUpdates:0 locks(micros) r:125126 nreturned:25 reslen:2821 125ms
+Wed Nov 20 10:02:44 [conn2] query mymobile.news query: { query: {}, orderby: { id: -1 } } ntoreturn:25 ntoskip:0 nscanned:30001 scanAndOrder:1 keyUpdates:0 locks(micros) r:130921 nreturned:25 reslen:2821 131ms
+Wed Nov 20 10:02:48 [conn2] query mymobile.news query: { query: {}, orderby: { title: 1 } } ntoreturn:25 ntoskip:0 nscanned:30001 scanAndOrder:1 keyUpdates:0 locks(micros) r:130828 nreturned:25 reslen:3046 130ms
+Wed Nov 20 10:02:55 [conn2] query mymobile.news query: { query: {}, orderby: { title: -1 } } ntoreturn:25 ntoskip:0 nscanned:30001 scanAndOrder:1 keyUpdates:0 locks(micros) r:159204 nreturned:25 reslen:3174 159ms
+Wed Nov 20 10:03:00 [conn2] query mymobile.news query: { query: {}, orderby: { content: 1 } } ntoreturn:25 ntoskip:0 nscanned:30001 scanAndOrder:1 keyUpdates:0 locks(micros) r:183649 nreturned:25 reslen:3064 184ms
+Wed Nov 20 10:03:05 [conn2] query mymobile.news query: { query: {}, orderby: { content: -1 } } ntoreturn:25 ntoskip:0 nscanned:30001 scanAndOrder:1 keyUpdates:0 locks(micros) r:115864 nreturned:25 reslen:3159 116ms
+Wed Nov 20 10:03:08 [conn2] query mymobile.news query: { query: {}, orderby: { newdate: 1 } } ntoreturn:25 ntoskip:0 nscanned:30001 scanAndOrder:1 keyUpdates:0 locks(micros) r:143360 nreturned:25 reslen:2821 144ms
+Wed Nov 20 10:03:11 [conn2] query mymobile.news query: { query: {}, orderby: { newdate: -1 } } ntoreturn:25 ntoskip:0 nscanned:30001 scanAndOrder:1 keyUpdates:0 locks(micros) r:138567 nreturned:25 reslen:3246 139ms
+Wed Nov 20 10:03:12 [conn2] query mymobile.news query: { query: {}, orderby: { author: 1 } } ntoreturn:25 ntoskip:0 nscanned:30001 scanAndOrder:1 keyUpdates:0 locks(micros) r:153497 nreturned:25 reslen:3064 153ms
+Wed Nov 20 10:03:14 [conn2] query mymobile.news query: { query: {}, orderby: { author: -1 } } ntoreturn:25 ntoskip:0 nscanned:30001 scanAndOrder:1 keyUpdates:0 numYields: 1 locks(micros) r:291742 nreturned:25 reslen:3159 158ms
+Wed Nov 20 11:02:39 [conn2] query mymobile.news query: { query: {}, orderby: { newdate: 1 } } ntoreturn:25 ntoskip:0 nscanned:30001 scanAndOrder:1 keyUpdates:0 locks(micros) r:247164 nreturned:25 reslen:2821 247ms
+Wed Nov 20 11:02:40 [conn2] query mymobile.news query: { query: {}, orderby: { newdate: -1 } } ntoreturn:25 ntoskip:0 nscanned:30001 scanAndOrder:1 keyUpdates:0 locks(micros) r:152888 nreturned:25 reslen:3246 152ms
+Wed Nov 20 11:02:44 [conn2] query mymobile.news query: { query: {}, orderby: { content: 1 } } ntoreturn:25 ntoskip:0 nscanned:30001 scanAndOrder:1 keyUpdates:0 locks(micros) r:144493 nreturned:25 reslen:3064 144ms
+Wed Nov 20 11:02:45 [conn2] query mymobile.news query: { query: {}, orderby: { title: 1 } } ntoreturn:25 ntoskip:0 nscanned:30001 scanAndOrder:1 keyUpdates:0 locks(micros) r:133764 nreturned:25 reslen:3046 134ms
+Wed Nov 20 11:02:47 [conn2] query mymobile.news query: { query: {}, orderby: { id: 1 } } ntoreturn:25 ntoskip:0 nscanned:30001 scanAndOrder:1 keyUpdates:0 locks(micros) r:126304 nreturned:25 reslen:2821 126ms
+Wed Nov 20 11:02:48 [conn2] query mymobile.news query: { query: {}, orderby: { title: 1 } } ntoreturn:25 ntoskip:0 nscanned:30001 scanAndOrder:1 keyUpdates:0 locks(micros) r:132315 nreturned:25 reslen:3046 133ms
+Wed Nov 20 11:04:21 [conn2] query mymobile.news query: { query: {}, orderby: { title: 1 } } ntoreturn:25 ntoskip:25 nscanned:30001 scanAndOrder:1 keyUpdates:0 numYields: 1 locks(micros) r:251763 nreturned:25 reslen:3064 138ms
+Wed Nov 20 11:04:22 [conn2] query mymobile.news query: { query: {}, orderby: { title: 1 } } ntoreturn:25 ntoskip:50 nscanned:30001 scanAndOrder:1 keyUpdates:0 numYields: 1 locks(micros) r:144953 nreturned:25 reslen:3064 135ms
+Wed Nov 20 11:04:24 [conn2] query mymobile.news query: { query: {}, orderby: { title: 1 } } ntoreturn:25 ntoskip:30000 nscanned:30001 scanAndOrder:1 keyUpdates:0 locks(micros) r:406793 nreturned:1 reslen:205 407ms
+Wed Nov 20 11:04:31 [conn2] query mymobile.news query: { query: {}, orderby: { title: 1 } } ntoreturn:25 ntoskip:29975 nscanned:30001 scanAndOrder:1 keyUpdates:0 locks(micros) r:669653 nreturned:25 reslen:3108 670ms
+Wed Nov 20 11:04:42 [conn2] query mymobile.news query: { query: {}, orderby: { title: 1 } } ntoreturn:25 ntoskip:0 nscanned:30001 scanAndOrder:1 keyUpdates:0 locks(micros) r:141426 nreturned:25 reslen:3046 141ms
+Wed Nov 20 11:07:27 [conn2] update mymobile.news query: { _id: ObjectId('527416eb6ce180c179f19604') } update: { _id: ObjectId('527416eb6ce180c179f19604'), _class: "News", title: "10000", content: "10000鍐呭", newdate: new Date(1385596800000), author: "10000author" } idhack:1 nupdated:1 keyUpdates:0 locks(micros) w:120392 138ms
+Wed Nov 20 11:07:31 [conn2] query mymobile.news query: { query: {}, orderby: { newdate: 1 } } ntoreturn:25 ntoskip:0 nscanned:30001 scanAndOrder:1 keyUpdates:0 locks(micros) r:210829 nreturned:25 reslen:2821 211ms
+Wed Nov 20 11:07:33 [conn2] query mymobile.news query: { query: {}, orderby: { newdate: -1 } } ntoreturn:25 ntoskip:0 nscanned:30001 scanAndOrder:1 keyUpdates:0 locks(micros) r:168330 nreturned:25 reslen:3246 169ms
+Wed Nov 20 11:07:35 [conn2] query mymobile.news query: { query: {}, orderby: { newdate: -1 } } ntoreturn:25 ntoskip:0 nscanned:30001 scanAndOrder:1 keyUpdates:0 locks(micros) r:140747 nreturned:25 reslen:3246 141ms
+Wed Nov 20 11:07:42 [conn2] query mymobile.news query: { query: {}, orderby: { newdate: -1 } } ntoreturn:25 ntoskip:30000 nscanned:30001 scanAndOrder:1 keyUpdates:0 locks(micros) r:418982 nreturned:1 reslen:133 419ms
+Wed Nov 20 11:07:44 [conn2] query mymobile.news query: { query: {}, orderby: { newdate: -1 } } ntoreturn:25 ntoskip:30000 nscanned:30001 scanAndOrder:1 keyUpdates:0 locks(micros) r:451897 nreturned:1 reslen:133 452ms
+Wed Nov 20 11:12:00 [conn2] query mymobile.news query: { query: {}, orderby: { content: 1 } } ntoreturn:25 ntoskip:0 nscanned:30001 scanAndOrder:1 keyUpdates:0 locks(micros) r:163462 nreturned:25 reslen:3064 163ms
+Wed Nov 20 11:12:00 [conn3] query mymobile.news query: { query: {}, orderby: { content: 1 } } ntoreturn:25 ntoskip:0 nscanned:30001 scanAndOrder:1 keyUpdates:0 locks(micros) r:199281 nreturned:25 reslen:3064 199ms
+Wed Nov 20 11:20:23 [conn3] query mymobile.news query: { query: {}, orderby: { content: 1 } } ntoreturn:25 ntoskip:0 nscanned:30001 scanAndOrder:1 keyUpdates:0 locks(micros) r:149599 nreturned:25 reslen:3064 150ms
+Wed Nov 20 11:20:24 [conn3] query mymobile.news query: { query: {}, orderby: { content: 1 } } ntoreturn:25 ntoskip:0 nscanned:30001 scanAndOrder:1 keyUpdates:0 locks(micros) r:144716 nreturned:25 reslen:3064 145ms
+Wed Nov 20 13:39:45 [conn3] query mymobile.news query: { query: {}, orderby: { content: 1 } } ntoreturn:25 ntoskip:0 nscanned:30001 scanAndOrder:1 keyUpdates:0 locks(micros) r:279891 nreturned:25 reslen:3064 280ms
+Wed Nov 20 13:39:45 [conn2] query mymobile.news query: { query: {}, orderby: { content: 1 } } ntoreturn:25 ntoskip:0 nscanned:30001 scanAndOrder:1 keyUpdates:0 locks(micros) r:177331 nreturned:25 reslen:3064 178ms
+Wed Nov 20 13:40:02 [conn2] query mymobile.news query: { query: {}, orderby: { id: 1 } } ntoreturn:25 ntoskip:0 nscanned:30001 scanAndOrder:1 keyUpdates:0 locks(micros) r:136614 nreturned:25 reslen:2821 137ms
+Wed Nov 20 13:40:04 [conn2] query mymobile.news query: { query: {}, orderby: { id: -1 } } ntoreturn:25 ntoskip:0 nscanned:30001 scanAndOrder:1 keyUpdates:0 locks(micros) r:136025 nreturned:25 reslen:2821 136ms
+Wed Nov 20 13:40:06 [conn2] query mymobile.news query: { query: {}, orderby: { content: 1 } } ntoreturn:25 ntoskip:0 nscanned:30001 scanAndOrder:1 keyUpdates:0 locks(micros) r:145973 nreturned:25 reslen:3064 146ms
+Wed Nov 20 13:40:07 [conn2] query mymobile.news query: { query: {}, orderby: { content: -1 } } ntoreturn:25 ntoskip:0 nscanned:30001 scanAndOrder:1 keyUpdates:0 locks(micros) r:147579 nreturned:25 reslen:3159 148ms
+Wed Nov 20 13:40:21 [conn2] query mymobile.news query: { query: {}, orderby: { content: -1 } } ntoreturn:25 ntoskip:0 nscanned:30001 scanAndOrder:1 keyUpdates:0 locks(micros) r:149162 nreturned:25 reslen:3159 149ms
+Wed Nov 20 13:40:32 [conn2] query mymobile.news query: { query: {}, orderby: { content: -1 } } ntoreturn:25 ntoskip:0 nscanned:30001 scanAndOrder:1 keyUpdates:0 locks(micros) r:150092 nreturned:25 reslen:3159 150ms
+Wed Nov 20 13:40:35 [conn2] query mymobile.news query: { query: {}, orderby: { content: -1 } } ntoreturn:25 ntoskip:30000 nscanned:30001 scanAndOrder:1 keyUpdates:0 locks(micros) r:461484 nreturned:1 reslen:142 462ms
+Wed Nov 20 13:40:38 [conn2] query mymobile.news query: { query: {}, orderby: { content: -1 } } ntoreturn:25 ntoskip:0 nscanned:30001 scanAndOrder:1 keyUpdates:0 locks(micros) r:143976 nreturned:25 reslen:3159 144ms
+Wed Nov 20 13:51:29 [conn2] query mymobile.news query: { query: {}, orderby: { content: 1 } } ntoreturn:25 ntoskip:0 nscanned:30001 scanAndOrder:1 keyUpdates:0 locks(micros) r:160242 nreturned:25 reslen:3064 160ms
+Wed Nov 20 13:51:29 [conn3] query mymobile.news query: { query: {}, orderby: { content: 1 } } ntoreturn:25 ntoskip:0 nscanned:30001 scanAndOrder:1 keyUpdates:0 locks(micros) r:186978 nreturned:25 reslen:3064 187ms
+Wed Nov 20 13:51:37 [conn3] query mymobile.news query: { query: {}, orderby: { content: 1 } } ntoreturn:25 ntoskip:30000 nscanned:30001 scanAndOrder:1 keyUpdates:0 locks(micros) r:323597 nreturned:1 reslen:205 324ms
+Wed Nov 20 13:51:57 [conn3] query mymobile.news query: { query: {}, orderby: { content: 1 } } ntoreturn:25 ntoskip:29975 nscanned:30001 scanAndOrder:1 keyUpdates:0 numYields: 1 locks(micros) r:488988 nreturned:25 reslen:3093 269ms
+Wed Nov 20 13:52:02 [conn3] remove mymobile.news query: { _id: ObjectId('527416eb6ce180c179f195f2') } keyUpdates:0 locks(micros) w:119094 136ms
+Wed Nov 20 14:11:48 [conn3] query mymobile.news query: { query: {}, orderby: { content: 1 } } ntoreturn:25 ntoskip:29975 nscanned:29999 scanAndOrder:1 keyUpdates:0 numYields: 1 locks(micros) r:435238 nreturned:24 reslen:3040 346ms
+Wed Nov 20 14:12:09 [conn3] query mymobile.news query: { query: {}, orderby: { id: -1 } } ntoreturn:25 ntoskip:29975 nscanned:29999 scanAndOrder:1 keyUpdates:0 locks(micros) r:356884 nreturned:24 reslen:3124 357ms
+Wed Nov 20 14:23:15 [conn3] query mymobile.news query: { query: {}, orderby: { content: 1 } } ntoreturn:25 ntoskip:0 nscanned:29999 scanAndOrder:1 keyUpdates:0 locks(micros) r:169547 nreturned:25 reslen:3064 170ms
+Wed Nov 20 14:23:33 [conn3] query mymobile.news query: { query: {}, orderby: { content: 1 } } ntoreturn:25 ntoskip:0 nscanned:29999 scanAndOrder:1 keyUpdates:0 locks(micros) r:114539 nreturned:25 reslen:3064 115ms
+Wed Nov 20 14:23:33 [conn2] query mymobile.news query: { query: {}, orderby: { content: 1 } } ntoreturn:25 ntoskip:0 nscanned:29999 scanAndOrder:1 keyUpdates:0 locks(micros) r:121449 nreturned:25 reslen:3064 122ms
+Wed Nov 20 14:24:46 [conn2] query mymobile.news query: { query: {}, orderby: { content: 1 } } ntoreturn:25 ntoskip:0 nscanned:29999 scanAndOrder:1 keyUpdates:0 numYields: 1 locks(micros) r:246604 nreturned:25 reslen:3064 184ms
+Wed Nov 20 14:24:46 [conn3] query mymobile.news query: { query: {}, orderby: { content: 1 } } ntoreturn:25 ntoskip:0 nscanned:29999 scanAndOrder:1 keyUpdates:0 numYields: 1 locks(micros) r:229735 nreturned:25 reslen:3064 208ms
+Wed Nov 20 14:44:05 [conn3] query mymobile.news query: { query: {}, orderby: { content: 1 } } ntoreturn:25 ntoskip:0 nscanned:29999 scanAndOrder:1 keyUpdates:0 locks(micros) r:210322 nreturned:25 reslen:3064 210ms
+Wed Nov 20 14:44:05 [conn2] query mymobile.news query: { query: {}, orderby: { content: 1 } } ntoreturn:25 ntoskip:0 nscanned:29999 scanAndOrder:1 keyUpdates:0 locks(micros) r:181808 nreturned:25 reslen:3064 182ms
+Wed Nov 20 14:54:30 [conn2] query mymobile.news query: { query: {}, orderby: { content: 1 } } ntoreturn:25 ntoskip:0 nscanned:29999 scanAndOrder:1 keyUpdates:0 locks(micros) r:146467 nreturned:25 reslen:3064 147ms
+Wed Nov 20 14:54:44 [conn2] query mymobile.news query: { query: {}, orderby: { content: 1 } } ntoreturn:25 ntoskip:0 nscanned:29999 scanAndOrder:1 keyUpdates:0 locks(micros) r:153322 nreturned:25 reslen:3064 153ms
+Wed Nov 20 14:54:47 [conn2] query mymobile.news query: { query: {}, orderby: { content: 1 } } ntoreturn:25 ntoskip:0 nscanned:29999 scanAndOrder:1 keyUpdates:0 locks(micros) r:144723 nreturned:25 reslen:3064 145ms
+Wed Nov 20 14:54:51 [conn2] query mymobile.news query: { query: {}, orderby: { content: 1 } } ntoreturn:25 ntoskip:0 nscanned:29999 scanAndOrder:1 keyUpdates:0 locks(micros) r:149866 nreturned:25 reslen:3064 150ms
+Wed Nov 20 14:55:08 [conn2] query mymobile.news query: { query: {}, orderby: { content: 1 } } ntoreturn:25 ntoskip:0 nscanned:29999 scanAndOrder:1 keyUpdates:0 locks(micros) r:156021 nreturned:25 reslen:3064 156ms
+Wed Nov 20 14:55:11 [conn2] query mymobile.news query: { query: {}, orderby: { content: 1 } } ntoreturn:25 ntoskip:0 nscanned:29999 scanAndOrder:1 keyUpdates:0 numYields: 1 locks(micros) r:264229 nreturned:25 reslen:3064 147ms
+Wed Nov 20 14:55:16 [conn2] query mymobile.news query: { query: {}, orderby: { content: 1 } } ntoreturn:25 ntoskip:0 nscanned:29999 scanAndOrder:1 keyUpdates:0 locks(micros) r:141414 nreturned:25 reslen:3064 142ms
+Wed Nov 20 14:55:20 [conn2] query mymobile.news query: { query: {}, orderby: { content: 1 } } ntoreturn:25 ntoskip:0 nscanned:29999 scanAndOrder:1 keyUpdates:0 locks(micros) r:139672 nreturned:25 reslen:3064 140ms
+Wed Nov 20 14:56:00 [conn2] query mymobile.news query: { query: {}, orderby: { content: 1 } } ntoreturn:25 ntoskip:0 nscanned:29999 scanAndOrder:1 keyUpdates:0 locks(micros) r:153337 nreturned:25 reslen:3064 153ms
+Wed Nov 20 14:56:43 [conn2] query mymobile.news query: { query: {}, orderby: { content: 1 } } ntoreturn:25 ntoskip:0 nscanned:29999 scanAndOrder:1 keyUpdates:0 locks(micros) r:146530 nreturned:25 reslen:3064 147ms
+Wed Nov 20 14:56:43 [conn2] query mymobile.news query: { query: {}, orderby: { content: 1 } } ntoreturn:25 ntoskip:0 nscanned:29999 scanAndOrder:1 keyUpdates:0 locks(micros) r:137450 nreturned:25 reslen:3064 138ms
+Wed Nov 20 15:05:11 [conn2] query mymobile.news query: { query: {}, orderby: { content: 1 } } ntoreturn:25 ntoskip:0 nscanned:29999 scanAndOrder:1 keyUpdates:0 locks(micros) r:161879 nreturned:25 reslen:3064 162ms
+Wed Nov 20 15:05:11 [conn2] query mymobile.news query: { query: {}, orderby: { content: 1 } } ntoreturn:25 ntoskip:0 nscanned:29999 scanAndOrder:1 keyUpdates:0 locks(micros) r:161023 nreturned:25 reslen:3064 161ms
+Wed Nov 20 15:07:31 [conn2] query mymobile.news query: { query: {}, orderby: { content: 1 } } ntoreturn:25 ntoskip:0 nscanned:29999 scanAndOrder:1 keyUpdates:0 locks(micros) r:140346 nreturned:25 reslen:3064 140ms
+Wed Nov 20 15:07:31 [conn2] query mymobile.news query: { query: {}, orderby: { content: 1 } } ntoreturn:25 ntoskip:0 nscanned:29999 scanAndOrder:1 keyUpdates:0 locks(micros) r:158779 nreturned:25 reslen:3064 159ms
+Wed Nov 20 15:09:04 [conn2] query mymobile.news query: { query: {}, orderby: { content: 1 } } ntoreturn:25 ntoskip:0 nscanned:29999 scanAndOrder:1 keyUpdates:0 locks(micros) r:147276 nreturned:25 reslen:3064 147ms
+Wed Nov 20 15:09:05 [conn3] query mymobile.news query: { query: {}, orderby: { content: 1 } } ntoreturn:25 ntoskip:0 nscanned:29999 scanAndOrder:1 keyUpdates:0 locks(micros) r:156583 nreturned:25 reslen:3064 157ms
+Wed Nov 20 15:09:46 [conn3] query mymobile.news query: { query: {}, orderby: { content: 1 } } ntoreturn:25 ntoskip:0 nscanned:29999 scanAndOrder:1 keyUpdates:0 locks(micros) r:205711 nreturned:25 reslen:3064 206ms
+Wed Nov 20 15:09:46 [conn2] query mymobile.news query: { query: {}, orderby: { content: 1 } } ntoreturn:25 ntoskip:0 nscanned:29999 scanAndOrder:1 keyUpdates:0 locks(micros) r:159397 nreturned:25 reslen:3064 159ms
+Wed Nov 20 16:38:38 [conn2] query mymobile.news query: { query: {}, orderby: { content: 1 } } ntoreturn:25 ntoskip:0 nscanned:29999 scanAndOrder:1 keyUpdates:0 locks(micros) r:281783 nreturned:25 reslen:3064 281ms
+Wed Nov 20 16:38:38 [conn3] query mymobile.news query: { query: {}, orderby: { content: 1 } } ntoreturn:25 ntoskip:0 nscanned:29999 scanAndOrder:1 keyUpdates:0 numYields: 1 locks(micros) r:342463 nreturned:25 reslen:3064 190ms
+Wed Nov 20 16:41:46 [conn3] query mymobile.news query: { query: {}, orderby: { content: 1 } } ntoreturn:25 ntoskip:0 nscanned:29999 scanAndOrder:1 keyUpdates:0 numYields: 1 locks(micros) r:360215 nreturned:25 reslen:3064 194ms
+Wed Nov 20 16:41:46 [conn2] query mymobile.news query: { query: {}, orderby: { content: 1 } } ntoreturn:25 ntoskip:0 nscanned:29999 scanAndOrder:1 keyUpdates:0 locks(micros) r:130748 nreturned:25 reslen:3064 131ms
+Wed Nov 20 16:52:54 [conn2] query mymobile.news query: { query: {}, orderby: { content: 1 } } ntoreturn:25 ntoskip:0 nscanned:29999 scanAndOrder:1 keyUpdates:0 locks(micros) r:190435 nreturned:25 reslen:3064 190ms
+Wed Nov 20 16:52:55 [conn3] query mymobile.news query: { query: {}, orderby: { content: 1 } } ntoreturn:25 ntoskip:0 nscanned:29999 scanAndOrder:1 keyUpdates:0 locks(micros) r:191499 nreturned:25 reslen:3064 191ms
+Wed Nov 20 17:26:12 [conn3] query mymobile.news query: { query: {}, orderby: { content: 1 } } ntoreturn:25 ntoskip:0 nscanned:29999 scanAndOrder:1 keyUpdates:0 locks(micros) r:186849 nreturned:25 reslen:3064 187ms
+Wed Nov 20 17:26:13 [conn3] query mymobile.news query: { query: {}, orderby: { content: 1 } } ntoreturn:25 ntoskip:0 nscanned:29999 scanAndOrder:1 keyUpdates:0 locks(micros) r:171041 nreturned:25 reslen:3064 171ms
+Wed Nov 20 17:29:45 [conn3] query mymobile.news query: { query: {}, orderby: { content: 1 } } ntoreturn:25 ntoskip:0 nscanned:29999 scanAndOrder:1 keyUpdates:0 locks(micros) r:157309 nreturned:25 reslen:3064 157ms
+Wed Nov 20 17:29:48 [conn3] query mymobile.news query: { query: {}, orderby: { content: 1 } } ntoreturn:25 ntoskip:0 nscanned:29999 scanAndOrder:1 keyUpdates:0 numYields: 1 locks(micros) r:253657 nreturned:25 reslen:3064 166ms
+Wed Nov 20 17:29:49 [conn3] query mymobile.news query: { query: {}, orderby: { content: 1 } } ntoreturn:25 ntoskip:0 nscanned:29999 scanAndOrder:1 keyUpdates:0 locks(micros) r:191068 nreturned:25 reslen:3064 191ms
+Wed Nov 20 17:32:31 [conn3] query mymobile.news query: { query: {}, orderby: { content: 1 } } ntoreturn:25 ntoskip:0 nscanned:29999 scanAndOrder:1 keyUpdates:0 locks(micros) r:163516 nreturned:25 reslen:3064 164ms
+Wed Nov 20 17:32:31 [conn3] query mymobile.news query: { query: {}, orderby: { content: 1 } } ntoreturn:25 ntoskip:0 nscanned:29999 scanAndOrder:1 keyUpdates:0 locks(micros) r:207290 nreturned:25 reslen:3064 207ms
+Wed Nov 20 17:32:57 [conn3] query mymobile.news query: { query: {}, orderby: { title: 1 } } ntoreturn:25 ntoskip:0 nscanned:29999 scanAndOrder:1 keyUpdates:0 locks(micros) r:131376 nreturned:25 reslen:3046 131ms
+Wed Nov 20 17:33:06 [conn3] query mymobile.news query: { query: {}, orderby: { title: -1 } } ntoreturn:25 ntoskip:0 nscanned:29999 scanAndOrder:1 keyUpdates:0 locks(micros) r:151442 nreturned:25 reslen:3174 152ms
+Wed Nov 20 17:33:07 [conn3] query mymobile.news query: { query: {}, orderby: { title: 1 } } ntoreturn:25 ntoskip:0 nscanned:29999 scanAndOrder:1 keyUpdates:0 locks(micros) r:134684 nreturned:25 reslen:3046 135ms
+Wed Nov 20 17:41:04 [conn3] query mymobile.news query: { query: {}, orderby: { content: 1 } } ntoreturn:25 ntoskip:0 nscanned:29999 scanAndOrder:1 keyUpdates:0 locks(micros) r:251513 nreturned:25 reslen:3064 251ms
+Wed Nov 20 17:41:04 [conn2] query mymobile.news query: { query: {}, orderby: { content: 1 } } ntoreturn:25 ntoskip:0 nscanned:29999 scanAndOrder:1 keyUpdates:0 locks(micros) r:160424 nreturned:25 reslen:3064 161ms
+Wed Nov 20 17:41:19 [conn2] query mymobile.news query: { query: {}, orderby: { content: 1 } } ntoreturn:25 ntoskip:0 nscanned:29999 scanAndOrder:1 keyUpdates:0 locks(micros) r:152779 nreturned:25 reslen:3064 152ms
+Wed Nov 20 17:41:22 [conn2] query mymobile.news query: { query: {}, orderby: { content: 1 } } ntoreturn:25 ntoskip:29975 nscanned:29999 scanAndOrder:1 keyUpdates:0 locks(micros) r:389042 nreturned:24 reslen:3040 389ms
+Wed Nov 20 17:41:24 [conn2] query mymobile.news query: { query: {}, orderby: { content: 1 } } ntoreturn:25 ntoskip:29975 nscanned:29999 scanAndOrder:1 keyUpdates:0 locks(micros) r:429969 nreturned:24 reslen:3040 430ms
+Wed Nov 20 17:41:25 [conn2] query mymobile.news query: { query: {}, orderby: { content: -1 } } ntoreturn:25 ntoskip:29975 nscanned:29999 scanAndOrder:1 keyUpdates:0 locks(micros) r:395895 nreturned:24 reslen:2942 396ms
+Wed Nov 20 17:47:03 [conn2] query mymobile.news query: { query: {}, orderby: { content: 1 } } ntoreturn:25 ntoskip:0 nscanned:29999 scanAndOrder:1 keyUpdates:0 locks(micros) r:226490 nreturned:25 reslen:3064 226ms
+Wed Nov 20 17:47:03 [conn3] query mymobile.news query: { query: {}, orderby: { content: 1 } } ntoreturn:25 ntoskip:0 nscanned:29999 scanAndOrder:1 keyUpdates:0 locks(micros) r:178140 nreturned:25 reslen:3064 179ms
+Wed Nov 20 17:56:06 [conn3] query mymobile.news query: { query: {}, orderby: { content: 1 } } ntoreturn:25 ntoskip:0 nscanned:29999 scanAndOrder:1 keyUpdates:0 locks(micros) r:237246 nreturned:25 reslen:3064 237ms
+Wed Nov 20 17:56:06 [conn2] query mymobile.news query: { query: {}, orderby: { content: 1 } } ntoreturn:25 ntoskip:0 nscanned:29999 scanAndOrder:1 keyUpdates:0 locks(micros) r:170619 nreturned:25 reslen:3064 171ms
+Wed Nov 20 17:57:35 [conn2] query mymobile.news query: { query: {}, orderby: { content: 1 } } ntoreturn:25 ntoskip:0 nscanned:29999 scanAndOrder:1 keyUpdates:0 locks(micros) r:159502 nreturned:25 reslen:3064 159ms
+Wed Nov 20 17:57:36 [conn2] query mymobile.news query: { query: {}, orderby: { content: 1 } } ntoreturn:25 ntoskip:0 nscanned:29999 scanAndOrder:1 keyUpdates:0 locks(micros) r:149655 nreturned:25 reslen:3064 150ms
+Wed Nov 20 18:32:18 [conn2] query mymobile.news query: { query: {}, orderby: { newdate: -1 } } ntoreturn:25 ntoskip:0 nscanned:29999 scanAndOrder:1 keyUpdates:0 locks(micros) r:159287 nreturned:25 reslen:3246 159ms
+Wed Nov 20 18:32:19 [conn2] query mymobile.news query: { query: {}, orderby: { newdate: 1 } } ntoreturn:25 ntoskip:0 nscanned:29999 scanAndOrder:1 keyUpdates:0 locks(micros) r:145560 nreturned:25 reslen:2821 146ms
+Wed Nov 20 18:32:21 [conn2] query mymobile.news query: { query: {}, orderby: { newdate: -1 } } ntoreturn:25 ntoskip:0 nscanned:29999 scanAndOrder:1 keyUpdates:0 locks(micros) r:159856 nreturned:25 reslen:3246 160ms
+Wed Nov 20 18:32:24 [conn2] query mymobile.news query: { query: {}, orderby: { newdate: 1 } } ntoreturn:25 ntoskip:0 nscanned:29999 scanAndOrder:1 keyUpdates:0 numYields: 1 locks(micros) r:205399 nreturned:25 reslen:2821 151ms
+Wed Nov 20 18:32:27 [conn2] query mymobile.news query: { query: {}, orderby: { newdate: -1 } } ntoreturn:25 ntoskip:0 nscanned:29999 scanAndOrder:1 keyUpdates:0 locks(micros) r:160830 nreturned:25 reslen:3246 161ms
+Wed Nov 20 18:32:33 [conn2] query mymobile.news query: { query: {}, orderby: { content: 1 } } ntoreturn:25 ntoskip:0 nscanned:29999 scanAndOrder:1 keyUpdates:0 numYields: 1 locks(micros) r:294782 nreturned:25 reslen:3064 176ms
+Wed Nov 20 18:33:27 [conn2] query mymobile.news query: { query: {}, orderby: { content: 1 } } ntoreturn:25 ntoskip:0 nscanned:29999 scanAndOrder:1 keyUpdates:0 locks(micros) r:206062 nreturned:25 reslen:3064 206ms
+Wed Nov 20 18:33:27 [conn3] query mymobile.news query: { query: {}, orderby: { content: 1 } } ntoreturn:25 ntoskip:0 nscanned:29999 scanAndOrder:1 keyUpdates:0 locks(micros) r:184315 nreturned:25 reslen:3064 184ms
+Wed Nov 20 18:33:53 [conn3] query mymobile.news query: { query: {}, orderby: { content: 1 } } ntoreturn:25 ntoskip:29975 nscanned:29999 scanAndOrder:1 keyUpdates:0 locks(micros) r:415431 nreturned:24 reslen:3040 415ms
+Wed Nov 20 18:35:04 [conn3] query mymobile.news query: { query: {}, orderby: { content: 1 } } ntoreturn:25 ntoskip:0 nscanned:29999 scanAndOrder:1 keyUpdates:0 locks(micros) r:194388 nreturned:25 reslen:3064 194ms
+Wed Nov 20 18:35:04 [conn2] query mymobile.news query: { query: {}, orderby: { content: 1 } } ntoreturn:25 ntoskip:0 nscanned:29999 scanAndOrder:1 keyUpdates:0 locks(micros) r:202619 nreturned:25 reslen:3064 203ms
+Wed Nov 20 18:39:15 [conn2] query mymobile.news query: { query: {}, orderby: { content: 1 } } ntoreturn:25 ntoskip:0 nscanned:29999 scanAndOrder:1 keyUpdates:0 locks(micros) r:203268 nreturned:25 reslen:3064 203ms
+Wed Nov 20 18:39:15 [conn3] query mymobile.news query: { query: {}, orderby: { content: 1 } } ntoreturn:25 ntoskip:0 nscanned:29999 scanAndOrder:1 keyUpdates:0 locks(micros) r:193346 nreturned:25 reslen:3064 193ms
+Wed Nov 20 18:40:25 CTRL_CLOSE_EVENT signal
+Wed Nov 20 18:40:25 [consoleTerminate] got CTRL_CLOSE_EVENT, will terminate after current cmd ends
+Wed Nov 20 18:40:25 [consoleTerminate] now exiting
+Wed Nov 20 18:40:25 dbexit: 
+Wed Nov 20 18:40:25 [consoleTerminate] shutdown: going to close listening sockets...
+Wed Nov 20 18:40:25 [consoleTerminate] closing listening socket: 492
+Wed Nov 20 18:40:25 [consoleTerminate] closing listening socket: 508
+Wed Nov 20 18:40:25 [consoleTerminate] shutdown: going to flush diaglog...
+Wed Nov 20 18:40:25 [consoleTerminate] shutdown: going to close sockets...
+Wed Nov 20 18:40:25 [consoleTerminate] shutdown: waiting for fs preallocator...
+Wed Nov 20 18:40:25 [consoleTerminate] shutdown: lock for final commit...
+Wed Nov 20 18:40:25 [consoleTerminate] shutdown: final commit...
+Wed Nov 20 18:40:25 [consoleTerminate] shutdown: closing all files...
+Wed Nov 20 18:40:25 [consoleTerminate] closeAllFiles() finished
+Wed Nov 20 18:40:25 [consoleTerminate] journalCleanup...
+Wed Nov 20 18:40:25 [consoleTerminate] removeJournalFiles
+Wed Nov 20 18:40:25 [consoleTerminate] shutdown: removing fs lock...
+Wed Nov 20 18:40:25 dbexit: really exiting now
+
+
+***** SERVER RESTARTED *****
+
+
+Wed Nov 20 19:57:43 [initandlisten] MongoDB starting : pid=1756 port=27017 dbpath=db 64-bit host=jamesmo-PC
+Wed Nov 20 19:57:43 [initandlisten] db version v2.2.0, pdfile version 4.5
+Wed Nov 20 19:57:43 [initandlisten] git version: f5e83eae9cfbec7fb7a071321928f00d1b0c5207
+Wed Nov 20 19:57:43 [initandlisten] build info: windows sys.getwindowsversion(major=6, minor=1, build=7601, platform=2, service_pack='Service Pack 1') BOOST_LIB_VERSION=1_49
+Wed Nov 20 19:57:43 [initandlisten] options: { dbpath: "db", jsonp: true, logappend: true, logpath: "logs/r0.log", oplogSize: 32, rest: true, smallfiles: true }
+Wed Nov 20 19:57:43 [initandlisten] journal dir=db/journal
+Wed Nov 20 19:57:43 [initandlisten] recover : no journal files present, no recovery needed
+Wed Nov 20 19:57:43 [initandlisten] preallocateIsFaster=true 2.82
+Wed Nov 20 19:57:43 [initandlisten] waiting for connections on port 27017
+Wed Nov 20 19:57:43 [websvr] admin web console waiting for connections on port 28017
+Wed Nov 20 19:58:51 [initandlisten] connection accepted from 127.0.0.1:49356 #1 (1 connection now open)
+Wed Nov 20 20:03:15 [initandlisten] connection accepted from 127.0.0.1:49515 #2 (2 connections now open)
+Wed Nov 20 20:03:15 [initandlisten] connection accepted from 127.0.0.1:49516 #3 (3 connections now open)
+Wed Nov 20 20:03:16 [conn2] query mymobile.news query: { query: {}, orderby: { content: 1 } } ntoreturn:25 ntoskip:0 nscanned:29999 scanAndOrder:1 keyUpdates:0 locks(micros) r:184516 nreturned:25 reslen:3064 185ms
+Wed Nov 20 20:03:16 [conn3] query mymobile.news query: { query: {}, orderby: { content: 1 } } ntoreturn:25 ntoskip:0 nscanned:29999 scanAndOrder:1 keyUpdates:0 locks(micros) r:226334 nreturned:25 reslen:3064 227ms
+Wed Nov 20 20:03:47 [conn3] query mymobile.news query: { query: {}, orderby: { content: 1 } } ntoreturn:25 ntoskip:0 nscanned:29999 scanAndOrder:1 keyUpdates:0 locks(micros) r:187708 nreturned:25 reslen:3064 188ms
+Wed Nov 20 20:07:25 [conn3] query mymobile.news query: { query: {}, orderby: { content: 1 } } ntoreturn:25 ntoskip:0 nscanned:29999 scanAndOrder:1 keyUpdates:0 numYields: 1 locks(micros) r:195711 nreturned:25 reslen:3064 184ms
+Wed Nov 20 20:10:26 [conn3] query mymobile.news query: { query: {}, orderby: { content: 1 } } ntoreturn:25 ntoskip:0 nscanned:29999 scanAndOrder:1 keyUpdates:0 locks(micros) r:325311 nreturned:25 reslen:3064 326ms
+Wed Nov 20 20:10:26 [conn2] query mymobile.news query: { query: {}, orderby: { content: 1 } } ntoreturn:25 ntoskip:0 nscanned:29999 scanAndOrder:1 keyUpdates:0 locks(micros) r:218974 nreturned:25 reslen:3064 219ms
+Wed Nov 20 20:33:48 [conn2] query mymobile.news query: { query: {}, orderby: { content: 1 } } ntoreturn:25 ntoskip:0 nscanned:29999 scanAndOrder:1 keyUpdates:0 locks(micros) r:209998 nreturned:25 reslen:3064 210ms
+Wed Nov 20 20:33:48 [conn3] query mymobile.news query: { query: {}, orderby: { content: 1 } } ntoreturn:25 ntoskip:0 nscanned:29999 scanAndOrder:1 keyUpdates:0 locks(micros) r:206133 nreturned:25 reslen:3064 206ms
+Wed Nov 20 20:34:09 [conn3] query mymobile.news query: { query: {}, orderby: { newdate: 1 } } ntoreturn:25 ntoskip:0 nscanned:29999 scanAndOrder:1 keyUpdates:0 numYields: 1 locks(micros) r:242834 nreturned:25 reslen:2821 160ms
+Wed Nov 20 20:34:37 [conn3] query mymobile.news query: { query: {}, orderby: { newdate: 1 } } ntoreturn:25 ntoskip:25 nscanned:29999 scanAndOrder:1 keyUpdates:0 locks(micros) r:147780 nreturned:25 reslen:2845 148ms
+Wed Nov 20 20:34:40 [conn3] query mymobile.news query: { query: {}, orderby: { newdate: 1 } } ntoreturn:25 ntoskip:29975 nscanned:29999 scanAndOrder:1 keyUpdates:0 locks(micros) r:469447 nreturned:24 reslen:3124 470ms
+Wed Nov 20 20:34:55 [conn3] query mymobile.news query: { query: {}, orderby: { newdate: 1 } } ntoreturn:25 ntoskip:0 nscanned:29999 scanAndOrder:1 keyUpdates:0 locks(micros) r:144474 nreturned:25 reslen:2821 145ms
+Wed Nov 20 20:35:47 [conn3] query mymobile.news query: { query: {}, orderby: { author: 1 } } ntoreturn:25 ntoskip:0 nscanned:29999 scanAndOrder:1 keyUpdates:0 locks(micros) r:210500 nreturned:25 reslen:3064 210ms
+Wed Nov 20 20:36:13 [conn3] query mymobile.news query: { query: {}, orderby: { newdate: 1 } } ntoreturn:25 ntoskip:0 nscanned:29999 scanAndOrder:1 keyUpdates:0 locks(micros) r:149136 nreturned:25 reslen:2821 149ms
+Wed Nov 20 22:24:17 [conn3] query mymobile.news query: { query: {}, orderby: { content: 1 } } ntoreturn:25 ntoskip:0 nscanned:29999 scanAndOrder:1 keyUpdates:0 locks(micros) r:196699 nreturned:25 reslen:3064 196ms
+Wed Nov 20 22:24:29 [conn3] query mymobile.news query: { query: {}, orderby: { content: 1 } } ntoreturn:25 ntoskip:0 nscanned:29999 scanAndOrder:1 keyUpdates:0 locks(micros) r:104076 nreturned:25 reslen:3064 104ms
+Wed Nov 20 22:24:29 [conn2] query mymobile.news query: { query: {}, orderby: { content: 1 } } ntoreturn:25 ntoskip:0 nscanned:29999 scanAndOrder:1 keyUpdates:0 locks(micros) r:114897 nreturned:25 reslen:3064 115ms
+Wed Nov 20 22:24:38 [conn2] query mymobile.news query: { query: {}, orderby: { content: 1 } } ntoreturn:25 ntoskip:0 nscanned:29999 scanAndOrder:1 keyUpdates:0 locks(micros) r:166673 nreturned:25 reslen:3064 167ms
+Wed Nov 20 22:24:45 [conn2] query mymobile.news query: { query: {}, orderby: { content: 1 } } ntoreturn:25 ntoskip:0 nscanned:29999 scanAndOrder:1 keyUpdates:0 numYields: 1 locks(micros) r:234281 nreturned:25 reslen:3064 177ms
+Wed Nov 20 22:25:04 [conn2] query mymobile.news query: { query: {}, orderby: { content: 1 } } ntoreturn:25 ntoskip:0 nscanned:29999 scanAndOrder:1 keyUpdates:0 locks(micros) r:168816 nreturned:25 reslen:3064 169ms
+Wed Nov 20 22:25:16 [conn2] query mymobile.news query: { query: {}, orderby: { content: 1 } } ntoreturn:25 ntoskip:0 nscanned:29999 scanAndOrder:1 keyUpdates:0 numYields: 1 locks(micros) r:211660 nreturned:25 reslen:3064 180ms
+Wed Nov 20 22:29:50 [initandlisten] connection accepted from 127.0.0.1:50474 #4 (4 connections now open)
+Wed Nov 20 22:29:50 [conn2] query mymobile.news query: { query: {}, orderby: { content: 1 } } ntoreturn:25 ntoskip:0 nscanned:29999 scanAndOrder:1 keyUpdates:0 locks(micros) r:332615 nreturned:25 reslen:3064 333ms
+Wed Nov 20 22:29:50 [conn3] query mymobile.news query: { query: {}, orderby: { content: 1 } } ntoreturn:25 ntoskip:0 nscanned:29999 scanAndOrder:1 keyUpdates:0 locks(micros) r:251908 nreturned:25 reslen:3064 252ms
+Wed Nov 20 22:29:50 [conn4] query mymobile.news query: { query: {}, orderby: { content: 1 } } ntoreturn:25 ntoskip:0 nscanned:29999 scanAndOrder:1 keyUpdates:0 locks(micros) r:252313 nreturned:25 reslen:3064 252ms
+Wed Nov 20 22:32:03 [conn4] query mymobile.news query: { query: {}, orderby: { content: 1 } } ntoreturn:25 ntoskip:0 nscanned:29999 scanAndOrder:1 keyUpdates:0 locks(micros) r:290209 nreturned:25 reslen:3064 290ms
+Wed Nov 20 22:32:03 [conn3] query mymobile.news query: { query: {}, orderby: { content: 1 } } ntoreturn:25 ntoskip:0 nscanned:29999 scanAndOrder:1 keyUpdates:0 locks(micros) r:152739 nreturned:25 reslen:3064 153ms
+Wed Nov 20 22:36:52 [conn3] query mymobile.news query: { query: {}, orderby: { content: 1 } } ntoreturn:25 ntoskip:0 nscanned:29999 scanAndOrder:1 keyUpdates:0 locks(micros) r:224042 nreturned:25 reslen:3064 224ms
+Wed Nov 20 22:36:52 [conn4] query mymobile.news query: { query: {}, orderby: { content: 1 } } ntoreturn:25 ntoskip:0 nscanned:29999 scanAndOrder:1 keyUpdates:0 locks(micros) r:227981 nreturned:25 reslen:3064 228ms
+Wed Nov 20 22:37:11 [conn4] query mymobile.news query: { query: {}, orderby: { content: 1 } } ntoreturn:25 ntoskip:0 nscanned:29999 scanAndOrder:1 keyUpdates:0 locks(micros) r:198074 nreturned:25 reslen:3064 198ms
+Wed Nov 20 22:37:11 [conn3] query mymobile.news query: { query: {}, orderby: { content: 1 } } ntoreturn:25 ntoskip:0 nscanned:29999 scanAndOrder:1 keyUpdates:0 locks(micros) r:155677 nreturned:25 reslen:3064 156ms
+Wed Nov 20 22:37:42 [conn3] query mymobile.news query: { query: {}, orderby: { content: 1 } } ntoreturn:25 ntoskip:0 nscanned:29999 scanAndOrder:1 keyUpdates:0 locks(micros) r:148505 nreturned:25 reslen:3064 149ms
+Wed Nov 20 22:37:42 [conn4] query mymobile.news query: { query: {}, orderby: { content: 1 } } ntoreturn:25 ntoskip:0 nscanned:29999 scanAndOrder:1 keyUpdates:0 numYields: 1 locks(micros) r:311075 nreturned:25 reslen:3064 205ms
+Wed Nov 20 22:38:49 [conn4] end connection 127.0.0.1:50474 (3 connections now open)
+Wed Nov 20 22:38:49 [conn3] end connection 127.0.0.1:49516 (3 connections now open)
+Wed Nov 20 22:38:49 [conn2] end connection 127.0.0.1:49515 (3 connections now open)
+Wed Nov 20 22:38:49 [conn1] end connection 127.0.0.1:49356 (3 connections now open)
+
+
+***** SERVER RESTARTED *****
+
+
+Thu Nov 21 09:19:54 [initandlisten] MongoDB starting : pid=2780 port=27017 dbpath=db 64-bit host=jamesmo-PC
+Thu Nov 21 09:19:54 [initandlisten] db version v2.2.0, pdfile version 4.5
+Thu Nov 21 09:19:54 [initandlisten] git version: f5e83eae9cfbec7fb7a071321928f00d1b0c5207
+Thu Nov 21 09:19:54 [initandlisten] build info: windows sys.getwindowsversion(major=6, minor=1, build=7601, platform=2, service_pack='Service Pack 1') BOOST_LIB_VERSION=1_49
+Thu Nov 21 09:19:54 [initandlisten] options: { dbpath: "db", jsonp: true, logappend: true, logpath: "logs/r0.log", oplogSize: 32, rest: true, smallfiles: true }
+Thu Nov 21 09:19:54 [initandlisten] journal dir=db/journal
+Thu Nov 21 09:19:54 [initandlisten] recover begin
+Thu Nov 21 09:19:54 [initandlisten] info no lsn file in journal/ directory
+Thu Nov 21 09:19:54 [initandlisten] recover lsn: 0
+Thu Nov 21 09:19:54 [initandlisten] recover db/journal/j._0
+Thu Nov 21 09:19:54 [initandlisten] recover cleaning up
+Thu Nov 21 09:19:54 [initandlisten] removeJournalFiles
+Thu Nov 21 09:19:54 [initandlisten] recover done
+Thu Nov 21 09:19:54 [initandlisten] waiting for connections on port 27017
+Thu Nov 21 09:19:54 [websvr] admin web console waiting for connections on port 28017
+Thu Nov 21 09:20:36 [initandlisten] connection accepted from 127.0.0.1:49741 #1 (1 connection now open)
+Thu Nov 21 09:24:03 [initandlisten] connection accepted from 127.0.0.1:49764 #2 (2 connections now open)
+Thu Nov 21 09:24:03 [initandlisten] connection accepted from 127.0.0.1:49765 #3 (3 connections now open)
+Thu Nov 21 09:24:04 [conn2] query mymobile.news query: { query: {}, orderby: { content: 1 } } ntoreturn:25 ntoskip:0 nscanned:29999 scanAndOrder:1 keyUpdates:0 locks(micros) r:223291 nreturned:25 reslen:3064 235ms
+Thu Nov 21 09:24:04 [conn3] query mymobile.news query: { query: {}, orderby: { content: 1 } } ntoreturn:25 ntoskip:0 nscanned:29999 scanAndOrder:1 keyUpdates:0 locks(micros) r:227528 nreturned:25 reslen:3064 238ms
+Thu Nov 21 09:24:12 [conn2] query mymobile.news query: { query: {}, orderby: { content: 1 } } ntoreturn:25 ntoskip:0 nscanned:29999 scanAndOrder:1 keyUpdates:0 numYields: 1 locks(micros) r:213270 nreturned:25 reslen:3064 136ms
+Thu Nov 21 09:24:15 [conn2] query mymobile.news query: { query: {}, orderby: { content: 1 } } ntoreturn:25 ntoskip:0 nscanned:29999 scanAndOrder:1 keyUpdates:0 locks(micros) r:138922 nreturned:25 reslen:3064 139ms
+Thu Nov 21 09:27:12 [conn2] query mymobile.news query: { query: {}, orderby: { content: 1 } } ntoreturn:25 ntoskip:0 nscanned:29999 scanAndOrder:1 keyUpdates:0 locks(micros) r:114514 nreturned:25 reslen:3064 115ms
+Thu Nov 21 09:27:31 [conn3] query mymobile.news query: { query: {}, orderby: { content: 1 } } ntoreturn:25 ntoskip:0 nscanned:29999 scanAndOrder:1 keyUpdates:0 numYields: 2 locks(micros) r:318227 nreturned:25 reslen:3064 173ms
+Thu Nov 21 09:27:31 [conn2] query mymobile.news query: { query: {}, orderby: { content: 1 } } ntoreturn:25 ntoskip:0 nscanned:29999 scanAndOrder:1 keyUpdates:0 numYields: 1 locks(micros) r:345974 nreturned:25 reslen:3064 212ms
+Thu Nov 21 09:27:48 [conn2] query mymobile.news query: { query: {}, orderby: { content: 1 } } ntoreturn:25 ntoskip:0 nscanned:29999 scanAndOrder:1 keyUpdates:0 locks(micros) r:151558 nreturned:25 reslen:3064 152ms
+Thu Nov 21 09:27:49 [conn3] query mymobile.news query: { query: {}, orderby: { content: 1 } } ntoreturn:25 ntoskip:0 nscanned:29999 scanAndOrder:1 keyUpdates:0 numYields: 1 locks(micros) r:268359 nreturned:25 reslen:3064 205ms
+Thu Nov 21 09:28:35 [conn3] query mymobile.news query: { query: {}, orderby: { content: 1 } } ntoreturn:25 ntoskip:0 nscanned:29999 scanAndOrder:1 keyUpdates:0 locks(micros) r:194897 nreturned:25 reslen:3064 195ms
+Thu Nov 21 09:28:35 [conn2] query mymobile.news query: { query: {}, orderby: { content: 1 } } ntoreturn:25 ntoskip:0 nscanned:29999 scanAndOrder:1 keyUpdates:0 locks(micros) r:160948 nreturned:25 reslen:3064 161ms
+Thu Nov 21 09:30:18 [conn2] query mymobile.news query: { query: {}, orderby: { content: 1 } } ntoreturn:25 ntoskip:0 nscanned:29999 scanAndOrder:1 keyUpdates:0 locks(micros) r:136549 nreturned:25 reslen:3064 136ms
+Thu Nov 21 09:30:18 [conn3] query mymobile.news query: { query: {}, orderby: { content: 1 } } ntoreturn:25 ntoskip:0 nscanned:29999 scanAndOrder:1 keyUpdates:0 locks(micros) r:192319 nreturned:25 reslen:3064 193ms
+Thu Nov 21 09:39:41 [conn3] query mymobile.news query: { query: {}, orderby: { content: 1 } } ntoreturn:25 ntoskip:0 nscanned:29999 scanAndOrder:1 keyUpdates:0 locks(micros) r:168232 nreturned:25 reslen:3064 168ms
+Thu Nov 21 09:39:53 [conn3] query mymobile.news query: { query: {}, orderby: { content: 1 } } ntoreturn:25 ntoskip:0 nscanned:29999 scanAndOrder:1 keyUpdates:0 locks(micros) r:182835 nreturned:25 reslen:3064 183ms
+Thu Nov 21 09:40:08 [conn3] query mymobile.news query: { query: {}, orderby: { content: 1 } } ntoreturn:25 ntoskip:0 nscanned:29999 scanAndOrder:1 keyUpdates:0 locks(micros) r:191662 nreturned:25 reslen:3064 192ms
+Thu Nov 21 09:40:08 [conn2] query mymobile.news query: { query: {}, orderby: { content: 1 } } ntoreturn:25 ntoskip:0 nscanned:29999 scanAndOrder:1 keyUpdates:0 numYields: 1 locks(micros) r:306432 nreturned:25 reslen:3064 184ms
+Thu Nov 21 09:40:29 [conn2] query mymobile.news query: { query: {}, orderby: { content: 1 } } ntoreturn:25 ntoskip:0 nscanned:29999 scanAndOrder:1 keyUpdates:0 locks(micros) r:142570 nreturned:25 reslen:3064 143ms
+Thu Nov 21 09:40:39 [conn2] query mymobile.news query: { query: {}, orderby: { content: 1 } } ntoreturn:25 ntoskip:0 nscanned:29999 scanAndOrder:1 keyUpdates:0 locks(micros) r:138368 nreturned:25 reslen:3064 139ms
+Thu Nov 21 09:41:20 [conn2] query mymobile.news query: { query: {}, orderby: { content: 1 } } ntoreturn:25 ntoskip:0 nscanned:29999 scanAndOrder:1 keyUpdates:0 locks(micros) r:137687 nreturned:25 reslen:3064 138ms
+Thu Nov 21 09:41:51 [conn2] query mymobile.news query: { query: {}, orderby: { content: 1 } } ntoreturn:25 ntoskip:0 nscanned:29999 scanAndOrder:1 keyUpdates:0 locks(micros) r:138828 nreturned:25 reslen:3064 139ms
+Thu Nov 21 09:41:55 [conn2] query mymobile.news query: { query: {}, orderby: { content: 1 } } ntoreturn:25 ntoskip:0 nscanned:29999 scanAndOrder:1 keyUpdates:0 locks(micros) r:137117 nreturned:25 reslen:3064 138ms
+Thu Nov 21 09:43:29 [conn2] query mymobile.news query: { query: {}, orderby: { newdate: 1 } } ntoreturn:25 ntoskip:0 nscanned:29999 scanAndOrder:1 keyUpdates:0 numYields: 1 locks(micros) r:170998 nreturned:25 reslen:2821 148ms
+Thu Nov 21 09:43:39 [conn2] query mymobile.news query: { query: {}, orderby: { newdate: 1 } } ntoreturn:25 ntoskip:29975 nscanned:29999 scanAndOrder:1 keyUpdates:0 locks(micros) r:477029 nreturned:24 reslen:3124 477ms
+Thu Nov 21 09:43:57 [conn2] query mymobile.news query: { query: {}, orderby: { content: 1 } } ntoreturn:25 ntoskip:0 nscanned:29999 scanAndOrder:1 keyUpdates:0 locks(micros) r:138225 nreturned:25 reslen:3064 138ms
+Thu Nov 21 09:44:00 [conn2] query mymobile.news query: { query: {}, orderby: { content: 1 } } ntoreturn:25 ntoskip:0 nscanned:29999 scanAndOrder:1 keyUpdates:0 locks(micros) r:139477 nreturned:25 reslen:3064 139ms
+Thu Nov 21 09:44:05 [conn2] query mymobile.news query: { query: {}, orderby: { content: 1 } } ntoreturn:25 ntoskip:0 nscanned:29999 scanAndOrder:1 keyUpdates:0 locks(micros) r:138339 nreturned:25 reslen:3064 138ms
+Thu Nov 21 09:44:08 [conn2] query mymobile.news query: { query: {}, orderby: { content: 1 } } ntoreturn:25 ntoskip:0 nscanned:29999 scanAndOrder:1 keyUpdates:0 locks(micros) r:140880 nreturned:25 reslen:3064 141ms
+Thu Nov 21 09:44:11 [conn2] query mymobile.news query: { query: {}, orderby: { content: 1 } } ntoreturn:25 ntoskip:0 nscanned:29999 scanAndOrder:1 keyUpdates:0 locks(micros) r:141465 nreturned:25 reslen:3064 141ms
+Thu Nov 21 09:47:10 [conn2] query mymobile.news query: { query: {}, orderby: { content: 1 } } ntoreturn:25 ntoskip:0 nscanned:29999 scanAndOrder:1 keyUpdates:0 locks(micros) r:123352 nreturned:25 reslen:3064 123ms
+Thu Nov 21 09:47:31 [conn2] query mymobile.news query: { query: {}, orderby: { content: 1 } } ntoreturn:25 ntoskip:0 nscanned:29999 scanAndOrder:1 keyUpdates:0 locks(micros) r:202075 nreturned:25 reslen:3064 203ms
+Thu Nov 21 09:47:31 [conn3] query mymobile.news query: { query: {}, orderby: { content: 1 } } ntoreturn:25 ntoskip:0 nscanned:29999 scanAndOrder:1 keyUpdates:0 locks(micros) r:200973 nreturned:25 reslen:3064 201ms
+Thu Nov 21 10:23:03 [conn3] query mymobile.news query: { query: {}, orderby: { content: 1 } } ntoreturn:25 ntoskip:0 nscanned:29999 scanAndOrder:1 keyUpdates:0 locks(micros) r:180711 nreturned:25 reslen:3064 181ms
+Thu Nov 21 10:23:03 [conn2] query mymobile.news query: { query: {}, orderby: { content: 1 } } ntoreturn:25 ntoskip:0 nscanned:29999 scanAndOrder:1 keyUpdates:0 numYields: 1 locks(micros) r:339623 nreturned:25 reslen:3064 188ms
+Thu Nov 21 10:23:13 [conn2] query mymobile.news query: { query: {}, orderby: { content: 1 } } ntoreturn:25 ntoskip:0 nscanned:29999 scanAndOrder:1 keyUpdates:0 locks(micros) r:159304 nreturned:25 reslen:3064 159ms
+Thu Nov 21 10:23:33 [conn2] query mymobile.news query: { query: {}, orderby: { content: 1 } } ntoreturn:25 ntoskip:0 nscanned:29999 scanAndOrder:1 keyUpdates:0 numYields: 1 locks(micros) r:162661 nreturned:25 reslen:3064 149ms
+Thu Nov 21 11:33:51 [conn2] query mymobile.news query: { query: {}, orderby: { content: 1 } } ntoreturn:25 ntoskip:0 nscanned:29999 scanAndOrder:1 keyUpdates:0 locks(micros) r:222890 nreturned:25 reslen:3064 222ms
+Thu Nov 21 11:33:51 [conn3] query mymobile.news query: { query: {}, orderby: { content: 1 } } ntoreturn:25 ntoskip:0 nscanned:29999 scanAndOrder:1 keyUpdates:0 locks(micros) r:247133 nreturned:25 reslen:3064 247ms
+Thu Nov 21 11:34:02 [conn3] query mymobile.news query: { query: {}, orderby: { content: 1 } } ntoreturn:25 ntoskip:0 nscanned:29999 scanAndOrder:1 keyUpdates:0 locks(micros) r:199968 nreturned:25 reslen:3064 200ms
+Thu Nov 21 11:34:03 [conn3] query mymobile.news query: { query: {}, orderby: { content: 1 } } ntoreturn:25 ntoskip:0 nscanned:29999 scanAndOrder:1 keyUpdates:0 numYields: 1 locks(micros) r:186225 nreturned:25 reslen:3064 182ms
+Thu Nov 21 11:34:05 [conn3] query mymobile.news query: { query: {}, orderby: { content: 1 } } ntoreturn:25 ntoskip:0 nscanned:29999 scanAndOrder:1 keyUpdates:0 locks(micros) r:175085 nreturned:25 reslen:3064 175ms
+Thu Nov 21 11:34:07 [conn3] query mymobile.news query: { query: {}, orderby: { content: 1 } } ntoreturn:25 ntoskip:0 nscanned:29999 scanAndOrder:1 keyUpdates:0 numYields: 1 locks(micros) r:369146 nreturned:25 reslen:3064 206ms
+Thu Nov 21 12:02:26 [conn1] end connection 127.0.0.1:49741 (2 connections now open)
+Thu Nov 21 12:02:26 [conn2] end connection 127.0.0.1:49764 (2 connections now open)
+Thu Nov 21 12:02:26 [conn3] end connection 127.0.0.1:49765 (2 connections now open)
+Thu Nov 21 12:02:49 [initandlisten] connection accepted from 127.0.0.1:52174 #4 (1 connection now open)
+Thu Nov 21 12:04:33 [conn4] end connection 127.0.0.1:52174 (0 connections now open)
+Thu Nov 21 12:04:46 [initandlisten] connection accepted from 127.0.0.1:52184 #5 (1 connection now open)
+Thu Nov 21 12:07:16 [conn5] end connection 127.0.0.1:52184 (0 connections now open)
+Thu Nov 21 12:07:34 [initandlisten] connection accepted from 127.0.0.1:52201 #6 (1 connection now open)
+Thu Nov 21 12:07:42 [initandlisten] connection accepted from 127.0.0.1:52205 #7 (2 connections now open)
+Thu Nov 21 12:08:59 [conn7] end connection 127.0.0.1:52205 (1 connection now open)
+Thu Nov 21 12:08:59 [conn6] end connection 127.0.0.1:52201 (0 connections now open)
+Thu Nov 21 12:09:11 [initandlisten] connection accepted from 127.0.0.1:52216 #8 (1 connection now open)
+Thu Nov 21 13:40:32 [conn8] end connection 127.0.0.1:52216 (0 connections now open)
+Thu Nov 21 13:40:50 [initandlisten] connection accepted from 127.0.0.1:52545 #9 (1 connection now open)
+Thu Nov 21 13:43:54 [initandlisten] connection accepted from 127.0.0.1:52563 #10 (2 connections now open)
+Thu Nov 21 13:43:54 [conn10] build index mymobile.my1 { _id: 1 }
+Thu Nov 21 13:43:55 [conn10] build index done.  scanned 0 total records. 0.106 secs
+Thu Nov 21 13:43:55 [conn10] insert mymobile.my1 keyUpdates:0 locks(micros) w:254988 255ms
+Thu Nov 21 13:44:01 [FileAllocator] allocating new datafile db/mymobile.2, filling with zeroes...
+Thu Nov 21 13:44:01 [FileAllocator] done allocating datafile db/mymobile.2, size: 64MB,  took 0.474 secs
+Thu Nov 21 13:44:01 [conn10] insert mymobile.my1 keyUpdates:0 locks(micros) w:79 177ms
+Thu Nov 21 13:44:19 [conn10] insert mymobile.my1 keyUpdates:0 locks(micros) w:195501 196ms
+Thu Nov 21 13:44:23 [conn10] insert mymobile.my1 keyUpdates:0 locks(micros) w:72 219ms
+Thu Nov 21 13:44:24 [conn10] insert mymobile.my1 keyUpdates:0 locks(micros) w:74 204ms
+Thu Nov 21 13:44:31 [conn10] end connection 127.0.0.1:52563 (1 connection now open)
+Thu Nov 21 13:52:41 [initandlisten] connection accepted from 127.0.0.1:52850 #11 (2 connections now open)
+Thu Nov 21 13:52:41 [conn11] build index mymobile.json2db { _id: 1 }
+Thu Nov 21 13:52:41 [conn11] build index done.  scanned 0 total records. 0.001 secs
+Thu Nov 21 13:52:41 [conn11] end connection 127.0.0.1:52850 (1 connection now open)
+Thu Nov 21 13:53:08 [initandlisten] connection accepted from 127.0.0.1:52852 #12 (2 connections now open)
+Thu Nov 21 13:55:19 [initandlisten] connection accepted from 127.0.0.1:52863 #13 (3 connections now open)
+Thu Nov 21 13:55:19 [conn13] end connection 127.0.0.1:52863 (2 connections now open)
+Thu Nov 21 13:56:03 [initandlisten] connection accepted from 127.0.0.1:52869 #14 (3 connections now open)
+Thu Nov 21 13:56:03 [conn14] end connection 127.0.0.1:52869 (2 connections now open)
+Thu Nov 21 13:58:24 [initandlisten] connection accepted from 127.0.0.1:53015 #15 (3 connections now open)
+Thu Nov 21 13:58:24 [conn15] end connection 127.0.0.1:53015 (2 connections now open)
+Thu Nov 21 13:59:33 [initandlisten] connection accepted from 127.0.0.1:53027 #16 (3 connections now open)
+Thu Nov 21 13:59:33 [conn16] end connection 127.0.0.1:53027 (2 connections now open)
+Thu Nov 21 14:08:02 [initandlisten] connection accepted from 127.0.0.1:53122 #17 (3 connections now open)
+Thu Nov 21 14:08:02 [conn17] end connection 127.0.0.1:53122 (2 connections now open)
+Thu Nov 21 14:08:52 [initandlisten] connection accepted from 127.0.0.1:53126 #18 (3 connections now open)
+Thu Nov 21 14:08:52 [conn18] end connection 127.0.0.1:53126 (2 connections now open)
+Thu Nov 21 14:09:32 [initandlisten] connection accepted from 127.0.0.1:53132 #19 (3 connections now open)
+Thu Nov 21 14:09:32 [conn19] end connection 127.0.0.1:53132 (2 connections now open)
+Thu Nov 21 14:10:55 [initandlisten] connection accepted from 127.0.0.1:53141 #20 (3 connections now open)
+Thu Nov 21 14:10:55 [conn20] end connection 127.0.0.1:53141 (2 connections now open)
+Thu Nov 21 14:12:03 [initandlisten] connection accepted from 127.0.0.1:53149 #21 (3 connections now open)
+Thu Nov 21 14:12:03 [conn21] end connection 127.0.0.1:53149 (2 connections now open)
+Thu Nov 21 14:12:41 [initandlisten] connection accepted from 127.0.0.1:53155 #22 (3 connections now open)
+Thu Nov 21 14:12:41 [conn22] end connection 127.0.0.1:53155 (2 connections now open)
+Thu Nov 21 14:13:05 [initandlisten] connection accepted from 127.0.0.1:53159 #23 (3 connections now open)
+Thu Nov 21 14:13:05 [conn23] end connection 127.0.0.1:53159 (2 connections now open)
+Thu Nov 21 14:13:23 [initandlisten] connection accepted from 127.0.0.1:53162 #24 (3 connections now open)
+Thu Nov 21 14:13:24 [conn24] end connection 127.0.0.1:53162 (2 connections now open)
+Thu Nov 21 14:14:21 [initandlisten] connection accepted from 127.0.0.1:53166 #25 (3 connections now open)
+Thu Nov 21 14:14:21 [conn25] end connection 127.0.0.1:53166 (2 connections now open)
+Thu Nov 21 14:15:00 [initandlisten] connection accepted from 127.0.0.1:53176 #26 (3 connections now open)
+Thu Nov 21 14:15:01 [conn26] end connection 127.0.0.1:53176 (2 connections now open)
+Thu Nov 21 14:15:40 [initandlisten] connection accepted from 127.0.0.1:53182 #27 (3 connections now open)
+Thu Nov 21 14:15:41 [conn27] end connection 127.0.0.1:53182 (2 connections now open)
+Thu Nov 21 14:21:39 [conn9] end connection 127.0.0.1:52545 (1 connection now open)
+Thu Nov 21 14:25:18 [initandlisten] connection accepted from 127.0.0.1:53343 #28 (2 connections now open)
+Thu Nov 21 14:25:19 [conn28] end connection 127.0.0.1:53343 (1 connection now open)
+Thu Nov 21 14:25:27 [initandlisten] connection accepted from 127.0.0.1:53346 #29 (2 connections now open)
+Thu Nov 21 14:25:27 [conn29] end connection 127.0.0.1:53346 (1 connection now open)
+Thu Nov 21 14:47:13 [initandlisten] connection accepted from 127.0.0.1:53792 #30 (2 connections now open)
+Thu Nov 21 14:47:13 [conn30] end connection 127.0.0.1:53792 (1 connection now open)
+Thu Nov 21 14:50:13 [initandlisten] connection accepted from 127.0.0.1:53809 #31 (2 connections now open)
+Thu Nov 21 14:50:13 [conn31] end connection 127.0.0.1:53809 (1 connection now open)
+Thu Nov 21 14:50:59 [initandlisten] connection accepted from 127.0.0.1:53813 #32 (2 connections now open)
+Thu Nov 21 14:51:00 [conn32] end connection 127.0.0.1:53813 (1 connection now open)
+Thu Nov 21 14:52:04 [initandlisten] connection accepted from 127.0.0.1:53821 #33 (2 connections now open)
+Thu Nov 21 14:52:04 [conn33] end connection 127.0.0.1:53821 (1 connection now open)
+Thu Nov 21 14:59:02 [initandlisten] connection accepted from 127.0.0.1:53857 #34 (2 connections now open)
+Thu Nov 21 14:59:02 [conn34] end connection 127.0.0.1:53857 (1 connection now open)
+Thu Nov 21 14:59:53 [initandlisten] connection accepted from 127.0.0.1:53861 #35 (2 connections now open)
+Thu Nov 21 14:59:53 [conn35] end connection 127.0.0.1:53861 (1 connection now open)
+Thu Nov 21 15:00:21 [initandlisten] connection accepted from 127.0.0.1:53864 #36 (2 connections now open)
+Thu Nov 21 15:00:21 [conn36] end connection 127.0.0.1:53864 (1 connection now open)
+Thu Nov 21 15:02:26 [initandlisten] connection accepted from 127.0.0.1:53882 #37 (2 connections now open)
+Thu Nov 21 15:02:27 [conn37] end connection 127.0.0.1:53882 (1 connection now open)
+Thu Nov 21 15:15:20 [initandlisten] connection accepted from 127.0.0.1:54004 #38 (2 connections now open)
+Thu Nov 21 15:15:20 [conn38] end connection 127.0.0.1:54004 (1 connection now open)
+Thu Nov 21 15:15:36 [initandlisten] connection accepted from 127.0.0.1:54007 #39 (2 connections now open)
+Thu Nov 21 15:15:37 [conn39] end connection 127.0.0.1:54007 (1 connection now open)
+Thu Nov 21 15:37:54 [initandlisten] connection accepted from 127.0.0.1:54371 #40 (2 connections now open)
+Thu Nov 21 15:53:21 [initandlisten] connection accepted from 127.0.0.1:54625 #41 (3 connections now open)
+Thu Nov 21 15:53:26 [conn41] command mymobile.$cmd command: { findandmodify: "json2db", query: { age: 25 }, remove: true } ntoreturn:1 keyUpdates:0 locks(micros) w:4077450 reslen:44 4078ms
+Thu Nov 21 15:53:26 [conn41] command mymobile.$cmd command: { findandmodify: "json2db", query: { age: 28 }, fields: { name: true }, sort: { age: true }, update: { name: "Abc" }, new: true, upsert: true } ntoreturn:1 keyUpdates:0 locks(micros) w:653422 reslen:184 653ms
+Thu Nov 21 15:53:26 [conn41] end connection 127.0.0.1:54625 (2 connections now open)
+Thu Nov 21 18:38:27 [conn40] end connection 127.0.0.1:54371 (1 connection now open)
+Thu Nov 21 18:38:31 [conn12] end connection 127.0.0.1:52852 (0 connections now open)
+Thu Nov 21 18:39:30 CTRL_CLOSE_EVENT signal
+Thu Nov 21 18:39:30 [consoleTerminate] got CTRL_CLOSE_EVENT, will terminate after current cmd ends
+Thu Nov 21 18:39:30 [consoleTerminate] now exiting
+Thu Nov 21 18:39:30 dbexit: 
+Thu Nov 21 18:39:30 [consoleTerminate] shutdown: going to close listening sockets...
+Thu Nov 21 18:39:30 [consoleTerminate] closing listening socket: 516
+Thu Nov 21 18:39:30 [consoleTerminate] closing listening socket: 524
+Thu Nov 21 18:39:30 [consoleTerminate] shutdown: going to flush diaglog...
+Thu Nov 21 18:39:30 [consoleTerminate] shutdown: going to close sockets...
+Thu Nov 21 18:39:30 [consoleTerminate] shutdown: waiting for fs preallocator...
+Thu Nov 21 18:39:30 [consoleTerminate] shutdown: lock for final commit...
+Thu Nov 21 18:39:30 [consoleTerminate] shutdown: final commit...
+Thu Nov 21 18:39:30 [consoleTerminate] shutdown: closing all files...
+Thu Nov 21 18:39:30 [consoleTerminate] closeAllFiles() finished
+Thu Nov 21 18:39:30 [consoleTerminate] journalCleanup...
+Thu Nov 21 18:39:30 [consoleTerminate] removeJournalFiles
+Thu Nov 21 18:39:30 [consoleTerminate] shutdown: removing fs lock...
+Thu Nov 21 18:39:30 dbexit: really exiting now
+
+
+***** SERVER RESTARTED *****
+
+
+Fri Nov 22 09:24:59 [initandlisten] MongoDB starting : pid=6304 port=27017 dbpath=db 64-bit host=jamesmo-PC
+Fri Nov 22 09:24:59 [initandlisten] db version v2.2.0, pdfile version 4.5
+Fri Nov 22 09:24:59 [initandlisten] git version: f5e83eae9cfbec7fb7a071321928f00d1b0c5207
+Fri Nov 22 09:24:59 [initandlisten] build info: windows sys.getwindowsversion(major=6, minor=1, build=7601, platform=2, service_pack='Service Pack 1') BOOST_LIB_VERSION=1_49
+Fri Nov 22 09:24:59 [initandlisten] options: { dbpath: "db", jsonp: true, logappend: true, logpath: "logs/r0.log", oplogSize: 32, rest: true, smallfiles: true }
+Fri Nov 22 09:24:59 [initandlisten] journal dir=db/journal
+Fri Nov 22 09:24:59 [initandlisten] recover : no journal files present, no recovery needed
+Fri Nov 22 09:25:00 [initandlisten] waiting for connections on port 27017
+Fri Nov 22 09:25:00 [websvr] admin web console waiting for connections on port 28017
+Fri Nov 22 09:25:30 [initandlisten] connection accepted from 127.0.0.1:59292 #1 (1 connection now open)
+
+
+***** SERVER RESTARTED *****
+
+
+Fri Nov 22 09:28:00 [initandlisten] MongoDB starting : pid=4608 port=27017 dbpath=db 64-bit host=jamesmo-PC
+Fri Nov 22 09:28:00 [initandlisten] db version v2.2.0, pdfile version 4.5
+Fri Nov 22 09:28:00 [initandlisten] git version: f5e83eae9cfbec7fb7a071321928f00d1b0c5207
+Fri Nov 22 09:28:00 [initandlisten] build info: windows sys.getwindowsversion(major=6, minor=1, build=7601, platform=2, service_pack='Service Pack 1') BOOST_LIB_VERSION=1_49
+Fri Nov 22 09:28:00 [initandlisten] options: { dbpath: "db", jsonp: true, logappend: true, logpath: "logs/r0.log", oplogSize: 32, rest: true, smallfiles: true }
+Fri Nov 22 09:28:00 [initandlisten] exception in initAndListen: 13627 Unable to create/open lock file: db\mongod.lock 另一个程序正在使用此文件，进程无法访问。. Is a mongod instance already running?, terminating
+Fri Nov 22 09:28:00 dbexit: 
+Fri Nov 22 09:28:00 [initandlisten] shutdown: going to close listening sockets...
+Fri Nov 22 09:28:00 [initandlisten] shutdown: going to flush diaglog...
+Fri Nov 22 09:28:00 [initandlisten] shutdown: going to close sockets...
+Fri Nov 22 09:28:00 [initandlisten] shutdown: waiting for fs preallocator...
+Fri Nov 22 09:28:00 [initandlisten] shutdown: lock for final commit...
+Fri Nov 22 09:28:00 [initandlisten] shutdown: final commit...
+Fri Nov 22 09:28:00 [initandlisten] shutdown: closing all files...
+Fri Nov 22 09:28:00 [initandlisten] closeAllFiles() finished
+Fri Nov 22 09:28:00 dbexit: really exiting now
+
+
+***** SERVER RESTARTED *****
+
+
+Fri Nov 22 09:29:28 [initandlisten] MongoDB starting : pid=1464 port=27017 dbpath=db 64-bit host=jamesmo-PC
+Fri Nov 22 09:29:28 [initandlisten] db version v2.2.0, pdfile version 4.5
+Fri Nov 22 09:29:28 [initandlisten] git version: f5e83eae9cfbec7fb7a071321928f00d1b0c5207
+Fri Nov 22 09:29:28 [initandlisten] build info: windows sys.getwindowsversion(major=6, minor=1, build=7601, platform=2, service_pack='Service Pack 1') BOOST_LIB_VERSION=1_49
+Fri Nov 22 09:29:28 [initandlisten] options: { dbpath: "db", jsonp: true, logappend: true, logpath: "logs/r0.log", oplogSize: 32, rest: true, smallfiles: true }
+Fri Nov 22 09:29:28 [initandlisten] journal dir=db/journal
+Fri Nov 22 09:29:28 [initandlisten] recover begin
+Fri Nov 22 09:29:28 [initandlisten] info no lsn file in journal/ directory
+Fri Nov 22 09:29:28 [initandlisten] recover lsn: 0
+Fri Nov 22 09:29:28 [initandlisten] recover db/journal/j._0
+Fri Nov 22 09:29:28 [initandlisten] recover cleaning up
+Fri Nov 22 09:29:28 [initandlisten] removeJournalFiles
+Fri Nov 22 09:29:28 [initandlisten] recover done
+Fri Nov 22 09:29:28 [initandlisten] waiting for connections on port 27017
+Fri Nov 22 09:29:28 [websvr] admin web console waiting for connections on port 28017
+Fri Nov 22 09:29:52 [initandlisten] connection accepted from 127.0.0.1:59321 #1 (1 connection now open)
+Fri Nov 22 09:42:58 [conn1] end connection 127.0.0.1:59321 (0 connections now open)
+Fri Nov 22 09:43:13 [initandlisten] connection accepted from 127.0.0.1:59445 #2 (1 connection now open)
+Fri Nov 22 09:47:02 [conn2] end connection 127.0.0.1:59445 (0 connections now open)
+Fri Nov 22 09:47:15 [initandlisten] connection accepted from 127.0.0.1:59485 #3 (1 connection now open)
+Fri Nov 22 09:47:35 [initandlisten] connection accepted from 127.0.0.1:59490 #4 (2 connections now open)
+Fri Nov 22 09:47:35 [conn4] query mymobile.news query: { query: {}, orderby: { content: 1 } } ntoreturn:25 ntoskip:0 nscanned:29999 scanAndOrder:1 keyUpdates:0 locks(micros) r:177029 nreturned:25 reslen:3064 178ms
+Fri Nov 22 09:47:46 [conn4] query mymobile.news query: { query: {}, orderby: { content: 1 } } ntoreturn:25 ntoskip:0 nscanned:29999 scanAndOrder:1 keyUpdates:0 locks(micros) r:138762 nreturned:25 reslen:3064 138ms
+Fri Nov 22 09:49:52 [conn4] query mymobile.news query: { query: {}, orderby: { content: 1 } } ntoreturn:25 ntoskip:0 nscanned:29999 scanAndOrder:1 keyUpdates:0 locks(micros) r:189400 nreturned:25 reslen:3064 189ms
+Fri Nov 22 09:49:53 [conn4] query mymobile.news query: { query: {}, orderby: { content: 1 } } ntoreturn:25 ntoskip:0 nscanned:29999 scanAndOrder:1 keyUpdates:0 locks(micros) r:138566 nreturned:25 reslen:3064 138ms
+Fri Nov 22 09:49:58 [conn4] query mymobile.news query: { query: {}, orderby: { content: 1 } } ntoreturn:25 ntoskip:0 nscanned:29999 scanAndOrder:1 keyUpdates:0 locks(micros) r:141303 nreturned:25 reslen:3064 141ms
+Fri Nov 22 10:34:13 [conn4] query mymobile.news query: { query: {}, orderby: { content: 1 } } ntoreturn:25 ntoskip:0 nscanned:29999 scanAndOrder:1 keyUpdates:0 locks(micros) r:100163 nreturned:25 reslen:3064 101ms
+Fri Nov 22 10:36:14 [initandlisten] connection accepted from 127.0.0.1:60300 #5 (3 connections now open)
+Fri Nov 22 10:36:14 [conn4] query mymobile.news query: { query: {}, orderby: { content: 1 } } ntoreturn:25 ntoskip:0 nscanned:29999 scanAndOrder:1 keyUpdates:0 locks(micros) r:161538 nreturned:25 reslen:3064 161ms
+Fri Nov 22 10:36:14 [conn5] query mymobile.news query: { query: {}, orderby: { content: 1 } } ntoreturn:25 ntoskip:0 nscanned:29999 scanAndOrder:1 keyUpdates:0 numYields: 4 locks(micros) r:223309 nreturned:25 reslen:3064 138ms
+Fri Nov 22 10:36:22 [conn5] query mymobile.news query: { query: {}, orderby: { content: 1 } } ntoreturn:25 ntoskip:0 nscanned:29999 scanAndOrder:1 keyUpdates:0 locks(micros) r:174245 nreturned:25 reslen:3064 174ms
+Fri Nov 22 10:36:22 [conn4] query mymobile.news query: { query: {}, orderby: { content: 1 } } ntoreturn:25 ntoskip:0 nscanned:29999 scanAndOrder:1 keyUpdates:0 locks(micros) r:165343 nreturned:25 reslen:3064 165ms
+Fri Nov 22 10:36:31 [conn4] query mymobile.news query: { query: {}, orderby: { content: 1 } } ntoreturn:25 ntoskip:0 nscanned:29999 scanAndOrder:1 keyUpdates:0 locks(micros) r:157736 nreturned:25 reslen:3064 158ms
+Fri Nov 22 10:36:33 [conn4] query mymobile.news query: { query: {}, orderby: { content: 1 } } ntoreturn:25 ntoskip:0 nscanned:29999 scanAndOrder:1 keyUpdates:0 locks(micros) r:135582 nreturned:25 reslen:3064 136ms
+Fri Nov 22 10:36:48 [conn4] query mymobile.news query: { query: {}, orderby: { content: 1 } } ntoreturn:25 ntoskip:0 nscanned:29999 scanAndOrder:1 keyUpdates:0 numYields: 1 locks(micros) r:263317 nreturned:25 reslen:3064 133ms
+Fri Nov 22 10:36:51 [conn4] query mymobile.news query: { query: {}, orderby: { content: 1 } } ntoreturn:25 ntoskip:0 nscanned:29999 scanAndOrder:1 keyUpdates:0 locks(micros) r:191148 nreturned:25 reslen:3064 191ms
+Fri Nov 22 10:37:00 [conn4] query mymobile.news query: { query: {}, orderby: { content: 1 } } ntoreturn:25 ntoskip:0 nscanned:29999 scanAndOrder:1 keyUpdates:0 locks(micros) r:148099 nreturned:25 reslen:3064 149ms
+Fri Nov 22 10:37:02 [conn4] query mymobile.news query: { query: {}, orderby: { content: 1 } } ntoreturn:25 ntoskip:0 nscanned:29999 scanAndOrder:1 keyUpdates:0 locks(micros) r:148218 nreturned:25 reslen:3064 148ms
+Fri Nov 22 20:32:36 CTRL_CLOSE_EVENT signal
+Fri Nov 22 20:32:36 [consoleTerminate] got CTRL_CLOSE_EVENT, will terminate after current cmd ends
+Fri Nov 22 20:32:36 [consoleTerminate] now exiting
+Fri Nov 22 20:32:36 dbexit: 
+Fri Nov 22 20:32:36 [consoleTerminate] shutdown: going to close listening sockets...
+Fri Nov 22 20:32:36 [consoleTerminate] closing listening socket: 508
+Fri Nov 22 20:32:36 [consoleTerminate] closing listening socket: 512
+Fri Nov 22 20:32:36 [consoleTerminate] shutdown: going to flush diaglog...
+Fri Nov 22 20:32:36 [consoleTerminate] shutdown: going to close sockets...
+Fri Nov 22 20:32:36 [consoleTerminate] shutdown: waiting for fs preallocator...
+Fri Nov 22 20:32:36 [consoleTerminate] shutdown: lock for final commit...
+Fri Nov 22 20:32:36 [consoleTerminate] shutdown: final commit...
+Fri Nov 22 20:32:36 [consoleTerminate] shutdown: closing all files...
+Fri Nov 22 20:32:36 [consoleTerminate] closeAllFiles() finished
+Fri Nov 22 20:32:36 [consoleTerminate] journalCleanup...
+Fri Nov 22 20:32:36 [consoleTerminate] removeJournalFiles
+Fri Nov 22 20:32:36 [consoleTerminate] shutdown: removing fs lock...
+Fri Nov 22 20:32:36 [conn4] end connection 127.0.0.1:59490 (2 connections now open)
+Fri Nov 22 20:32:36 [conn3] end connection 127.0.0.1:59485 (1 connection now open)
+Fri Nov 22 20:32:36 [conn5] end connection 127.0.0.1:60300 (2 connections now open)
+Fri Nov 22 20:32:36 dbexit: really exiting now
+
+
+***** SERVER RESTARTED *****
+
+
+Wed Jan 08 13:57:02 [initandlisten] MongoDB starting : pid=4972 port=27017 dbpath=db 64-bit host=jamesmo-PC
+Wed Jan 08 13:57:02 [initandlisten] db version v2.2.0, pdfile version 4.5
+Wed Jan 08 13:57:02 [initandlisten] git version: f5e83eae9cfbec7fb7a071321928f00d1b0c5207
+Wed Jan 08 13:57:02 [initandlisten] build info: windows sys.getwindowsversion(major=6, minor=1, build=7601, platform=2, service_pack='Service Pack 1') BOOST_LIB_VERSION=1_49
+Wed Jan 08 13:57:02 [initandlisten] options: { dbpath: "db", jsonp: true, logappend: true, logpath: "logs/r0.log", oplogSize: 32, rest: true, smallfiles: true }
+Wed Jan 08 13:57:02 [initandlisten] journal dir=db/journal
+Wed Jan 08 13:57:02 [initandlisten] recover : no journal files present, no recovery needed
+Wed Jan 08 13:57:02 [initandlisten] query mymobile.system.namespaces query: { options.temp: { $in: [ true, 1 ] } } ntoreturn:0 ntoskip:0 nscanned:18 keyUpdates:0  nreturned:0 reslen:20 113ms
+Wed Jan 08 13:57:02 [initandlisten] waiting for connections on port 27017
+Wed Jan 08 13:57:02 [websvr] admin web console waiting for connections on port 28017
+Wed Jan 08 18:18:36 CTRL_CLOSE_EVENT signal
+Wed Jan 08 18:18:36 [consoleTerminate] got CTRL_CLOSE_EVENT, will terminate after current cmd ends
+Wed Jan 08 18:18:36 [consoleTerminate] now exiting
+Wed Jan 08 18:18:36 dbexit: 
+Wed Jan 08 18:18:36 [consoleTerminate] shutdown: going to close listening sockets...
+Wed Jan 08 18:18:36 [consoleTerminate] closing listening socket: 508
+Wed Jan 08 18:18:36 [consoleTerminate] closing listening socket: 512
+Wed Jan 08 18:18:36 [consoleTerminate] shutdown: going to flush diaglog...
+Wed Jan 08 18:18:36 [consoleTerminate] shutdown: going to close sockets...
+Wed Jan 08 18:18:36 [consoleTerminate] shutdown: waiting for fs preallocator...
+Wed Jan 08 18:18:36 [consoleTerminate] shutdown: lock for final commit...
+Wed Jan 08 18:18:36 [consoleTerminate] shutdown: final commit...
+Wed Jan 08 18:18:36 [consoleTerminate] shutdown: closing all files...
+Wed Jan 08 18:18:36 [consoleTerminate] closeAllFiles() finished
+Wed Jan 08 18:18:36 [consoleTerminate] journalCleanup...
+Wed Jan 08 18:18:36 [consoleTerminate] removeJournalFiles
+Wed Jan 08 18:18:36 [consoleTerminate] shutdown: removing fs lock...
+Wed Jan 08 18:18:36 dbexit: really exiting now
+
+
+***** SERVER RESTARTED *****
+
+
+Wed Feb 19 15:05:37 [initandlisten] MongoDB starting : pid=3936 port=27017 dbpath=db 64-bit host=jamesmo-PC
+Wed Feb 19 15:05:37 [initandlisten] db version v2.2.0, pdfile version 4.5
+Wed Feb 19 15:05:37 [initandlisten] git version: f5e83eae9cfbec7fb7a071321928f00d1b0c5207
+Wed Feb 19 15:05:37 [initandlisten] build info: windows sys.getwindowsversion(major=6, minor=1, build=7601, platform=2, service_pack='Service Pack 1') BOOST_LIB_VERSION=1_49
+Wed Feb 19 15:05:37 [initandlisten] options: { dbpath: "db", jsonp: true, logappend: true, logpath: "logs/r0.log", oplogSize: 32, rest: true, smallfiles: true }
+Wed Feb 19 15:05:37 [initandlisten] journal dir=db/journal
+Wed Feb 19 15:05:37 [initandlisten] recover : no journal files present, no recovery needed
+Wed Feb 19 15:05:38 [initandlisten] waiting for connections on port 27017
+Wed Feb 19 15:05:38 [websvr] admin web console waiting for connections on port 28017
+Wed Feb 19 15:06:22 [initandlisten] connection accepted from 127.0.0.1:50131 #1 (1 connection now open)
+Wed Feb 19 15:06:22 [conn1] build index mymobile.menuitem { _id: 1 }
+Wed Feb 19 15:06:22 [conn1] build index done.  scanned 0 total records. 0.03 secs
+Wed Feb 19 15:06:22 [conn1] build index mymobile.menu { _id: 1 }
+Wed Feb 19 15:06:22 [conn1] build index done.  scanned 0 total records. 0.002 secs
+Wed Feb 19 15:06:22 [conn1] end connection 127.0.0.1:50131 (0 connections now open)
+Wed Feb 19 15:08:05 [initandlisten] connection accepted from 127.0.0.1:50162 #2 (1 connection now open)
+Wed Feb 19 15:08:05 [conn2] insert mymobile.my1 keyUpdates:0 locks(micros) w:86522 117ms
+Wed Feb 19 15:08:31 [FileAllocator] allocating new datafile db/mymobile.3, filling with zeroes...
+Wed Feb 19 15:08:31 [conn2] insert mymobile.my1 keyUpdates:0 locks(micros) w:278070 278ms
+Wed Feb 19 15:08:32 [conn2] insert mymobile.my1 keyUpdates:0 locks(micros) w:232173 232ms
+Wed Feb 19 15:08:32 [FileAllocator] done allocating datafile db/mymobile.3, size: 128MB,  took 0.787 secs
+Wed Feb 19 15:08:37 [conn2] insert mymobile.my1 keyUpdates:0 locks(micros) w:154834 155ms
+Wed Feb 19 15:08:38 [conn2] insert mymobile.my1 keyUpdates:0 locks(micros) w:1601 247ms
+Wed Feb 19 15:08:44 [conn2] insert mymobile.my1 keyUpdates:0 locks(micros) w:116 112ms
+Wed Feb 19 15:08:47 [conn2] insert mymobile.my1 keyUpdates:0 locks(micros) w:160416 161ms
+Wed Feb 19 15:08:49 [conn2] insert mymobile.my1 keyUpdates:0 locks(micros) w:244215 244ms
+Wed Feb 19 15:08:49 [conn2] insert mymobile.my1 keyUpdates:0 locks(micros) w:69 188ms
+Wed Feb 19 15:08:53 [conn2] insert mymobile.my1 keyUpdates:0 locks(micros) w:109970 110ms
+Wed Feb 19 15:08:59 [conn2] insert mymobile.my1 keyUpdates:0 locks(micros) w:128 187ms
+Wed Feb 19 15:09:37 [conn2] insert mymobile.my1 keyUpdates:0 locks(micros) w:175916 176ms
+Wed Feb 19 15:09:38 [conn2] insert mymobile.my1 keyUpdates:0 locks(micros) w:486794 487ms
+Wed Feb 19 15:09:38 [PeriodicTask::Runner] task: DBConnectionPool-cleaner took: 15ms
+Wed Feb 19 15:10:08 [conn2] insert mymobile.my1 keyUpdates:0 locks(micros) w:462332 463ms
+Wed Feb 19 15:10:09 [conn2] insert mymobile.my1 keyUpdates:0 locks(micros) w:718 1759ms
+Wed Feb 19 15:10:13 [FileAllocator] allocating new datafile db/mymobile.4, filling with zeroes...
+Wed Feb 19 15:10:13 [conn2] insert mymobile.my1 keyUpdates:0 locks(micros) w:70 116ms
+Wed Feb 19 15:10:14 [FileAllocator] done allocating datafile db/mymobile.4, size: 256MB,  took 1.525 secs
+Wed Feb 19 15:10:15 [conn2] insert mymobile.my1 keyUpdates:0 locks(micros) w:111 155ms
+Wed Feb 19 15:10:20 [conn2] insert mymobile.my1 keyUpdates:0 locks(micros) w:84 145ms
+Wed Feb 19 15:10:35 [conn2] insert mymobile.my1 keyUpdates:0 locks(micros) w:57 126ms
+Wed Feb 19 15:10:45 [conn2] insert mymobile.my1 keyUpdates:0 locks(micros) w:168 116ms
+Wed Feb 19 15:11:28 [conn2] end connection 127.0.0.1:50162 (0 connections now open)
+Wed Feb 19 15:20:50 CTRL_CLOSE_EVENT signal
+Wed Feb 19 15:20:50 [consoleTerminate] got CTRL_CLOSE_EVENT, will terminate after current cmd ends
+Wed Feb 19 15:20:50 [consoleTerminate] now exiting
+Wed Feb 19 15:20:50 dbexit: 
+Wed Feb 19 15:20:50 [consoleTerminate] shutdown: going to close listening sockets...
+Wed Feb 19 15:20:50 [consoleTerminate] closing listening socket: 504
+Wed Feb 19 15:20:50 [consoleTerminate] closing listening socket: 516
+Wed Feb 19 15:20:50 [consoleTerminate] shutdown: going to flush diaglog...
+Wed Feb 19 15:20:50 [consoleTerminate] shutdown: going to close sockets...
+Wed Feb 19 15:20:50 [consoleTerminate] shutdown: waiting for fs preallocator...
+Wed Feb 19 15:20:50 [consoleTerminate] shutdown: lock for final commit...
+Wed Feb 19 15:20:50 [consoleTerminate] shutdown: final commit...
+Wed Feb 19 15:20:50 [consoleTerminate] shutdown: closing all files...
+Wed Feb 19 15:20:50 [consoleTerminate] closeAllFiles() finished
+Wed Feb 19 15:20:50 [consoleTerminate] journalCleanup...
+Wed Feb 19 15:20:50 [consoleTerminate] removeJournalFiles
+Wed Feb 19 15:20:50 [consoleTerminate] shutdown: removing fs lock...
+Wed Feb 19 15:20:50 dbexit: really exiting now
+
+
+***** SERVER RESTARTED *****
+
+
+Thu Mar 13 18:06:48 [initandlisten] MongoDB starting : pid=4184 port=27017 dbpath=db 64-bit host=jamesmo-PC
+Thu Mar 13 18:06:48 [initandlisten] db version v2.2.0, pdfile version 4.5
+Thu Mar 13 18:06:48 [initandlisten] git version: f5e83eae9cfbec7fb7a071321928f00d1b0c5207
+Thu Mar 13 18:06:48 [initandlisten] build info: windows sys.getwindowsversion(major=6, minor=1, build=7601, platform=2, service_pack='Service Pack 1') BOOST_LIB_VERSION=1_49
+Thu Mar 13 18:06:48 [initandlisten] options: { dbpath: "db", jsonp: true, logappend: true, logpath: "logs/r0.log", oplogSize: 32, rest: true, smallfiles: true }
+Thu Mar 13 18:06:48 [initandlisten] journal dir=db/journal
+Thu Mar 13 18:06:48 [initandlisten] recover : no journal files present, no recovery needed
+Thu Mar 13 18:06:48 [initandlisten] waiting for connections on port 27017
+Thu Mar 13 18:06:48 [websvr] admin web console waiting for connections on port 28017
+Thu Mar 13 18:06:53 [initandlisten] connection accepted from 127.0.0.1:62996 #1 (1 connection now open)
+Thu Mar 13 18:08:31 [conn1] end connection 127.0.0.1:62996 (0 connections now open)
+Thu Mar 13 18:08:33 CTRL_CLOSE_EVENT signal
+Thu Mar 13 18:08:33 [consoleTerminate] got CTRL_CLOSE_EVENT, will terminate after current cmd ends
+Thu Mar 13 18:08:33 [consoleTerminate] now exiting
+Thu Mar 13 18:08:33 dbexit: 
+Thu Mar 13 18:08:33 [consoleTerminate] shutdown: going to close listening sockets...
+Thu Mar 13 18:08:33 [consoleTerminate] closing listening socket: 488
+Thu Mar 13 18:08:33 [consoleTerminate] closing listening socket: 500
+Thu Mar 13 18:08:33 [consoleTerminate] shutdown: going to flush diaglog...
+Thu Mar 13 18:08:33 [consoleTerminate] shutdown: going to close sockets...
+Thu Mar 13 18:08:33 [consoleTerminate] shutdown: waiting for fs preallocator...
+Thu Mar 13 18:08:33 [consoleTerminate] shutdown: lock for final commit...
+Thu Mar 13 18:08:33 [consoleTerminate] shutdown: final commit...
+Thu Mar 13 18:08:33 [consoleTerminate] shutdown: closing all files...
+Thu Mar 13 18:08:33 [consoleTerminate] closeAllFiles() finished
+Thu Mar 13 18:08:33 [consoleTerminate] journalCleanup...
+Thu Mar 13 18:08:33 [consoleTerminate] removeJournalFiles
+Thu Mar 13 18:08:33 [consoleTerminate] shutdown: removing fs lock...
+Thu Mar 13 18:08:33 dbexit: really exiting now

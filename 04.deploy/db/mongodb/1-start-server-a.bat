@@ -1,0 +1,1 @@
+call bin\mongod.exe --logpath  logs/r0.log --logappend --dbpath  db --rest  --oplogSize 32  --smallfiles --jsonp

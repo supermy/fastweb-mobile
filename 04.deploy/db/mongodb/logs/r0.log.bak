@@ -1,0 +1,646 @@
+Sun Jul 14 19:28:47 [initandlisten] MongoDB starting : pid=2724 port=27017 dbpath=db 64-bit host=jamesmo-PC
+Sun Jul 14 19:28:47 [initandlisten] db version v2.2.0, pdfile version 4.5
+Sun Jul 14 19:28:47 [initandlisten] git version: f5e83eae9cfbec7fb7a071321928f00d1b0c5207
+Sun Jul 14 19:28:47 [initandlisten] build info: windows sys.getwindowsversion(major=6, minor=1, build=7601, platform=2, service_pack='Service Pack 1') BOOST_LIB_VERSION=1_49
+Sun Jul 14 19:28:47 [initandlisten] options: { dbpath: "db", logappend: true, logpath: "logs/r0.log", oplogSize: 32, rest: true }
+Sun Jul 14 19:28:47 [initandlisten] journal dir=db/journal
+Sun Jul 14 19:28:47 [initandlisten] recover : no journal files present, no recovery needed
+Sun Jul 14 19:28:47 [initandlisten] 
+Sun Jul 14 19:28:47 [initandlisten] ERROR: Insufficient free space for journal files
+Sun Jul 14 19:28:47 [initandlisten] Please make at least 3379MB available in db/journal or use --smallfiles
+Sun Jul 14 19:28:47 [initandlisten] 
+Sun Jul 14 19:28:47 [initandlisten] exception in initAndListen: 15926 Insufficient free space for journals, terminating
+Sun Jul 14 19:28:47 dbexit: 
+Sun Jul 14 19:28:47 [initandlisten] shutdown: going to close listening sockets...
+Sun Jul 14 19:28:47 [initandlisten] shutdown: going to flush diaglog...
+Sun Jul 14 19:28:47 [initandlisten] shutdown: going to close sockets...
+Sun Jul 14 19:28:47 [initandlisten] shutdown: waiting for fs preallocator...
+Sun Jul 14 19:28:47 [initandlisten] shutdown: lock for final commit...
+Sun Jul 14 19:28:47 [initandlisten] shutdown: final commit...
+Sun Jul 14 19:28:47 [initandlisten] shutdown: closing all files...
+Sun Jul 14 19:28:47 [initandlisten] closeAllFiles() finished
+Sun Jul 14 19:28:47 [initandlisten] journalCleanup...
+Sun Jul 14 19:28:47 [initandlisten] removeJournalFiles
+Sun Jul 14 19:28:47 [initandlisten] shutdown: removing fs lock...
+Sun Jul 14 19:28:47 dbexit: really exiting now
+
+
+***** SERVER RESTARTED *****
+
+
+Sun Jul 14 19:29:47 [initandlisten] MongoDB starting : pid=2580 port=27017 dbpath=db 64-bit host=jamesmo-PC
+Sun Jul 14 19:29:47 [initandlisten] db version v2.2.0, pdfile version 4.5
+Sun Jul 14 19:29:47 [initandlisten] git version: f5e83eae9cfbec7fb7a071321928f00d1b0c5207
+Sun Jul 14 19:29:47 [initandlisten] build info: windows sys.getwindowsversion(major=6, minor=1, build=7601, platform=2, service_pack='Service Pack 1') BOOST_LIB_VERSION=1_49
+Sun Jul 14 19:29:47 [initandlisten] options: { dbpath: "db", logappend: true, logpath: "logs/r0.log", oplogSize: 32, rest: true }
+Sun Jul 14 19:29:47 [initandlisten] journal dir=db/journal
+Sun Jul 14 19:29:47 [initandlisten] recover : no journal files present, no recovery needed
+Sun Jul 14 19:29:47 [initandlisten] waiting for connections on port 27017
+Sun Jul 14 19:29:47 [websvr] admin web console waiting for connections on port 28017
+Sun Jul 14 19:30:45 [initandlisten] connection accepted from 127.0.0.1:63590 #1 (1 connection now open)
+Sun Jul 14 19:30:45 [FileAllocator] allocating new datafile db/mymobile.ns, filling with zeroes...
+Sun Jul 14 19:30:45 [FileAllocator] creating directory db/_tmp
+Sun Jul 14 19:30:45 [FileAllocator] done allocating datafile db/mymobile.ns, size: 16MB,  took 0.072 secs
+Sun Jul 14 19:30:45 [FileAllocator] allocating new datafile db/mymobile.0, filling with zeroes...
+Sun Jul 14 19:30:46 [FileAllocator] done allocating datafile db/mymobile.0, size: 64MB,  took 0.276 secs
+Sun Jul 14 19:30:46 [FileAllocator] allocating new datafile db/mymobile.1, filling with zeroes...
+Sun Jul 14 19:30:46 [conn1] build index mymobile.person { _id: 1 }
+Sun Jul 14 19:30:46 [conn1] build index done.  scanned 0 total records. 0.001 secs
+Sun Jul 14 19:30:46 [conn1] info: creating collection mymobile.person on add index
+Sun Jul 14 19:30:46 [conn1] build index mymobile.person { name: 1, age: -1 }
+Sun Jul 14 19:30:46 [conn1] build index done.  scanned 0 total records. 0 secs
+Sun Jul 14 19:30:46 [conn1] insert mymobile.system.indexes keyUpdates:0 locks(micros) w:419566 420ms
+Sun Jul 14 19:30:46 [conn1] build index mymobile.person { ssn: 1 }
+Sun Jul 14 19:30:46 [conn1] build index done.  scanned 0 total records. 0.003 secs
+Sun Jul 14 19:30:46 [conn1] build index mymobile.person { name: 1 }
+Sun Jul 14 19:30:46 [conn1] build index done.  scanned 0 total records. 0.001 secs
+Sun Jul 14 19:30:46 [FileAllocator] done allocating datafile db/mymobile.1, size: 128MB,  took 0.749 secs
+Sun Jul 14 19:40:09 [conn1] end connection 127.0.0.1:63590 (0 connections now open)
+Sun Jul 14 19:40:26 [initandlisten] connection accepted from 127.0.0.1:63866 #2 (1 connection now open)
+Sun Jul 14 20:00:29 [initandlisten] connection accepted from 127.0.0.1:64452 #3 (2 connections now open)
+Sun Jul 14 20:00:30 [conn3] end connection 127.0.0.1:64452 (1 connection now open)
+Sun Jul 14 20:03:39 [initandlisten] connection accepted from 127.0.0.1:64536 #4 (2 connections now open)
+Sun Jul 14 20:03:40 [conn4] end connection 127.0.0.1:64536 (1 connection now open)
+Sun Jul 14 20:09:52 [initandlisten] connection accepted from 127.0.0.1:64696 #5 (2 connections now open)
+Sun Jul 14 20:09:54 [conn5] end connection 127.0.0.1:64696 (1 connection now open)
+Sun Jul 14 20:11:02 [conn2] end connection 127.0.0.1:63866 (0 connections now open)
+Sun Jul 14 20:11:19 [initandlisten] connection accepted from 127.0.0.1:64732 #6 (1 connection now open)
+Sun Jul 14 20:12:04 [initandlisten] connection accepted from 127.0.0.1:64749 #7 (2 connections now open)
+Sun Jul 14 20:12:05 [conn7] end connection 127.0.0.1:64749 (1 connection now open)
+Sun Jul 14 20:13:49 [initandlisten] connection accepted from 127.0.0.1:64801 #8 (2 connections now open)
+Sun Jul 14 20:14:31 [initandlisten] connection accepted from 127.0.0.1:64819 #9 (3 connections now open)
+Sun Jul 14 20:14:44 [initandlisten] connection accepted from 127.0.0.1:64827 #10 (4 connections now open)
+Sun Jul 14 20:14:45 [conn10] end connection 127.0.0.1:64827 (3 connections now open)
+Sun Jul 14 20:20:23 [conn6] end connection 127.0.0.1:64732 (2 connections now open)
+Sun Jul 14 20:20:23 [conn8] end connection 127.0.0.1:64801 (1 connection now open)
+Sun Jul 14 20:20:23 [conn9] end connection 127.0.0.1:64819 (0 connections now open)
+Sun Jul 14 20:20:37 [initandlisten] connection accepted from 127.0.0.1:64986 #11 (1 connection now open)
+Sun Jul 14 20:20:43 [initandlisten] connection accepted from 127.0.0.1:64994 #12 (2 connections now open)
+Sun Jul 14 20:20:46 [initandlisten] connection accepted from 127.0.0.1:64996 #13 (3 connections now open)
+Sun Jul 14 20:27:55 [conn13] end connection 127.0.0.1:64996 (2 connections now open)
+Sun Jul 14 20:27:55 [conn12] end connection 127.0.0.1:64994 (1 connection now open)
+Sun Jul 14 20:27:55 [conn11] end connection 127.0.0.1:64986 (0 connections now open)
+Sun Jul 14 21:55:54 [initandlisten] connection accepted from 127.0.0.1:52447 #14 (1 connection now open)
+Sun Jul 14 21:56:08 [initandlisten] connection accepted from 127.0.0.1:52450 #15 (2 connections now open)
+Sun Jul 14 21:56:10 [initandlisten] connection accepted from 127.0.0.1:52453 #16 (3 connections now open)
+Sun Jul 14 21:58:03 [conn14] end connection 127.0.0.1:52447 (2 connections now open)
+Sun Jul 14 21:58:03 [conn15] end connection 127.0.0.1:52450 (1 connection now open)
+Sun Jul 14 21:58:03 [conn16] end connection 127.0.0.1:52453 (0 connections now open)
+Sun Jul 14 22:01:23 [initandlisten] connection accepted from 127.0.0.1:52999 #17 (1 connection now open)
+Sun Jul 14 22:01:34 [initandlisten] connection accepted from 127.0.0.1:53003 #18 (2 connections now open)
+Sun Jul 14 22:01:36 [initandlisten] connection accepted from 127.0.0.1:53006 #19 (3 connections now open)
+Sun Jul 14 22:01:59 [conn17] end connection 127.0.0.1:52999 (2 connections now open)
+Sun Jul 14 22:01:59 [conn18] end connection 127.0.0.1:53003 (1 connection now open)
+Sun Jul 14 22:01:59 [conn19] end connection 127.0.0.1:53006 (0 connections now open)
+Sun Jul 14 22:02:46 [initandlisten] connection accepted from 127.0.0.1:53043 #20 (1 connection now open)
+Sun Jul 14 22:02:50 [initandlisten] connection accepted from 127.0.0.1:53059 #21 (2 connections now open)
+Sun Jul 14 22:02:52 [initandlisten] connection accepted from 127.0.0.1:53062 #22 (3 connections now open)
+Sun Jul 14 22:02:56 [conn20] end connection 127.0.0.1:53043 (2 connections now open)
+Sun Jul 14 22:02:56 [conn22] end connection 127.0.0.1:53062 (1 connection now open)
+Sun Jul 14 22:02:56 [conn21] end connection 127.0.0.1:53059 (0 connections now open)
+Sun Jul 14 22:05:14 [initandlisten] connection accepted from 127.0.0.1:53098 #23 (1 connection now open)
+Sun Jul 14 22:05:24 [initandlisten] connection accepted from 127.0.0.1:53104 #24 (2 connections now open)
+Sun Jul 14 22:05:25 [initandlisten] connection accepted from 127.0.0.1:53106 #25 (3 connections now open)
+Sun Jul 14 22:13:35 [conn23] end connection 127.0.0.1:53098 (2 connections now open)
+Sun Jul 14 22:13:35 [conn24] end connection 127.0.0.1:53104 (1 connection now open)
+Sun Jul 14 22:13:35 [conn25] end connection 127.0.0.1:53106 (0 connections now open)
+Sun Jul 14 22:13:47 [initandlisten] connection accepted from 127.0.0.1:53189 #26 (1 connection now open)
+Sun Jul 14 22:14:01 [initandlisten] connection accepted from 127.0.0.1:53195 #27 (2 connections now open)
+Sun Jul 14 22:14:02 [initandlisten] connection accepted from 127.0.0.1:53197 #28 (3 connections now open)
+Sun Jul 14 22:15:01 [conn26] end connection 127.0.0.1:53189 (2 connections now open)
+Sun Jul 14 22:15:01 [conn27] end connection 127.0.0.1:53195 (1 connection now open)
+Sun Jul 14 22:15:01 [conn28] end connection 127.0.0.1:53197 (0 connections now open)
+Sun Jul 14 22:15:35 [initandlisten] connection accepted from 127.0.0.1:53262 #29 (1 connection now open)
+Sun Jul 14 22:15:51 [initandlisten] connection accepted from 127.0.0.1:53285 #30 (2 connections now open)
+Sun Jul 14 22:15:53 [initandlisten] connection accepted from 127.0.0.1:53288 #31 (3 connections now open)
+Sun Jul 14 22:15:57 [conn31] end connection 127.0.0.1:53288 (2 connections now open)
+Sun Jul 14 22:15:57 [conn30] end connection 127.0.0.1:53285 (1 connection now open)
+Sun Jul 14 22:15:57 [conn29] end connection 127.0.0.1:53262 (0 connections now open)
+Sun Jul 14 22:38:25 [initandlisten] connection accepted from 127.0.0.1:54804 #32 (1 connection now open)
+Sun Jul 14 22:38:25 [conn32] end connection 127.0.0.1:54804 (0 connections now open)
+Sun Jul 14 22:44:09 [initandlisten] connection accepted from 127.0.0.1:55157 #33 (1 connection now open)
+Sun Jul 14 22:44:21 [initandlisten] connection accepted from 127.0.0.1:55161 #34 (2 connections now open)
+Sun Jul 14 22:44:22 [initandlisten] connection accepted from 127.0.0.1:55165 #35 (3 connections now open)
+Sun Jul 14 22:45:45 [conn33] end connection 127.0.0.1:55157 (2 connections now open)
+Sun Jul 14 22:45:45 [conn34] end connection 127.0.0.1:55161 (1 connection now open)
+Sun Jul 14 22:45:45 [conn35] end connection 127.0.0.1:55165 (0 connections now open)
+Sun Jul 14 22:45:59 [initandlisten] connection accepted from 127.0.0.1:55181 #36 (1 connection now open)
+Sun Jul 14 22:46:29 [initandlisten] connection accepted from 127.0.0.1:55221 #37 (2 connections now open)
+Sun Jul 14 22:46:31 [initandlisten] connection accepted from 127.0.0.1:55223 #38 (3 connections now open)
+Sun Jul 14 22:50:02 [conn36] end connection 127.0.0.1:55181 (2 connections now open)
+Sun Jul 14 22:50:02 [conn38] end connection 127.0.0.1:55223 (1 connection now open)
+Sun Jul 14 22:50:02 [conn37] end connection 127.0.0.1:55221 (0 connections now open)
+Sun Jul 14 22:50:54 [initandlisten] connection accepted from 127.0.0.1:55338 #39 (1 connection now open)
+Sun Jul 14 22:50:59 [initandlisten] connection accepted from 127.0.0.1:55343 #40 (2 connections now open)
+Sun Jul 14 22:51:02 [initandlisten] connection accepted from 127.0.0.1:55345 #41 (3 connections now open)
+Sun Jul 14 22:51:12 [conn39] end connection 127.0.0.1:55338 (2 connections now open)
+Sun Jul 14 22:51:12 [conn40] end connection 127.0.0.1:55343 (1 connection now open)
+Sun Jul 14 22:51:12 [conn41] end connection 127.0.0.1:55345 (0 connections now open)
+Sun Jul 14 22:52:06 [initandlisten] connection accepted from 127.0.0.1:55360 #42 (1 connection now open)
+Sun Jul 14 22:52:12 [initandlisten] connection accepted from 127.0.0.1:55377 #43 (2 connections now open)
+Sun Jul 14 22:52:13 [initandlisten] connection accepted from 127.0.0.1:55379 #44 (3 connections now open)
+Sun Jul 14 22:54:31 [conn44] end connection 127.0.0.1:55379 (2 connections now open)
+Sun Jul 14 22:54:31 [conn42] end connection 127.0.0.1:55360 (1 connection now open)
+Sun Jul 14 22:54:31 [conn43] end connection 127.0.0.1:55377 (0 connections now open)
+Sun Jul 14 22:55:22 [initandlisten] connection accepted from 127.0.0.1:55408 #45 (1 connection now open)
+Sun Jul 14 22:55:35 [initandlisten] connection accepted from 127.0.0.1:55414 #46 (2 connections now open)
+Sun Jul 14 22:55:56 [initandlisten] connection accepted from 127.0.0.1:55432 #47 (3 connections now open)
+Sun Jul 14 22:57:19 [conn45] end connection 127.0.0.1:55408 (2 connections now open)
+Sun Jul 14 22:57:19 [conn47] end connection 127.0.0.1:55432 (1 connection now open)
+Sun Jul 14 22:57:19 [conn46] end connection 127.0.0.1:55414 (0 connections now open)
+Sun Jul 14 22:57:43 [initandlisten] connection accepted from 127.0.0.1:55447 #48 (1 connection now open)
+Sun Jul 14 22:57:48 [initandlisten] connection accepted from 127.0.0.1:55450 #49 (2 connections now open)
+Sun Jul 14 22:57:51 [initandlisten] connection accepted from 127.0.0.1:55452 #50 (3 connections now open)
+Sun Jul 14 22:59:05 [conn48] end connection 127.0.0.1:55447 (2 connections now open)
+Sun Jul 14 22:59:05 [conn50] end connection 127.0.0.1:55452 (1 connection now open)
+Sun Jul 14 22:59:05 [conn49] end connection 127.0.0.1:55450 (1 connection now open)
+Sun Jul 14 22:59:30 [initandlisten] connection accepted from 127.0.0.1:55475 #51 (1 connection now open)
+Sun Jul 14 22:59:30 [conn51] build index mymobile.menuitem { _id: 1 }
+Sun Jul 14 22:59:30 [conn51] build index done.  scanned 0 total records. 0.017 secs
+Sun Jul 14 22:59:30 [conn51] build index mymobile.menu { _id: 1 }
+Sun Jul 14 22:59:31 [conn51] build index done.  scanned 0 total records. 0.001 secs
+Sun Jul 14 22:59:31 [conn51] end connection 127.0.0.1:55475 (0 connections now open)
+Sun Jul 14 22:59:46 [initandlisten] connection accepted from 127.0.0.1:55477 #52 (1 connection now open)
+Sun Jul 14 22:59:51 [initandlisten] connection accepted from 127.0.0.1:55481 #53 (2 connections now open)
+Sun Jul 14 23:00:10 [conn52] end connection 127.0.0.1:55477 (1 connection now open)
+Sun Jul 14 23:00:10 [conn53] end connection 127.0.0.1:55481 (1 connection now open)
+Sun Jul 14 23:00:23 [initandlisten] connection accepted from 127.0.0.1:55491 #54 (1 connection now open)
+Sun Jul 14 23:00:30 [initandlisten] connection accepted from 127.0.0.1:55498 #55 (2 connections now open)
+Sun Jul 14 23:00:35 [conn54] end connection 127.0.0.1:55491 (1 connection now open)
+Sun Jul 14 23:00:35 [conn55] end connection 127.0.0.1:55498 (0 connections now open)
+Sun Jul 14 23:01:01 [initandlisten] connection accepted from 127.0.0.1:55509 #56 (1 connection now open)
+Sun Jul 14 23:01:05 [initandlisten] connection accepted from 127.0.0.1:55512 #57 (2 connections now open)
+Sun Jul 14 23:01:23 [conn56] end connection 127.0.0.1:55509 (1 connection now open)
+Sun Jul 14 23:01:23 [conn57] end connection 127.0.0.1:55512 (0 connections now open)
+Sun Jul 14 23:01:37 [initandlisten] connection accepted from 127.0.0.1:55518 #58 (1 connection now open)
+Sun Jul 14 23:01:42 [initandlisten] connection accepted from 127.0.0.1:55521 #59 (2 connections now open)
+Sun Jul 14 23:01:48 [initandlisten] connection accepted from 127.0.0.1:55523 #60 (3 connections now open)
+Sun Jul 14 23:01:50 [conn58] end connection 127.0.0.1:55518 (2 connections now open)
+Sun Jul 14 23:01:50 [conn60] end connection 127.0.0.1:55523 (1 connection now open)
+Sun Jul 14 23:01:50 [conn59] end connection 127.0.0.1:55521 (0 connections now open)
+Sun Jul 14 23:02:13 [initandlisten] connection accepted from 127.0.0.1:55532 #61 (1 connection now open)
+Sun Jul 14 23:02:18 [initandlisten] connection accepted from 127.0.0.1:55536 #62 (2 connections now open)
+Sun Jul 14 23:02:33 [conn61] end connection 127.0.0.1:55532 (1 connection now open)
+Sun Jul 14 23:02:33 [conn62] end connection 127.0.0.1:55536 (0 connections now open)
+Sun Jul 14 23:02:46 [initandlisten] connection accepted from 127.0.0.1:55542 #63 (1 connection now open)
+Sun Jul 14 23:02:51 [initandlisten] connection accepted from 127.0.0.1:55545 #64 (2 connections now open)
+Sun Jul 14 23:04:44 [conn63] end connection 127.0.0.1:55542 (1 connection now open)
+Sun Jul 14 23:04:44 [conn64] end connection 127.0.0.1:55545 (0 connections now open)
+Sun Jul 14 23:08:04 [initandlisten] connection accepted from 127.0.0.1:55597 #65 (1 connection now open)
+Sun Jul 14 23:08:09 [initandlisten] connection accepted from 127.0.0.1:55600 #66 (2 connections now open)
+Sun Jul 14 23:08:23 [initandlisten] connection accepted from 127.0.0.1:55615 #67 (3 connections now open)
+Sun Jul 14 23:09:31 [initandlisten] connection accepted from 127.0.0.1:55627 #68 (4 connections now open)
+Sun Jul 14 23:09:33 [conn68] end connection 127.0.0.1:55627 (3 connections now open)
+Sun Jul 14 23:10:27 [initandlisten] connection accepted from 127.0.0.1:55700 #69 (4 connections now open)
+Sun Jul 14 23:10:29 [conn69] end connection 127.0.0.1:55700 (3 connections now open)
+Sun Jul 14 23:11:33 [initandlisten] connection accepted from 127.0.0.1:55715 #70 (4 connections now open)
+Sun Jul 14 23:11:34 [conn70] end connection 127.0.0.1:55715 (3 connections now open)
+Sun Jul 14 23:12:31 [initandlisten] connection accepted from 127.0.0.1:55723 #71 (4 connections now open)
+Sun Jul 14 23:12:32 [conn71] end connection 127.0.0.1:55723 (3 connections now open)
+Sun Jul 14 23:13:39 [initandlisten] connection accepted from 127.0.0.1:55731 #72 (4 connections now open)
+Sun Jul 14 23:13:40 [conn72] end connection 127.0.0.1:55731 (3 connections now open)
+Sun Jul 14 23:14:15 [initandlisten] connection accepted from 127.0.0.1:55737 #73 (4 connections now open)
+Sun Jul 14 23:14:16 [conn73] end connection 127.0.0.1:55737 (3 connections now open)
+Sun Jul 14 23:14:32 [initandlisten] connection accepted from 127.0.0.1:55741 #74 (4 connections now open)
+Sun Jul 14 23:15:46 [initandlisten] connection accepted from 127.0.0.1:55754 #75 (5 connections now open)
+Sun Jul 14 23:15:47 [conn75] end connection 127.0.0.1:55754 (4 connections now open)
+Sun Jul 14 23:17:25 [initandlisten] connection accepted from 127.0.0.1:55764 #76 (5 connections now open)
+Sun Jul 14 23:17:26 [conn76] end connection 127.0.0.1:55764 (4 connections now open)
+Sun Jul 14 23:32:03 [initandlisten] connection accepted from 127.0.0.1:55835 #77 (5 connections now open)
+Sun Jul 14 23:32:04 [conn77] end connection 127.0.0.1:55835 (4 connections now open)
+Sun Jul 14 23:34:47 [conn65] end connection 127.0.0.1:55597 (3 connections now open)
+Sun Jul 14 23:34:47 [conn67] end connection 127.0.0.1:55615 (2 connections now open)
+Sun Jul 14 23:34:47 [conn66] end connection 127.0.0.1:55600 (1 connection now open)
+Sun Jul 14 23:35:21 [initandlisten] connection accepted from 127.0.0.1:55852 #78 (2 connections now open)
+Sun Jul 14 23:35:40 [initandlisten] connection accepted from 127.0.0.1:55858 #79 (3 connections now open)
+Sun Jul 14 23:35:41 [initandlisten] connection accepted from 127.0.0.1:55860 #80 (4 connections now open)
+Sun Jul 14 23:35:41 [conn79] end connection 127.0.0.1:55858 (3 connections now open)
+Sun Jul 14 23:41:01 [conn78] end connection 127.0.0.1:55852 (2 connections now open)
+Sun Jul 14 23:41:01 [conn80] end connection 127.0.0.1:55860 (1 connection now open)
+Sun Jul 14 23:41:29 [initandlisten] connection accepted from 127.0.0.1:55891 #81 (2 connections now open)
+Sun Jul 14 23:42:06 [initandlisten] connection accepted from 127.0.0.1:55898 #82 (3 connections now open)
+Sun Jul 14 23:42:07 [initandlisten] connection accepted from 127.0.0.1:55900 #83 (4 connections now open)
+Sun Jul 14 23:42:08 [conn82] end connection 127.0.0.1:55898 (3 connections now open)
+Sun Jul 14 23:50:44 [initandlisten] connection accepted from 127.0.0.1:55970 #84 (4 connections now open)
+Sun Jul 14 23:50:45 [conn84] end connection 127.0.0.1:55970 (3 connections now open)
+Sun Jul 14 23:56:10 [initandlisten] connection accepted from 127.0.0.1:56087 #85 (4 connections now open)
+Sun Jul 14 23:56:11 [conn85] end connection 127.0.0.1:56087 (3 connections now open)
+Sun Jul 14 23:56:25 [conn81] end connection 127.0.0.1:55891 (2 connections now open)
+Sun Jul 14 23:56:25 [conn83] end connection 127.0.0.1:55900 (1 connection now open)
+Sun Jul 14 23:56:39 [initandlisten] connection accepted from 127.0.0.1:56096 #86 (2 connections now open)
+Sun Jul 14 23:57:13 [conn86] end connection 127.0.0.1:56096 (1 connection now open)
+Sun Jul 14 23:57:28 [initandlisten] connection accepted from 127.0.0.1:56105 #87 (2 connections now open)
+Sun Jul 14 23:59:44 [initandlisten] connection accepted from 127.0.0.1:56124 #88 (3 connections now open)
+Sun Jul 14 23:59:45 [initandlisten] connection accepted from 127.0.0.1:56126 #89 (4 connections now open)
+Sun Jul 14 23:59:45 [initandlisten] connection accepted from 127.0.0.1:56129 #90 (5 connections now open)
+Sun Jul 14 23:59:46 [conn88] end connection 127.0.0.1:56124 (4 connections now open)
+Mon Jul 15 00:16:04 [conn74] end connection 127.0.0.1:55741 (3 connections now open)
+Mon Jul 15 00:16:07 [conn89] end connection 127.0.0.1:56126 (2 connections now open)
+Mon Jul 15 00:16:07 [conn87] end connection 127.0.0.1:56105 (1 connection now open)
+Mon Jul 15 00:16:07 [conn90] end connection 127.0.0.1:56129 (0 connections now open)
+Mon Jul 15 00:24:31 CTRL_CLOSE_EVENT signal
+Mon Jul 15 00:24:31 [consoleTerminate] got CTRL_CLOSE_EVENT, will terminate after current cmd ends
+Mon Jul 15 00:24:31 [consoleTerminate] now exiting
+Mon Jul 15 00:24:31 dbexit: 
+Mon Jul 15 00:24:31 [consoleTerminate] shutdown: going to close listening sockets...
+Mon Jul 15 00:24:31 [consoleTerminate] closing listening socket: 496
+Mon Jul 15 00:24:31 [consoleTerminate] closing listening socket: 512
+Mon Jul 15 00:24:31 [consoleTerminate] shutdown: going to flush diaglog...
+Mon Jul 15 00:24:31 [consoleTerminate] shutdown: going to close sockets...
+Mon Jul 15 00:24:31 [consoleTerminate] shutdown: waiting for fs preallocator...
+Mon Jul 15 00:24:31 [consoleTerminate] shutdown: lock for final commit...
+Mon Jul 15 00:24:31 [consoleTerminate] shutdown: final commit...
+Mon Jul 15 00:24:31 [consoleTerminate] shutdown: closing all files...
+Mon Jul 15 00:24:31 [consoleTerminate] closeAllFiles() finished
+Mon Jul 15 00:24:31 [consoleTerminate] journalCleanup...
+Mon Jul 15 00:24:31 [consoleTerminate] removeJournalFiles
+Mon Jul 15 00:24:31 [consoleTerminate] shutdown: removing fs lock...
+Mon Jul 15 00:24:31 dbexit: really exiting now
+
+
+***** SERVER RESTARTED *****
+
+
+Wed Jul 17 14:00:23 [initandlisten] MongoDB starting : pid=10092 port=27017 dbpath=db 64-bit host=jamesmo-PC
+Wed Jul 17 14:00:23 [initandlisten] db version v2.2.0, pdfile version 4.5
+Wed Jul 17 14:00:23 [initandlisten] git version: f5e83eae9cfbec7fb7a071321928f00d1b0c5207
+Wed Jul 17 14:00:23 [initandlisten] build info: windows sys.getwindowsversion(major=6, minor=1, build=7601, platform=2, service_pack='Service Pack 1') BOOST_LIB_VERSION=1_49
+Wed Jul 17 14:00:23 [initandlisten] options: { dbpath: "db", logappend: true, logpath: "logs/r0.log", oplogSize: 32, rest: true }
+Wed Jul 17 14:00:23 [initandlisten] journal dir=db/journal
+Wed Jul 17 14:00:23 [initandlisten] recover : no journal files present, no recovery needed
+Wed Jul 17 14:00:25 [initandlisten] preallocateIsFaster=true 30.4
+Wed Jul 17 14:00:25 [initandlisten] preallocateIsFaster=true 6.86
+Wed Jul 17 14:00:27 [initandlisten] preallocateIsFaster check took 3.586 secs
+Wed Jul 17 14:00:27 [initandlisten] query mymobile.system.namespaces query: { options.temp: { $in: [ true, 1 ] } } ntoreturn:0 ntoskip:0 nscanned:10 keyUpdates:0  nreturned:0 reslen:20 160ms
+Wed Jul 17 14:00:28 [websvr] admin web console waiting for connections on port 28017
+Wed Jul 17 14:00:28 [initandlisten] waiting for connections on port 27017
+Wed Jul 17 14:02:13 [initandlisten] connection accepted from 127.0.0.1:50630 #1 (1 connection now open)
+Wed Jul 17 14:03:39 [initandlisten] connection accepted from 127.0.0.1:50638 #2 (2 connections now open)
+Wed Jul 17 14:04:05 [conn2] query mymobile.system.namespaces ntoreturn:0 ntoskip:0 nscanned:10 keyUpdates:0 locks(micros) r:1136801 nreturned:10 reslen:376 1137ms
+Wed Jul 17 14:04:21 [conn2] remove mymobile.menu keyUpdates:0 numYields: 1 locks(micros) w:851499 1466ms
+Wed Jul 17 16:47:28 [PeriodicTask::Runner] task: WriteBackManager::cleaner took: 4ms
+Wed Jul 17 18:11:42 [conn1] end connection 127.0.0.1:50630 (1 connection now open)
+Wed Jul 17 18:11:43 CTRL_CLOSE_EVENT signal
+Wed Jul 17 18:11:43 [consoleTerminate] got CTRL_CLOSE_EVENT, will terminate after current cmd ends
+Wed Jul 17 18:11:43 [consoleTerminate] now exiting
+Wed Jul 17 18:11:43 dbexit: 
+Wed Jul 17 18:11:43 [consoleTerminate] shutdown: going to close listening sockets...
+Wed Jul 17 18:11:43 [consoleTerminate] closing listening socket: 516
+Wed Jul 17 18:11:43 [consoleTerminate] closing listening socket: 524
+Wed Jul 17 18:11:43 [consoleTerminate] shutdown: going to flush diaglog...
+Wed Jul 17 18:11:43 [consoleTerminate] shutdown: going to close sockets...
+Wed Jul 17 18:11:43 [consoleTerminate] shutdown: waiting for fs preallocator...
+Wed Jul 17 18:11:43 [consoleTerminate] shutdown: lock for final commit...
+Wed Jul 17 18:11:43 [consoleTerminate] shutdown: final commit...
+Wed Jul 17 18:11:43 [conn2] end connection 127.0.0.1:50638 (0 connections now open)
+Wed Jul 17 18:11:43 [consoleTerminate] shutdown: closing all files...
+Wed Jul 17 18:11:43 [consoleTerminate] closeAllFiles() finished
+Wed Jul 17 18:11:43 [consoleTerminate] journalCleanup...
+Wed Jul 17 18:11:43 [consoleTerminate] removeJournalFiles
+Wed Jul 17 18:11:43 [consoleTerminate] shutdown: removing fs lock...
+Wed Jul 17 18:11:43 dbexit: really exiting now
+
+
+***** SERVER RESTARTED *****
+
+
+Thu Jul 18 16:33:07 [initandlisten] MongoDB starting : pid=4216 port=27017 dbpath=db 64-bit host=jamesmo-PC
+Thu Jul 18 16:33:07 [initandlisten] db version v2.2.0, pdfile version 4.5
+Thu Jul 18 16:33:07 [initandlisten] git version: f5e83eae9cfbec7fb7a071321928f00d1b0c5207
+Thu Jul 18 16:33:07 [initandlisten] build info: windows sys.getwindowsversion(major=6, minor=1, build=7601, platform=2, service_pack='Service Pack 1') BOOST_LIB_VERSION=1_49
+Thu Jul 18 16:33:07 [initandlisten] options: { dbpath: "db", logappend: true, logpath: "logs/r0.log", oplogSize: 32, rest: true }
+Thu Jul 18 16:33:07 [initandlisten] journal dir=db/journal
+Thu Jul 18 16:33:07 [initandlisten] recover : no journal files present, no recovery needed
+Thu Jul 18 16:33:08 [initandlisten] waiting for connections on port 27017
+Thu Jul 18 16:33:08 [websvr] admin web console waiting for connections on port 28017
+Thu Jul 18 16:39:26 [initandlisten] connection accepted from 127.0.0.1:57820 #1 (1 connection now open)
+Thu Jul 18 16:39:46 [initandlisten] connection accepted from 127.0.0.1:57824 #2 (2 connections now open)
+Thu Jul 18 16:40:05 [initandlisten] connection accepted from 127.0.0.1:57827 #3 (3 connections now open)
+Thu Jul 18 16:42:21 [initandlisten] connection accepted from 127.0.0.1:57849 #4 (4 connections now open)
+Thu Jul 18 17:05:10 [initandlisten] connection accepted from 127.0.0.1:58193 #5 (5 connections now open)
+Thu Jul 18 17:15:58 [conn1] end connection 127.0.0.1:57820 (4 connections now open)
+Thu Jul 18 17:15:58 [conn4] end connection 127.0.0.1:57849 (3 connections now open)
+Thu Jul 18 17:15:58 [conn2] end connection 127.0.0.1:57824 (2 connections now open)
+Thu Jul 18 17:15:58 [conn5] end connection 127.0.0.1:58193 (1 connection now open)
+Thu Jul 18 17:16:15 [initandlisten] connection accepted from 127.0.0.1:58331 #6 (2 connections now open)
+Thu Jul 18 17:29:45 [initandlisten] connection accepted from 127.0.0.1:58536 #7 (3 connections now open)
+Thu Jul 18 17:53:43 [initandlisten] connection accepted from 127.0.0.1:58873 #8 (4 connections now open)
+Thu Jul 18 17:59:18 [conn7] end connection 127.0.0.1:58536 (3 connections now open)
+Thu Jul 18 17:59:18 [conn8] end connection 127.0.0.1:58873 (2 connections now open)
+Thu Jul 18 17:59:18 [conn6] end connection 127.0.0.1:58331 (1 connection now open)
+Thu Jul 18 17:59:32 [initandlisten] connection accepted from 127.0.0.1:58915 #9 (2 connections now open)
+Thu Jul 18 18:00:07 [initandlisten] connection accepted from 127.0.0.1:58924 #10 (3 connections now open)
+Thu Jul 18 18:05:45 [initandlisten] connection accepted from 127.0.0.1:58979 #11 (4 connections now open)
+Thu Jul 18 18:14:45 [conn9] end connection 127.0.0.1:58915 (3 connections now open)
+Thu Jul 18 18:14:45 [conn11] end connection 127.0.0.1:58979 (2 connections now open)
+Thu Jul 18 18:14:45 [conn10] end connection 127.0.0.1:58924 (1 connection now open)
+Thu Jul 18 18:15:00 [initandlisten] connection accepted from 127.0.0.1:59050 #12 (2 connections now open)
+Thu Jul 18 19:41:56 [initandlisten] connection accepted from 127.0.0.1:59595 #13 (3 connections now open)
+Thu Jul 18 19:42:09 [conn13] end connection 127.0.0.1:59595 (2 connections now open)
+Thu Jul 18 19:42:09 [conn12] end connection 127.0.0.1:59050 (2 connections now open)
+Thu Jul 18 19:42:10 [conn3] end connection 127.0.0.1:57827 (0 connections now open)
+Thu Jul 18 19:42:12 CTRL_CLOSE_EVENT signal
+Thu Jul 18 19:42:12 [consoleTerminate] got CTRL_CLOSE_EVENT, will terminate after current cmd ends
+Thu Jul 18 19:42:12 [consoleTerminate] now exiting
+Thu Jul 18 19:42:12 dbexit: 
+Thu Jul 18 19:42:12 [consoleTerminate] shutdown: going to close listening sockets...
+Thu Jul 18 19:42:12 [consoleTerminate] closing listening socket: 496
+Thu Jul 18 19:42:12 [consoleTerminate] closing listening socket: 512
+Thu Jul 18 19:42:12 [consoleTerminate] shutdown: going to flush diaglog...
+Thu Jul 18 19:42:12 [consoleTerminate] shutdown: going to close sockets...
+Thu Jul 18 19:42:12 [consoleTerminate] shutdown: waiting for fs preallocator...
+Thu Jul 18 19:42:12 [consoleTerminate] shutdown: lock for final commit...
+Thu Jul 18 19:42:12 [consoleTerminate] shutdown: final commit...
+Thu Jul 18 19:42:12 [consoleTerminate] shutdown: closing all files...
+Thu Jul 18 19:42:12 [consoleTerminate] closeAllFiles() finished
+Thu Jul 18 19:42:12 [consoleTerminate] journalCleanup...
+Thu Jul 18 19:42:12 [consoleTerminate] removeJournalFiles
+Thu Jul 18 19:42:12 [consoleTerminate] shutdown: removing fs lock...
+Thu Jul 18 19:42:12 dbexit: really exiting now
+
+
+***** SERVER RESTARTED *****
+
+
+Fri Jul 19 22:01:26 [initandlisten] MongoDB starting : pid=852 port=27017 dbpath=db 64-bit host=jamesmo-PC
+Fri Jul 19 22:01:26 [initandlisten] db version v2.2.0, pdfile version 4.5
+Fri Jul 19 22:01:26 [initandlisten] git version: f5e83eae9cfbec7fb7a071321928f00d1b0c5207
+Fri Jul 19 22:01:26 [initandlisten] build info: windows sys.getwindowsversion(major=6, minor=1, build=7601, platform=2, service_pack='Service Pack 1') BOOST_LIB_VERSION=1_49
+Fri Jul 19 22:01:26 [initandlisten] options: { dbpath: "db", logappend: true, logpath: "logs/r0.log", oplogSize: 32, rest: true }
+Fri Jul 19 22:01:26 [initandlisten] journal dir=db/journal
+Fri Jul 19 22:01:26 [initandlisten] recover : no journal files present, no recovery needed
+Fri Jul 19 22:01:26 [initandlisten] preallocateIsFaster=true 5.3
+Fri Jul 19 22:01:26 [initandlisten] waiting for connections on port 27017
+Fri Jul 19 22:01:27 [websvr] admin web console waiting for connections on port 28017
+Fri Jul 19 22:02:34 [initandlisten] connection accepted from 127.0.0.1:63581 #1 (1 connection now open)
+Fri Jul 19 22:09:23 [initandlisten] connection accepted from 127.0.0.1:63592 #2 (2 connections now open)
+Fri Jul 19 22:09:47 [initandlisten] connection accepted from 127.0.0.1:63595 #3 (3 connections now open)
+Fri Jul 19 22:25:59 [initandlisten] connection accepted from 127.0.0.1:63734 #4 (4 connections now open)
+Fri Jul 19 22:32:42 [initandlisten] connection accepted from 127.0.0.1:63760 #5 (5 connections now open)
+Fri Jul 19 22:43:24 [conn1] end connection 127.0.0.1:63581 (4 connections now open)
+Fri Jul 19 22:43:24 [conn4] end connection 127.0.0.1:63734 (3 connections now open)
+Fri Jul 19 22:43:24 [conn2] end connection 127.0.0.1:63592 (2 connections now open)
+Fri Jul 19 22:43:24 [conn5] end connection 127.0.0.1:63760 (1 connection now open)
+Fri Jul 19 22:44:10 [initandlisten] connection accepted from 127.0.0.1:63786 #6 (2 connections now open)
+Fri Jul 19 23:09:26 [initandlisten] connection accepted from 127.0.0.1:63828 #7 (3 connections now open)
+Sat Jul 20 12:25:27 [conn3] end connection 127.0.0.1:63595 (2 connections now open)
+Sat Jul 20 12:25:29 [conn6] end connection 127.0.0.1:63786 (1 connection now open)
+Sat Jul 20 12:25:29 [conn7] end connection 127.0.0.1:63828 (0 connections now open)
+
+
+***** SERVER RESTARTED *****
+
+
+Tue Jul 23 11:24:18 [initandlisten] MongoDB starting : pid=5500 port=27017 dbpath=db 64-bit host=jamesmo-PC
+Tue Jul 23 11:24:18 [initandlisten] db version v2.2.0, pdfile version 4.5
+Tue Jul 23 11:24:18 [initandlisten] git version: f5e83eae9cfbec7fb7a071321928f00d1b0c5207
+Tue Jul 23 11:24:18 [initandlisten] build info: windows sys.getwindowsversion(major=6, minor=1, build=7601, platform=2, service_pack='Service Pack 1') BOOST_LIB_VERSION=1_49
+Tue Jul 23 11:24:18 [initandlisten] options: { dbpath: "db", logappend: true, logpath: "logs/r0.log", oplogSize: 32, rest: true }
+Tue Jul 23 11:24:18 [initandlisten] journal dir=db/journal
+Tue Jul 23 11:24:18 [initandlisten] recover begin
+Tue Jul 23 11:24:18 [initandlisten] recover lsn: 4023376
+Tue Jul 23 11:24:18 [initandlisten] recover db/journal/j._0
+Tue Jul 23 11:24:18 [initandlisten] recover skipping application of section seq:412811 < lsn:4023376
+Tue Jul 23 11:24:18 [initandlisten] recover skipping application of section seq:471832 < lsn:4023376
+Tue Jul 23 11:24:18 [initandlisten] recover skipping application of section seq:1415033 < lsn:4023376
+Tue Jul 23 11:24:18 [initandlisten] recover skipping application of section seq:1532474 < lsn:4023376
+Tue Jul 23 11:24:18 [initandlisten] recover skipping application of section seq:1710544 < lsn:4023376
+Tue Jul 23 11:24:18 [initandlisten] recover skipping application of section seq:1828604 < lsn:4023376
+Tue Jul 23 11:24:18 [initandlisten] recover skipping application of section seq:2239175 < lsn:4023376
+Tue Jul 23 11:24:18 [initandlisten] recover cleaning up
+Tue Jul 23 11:24:18 [initandlisten] removeJournalFiles
+Tue Jul 23 11:24:18 [initandlisten] recover done
+Tue Jul 23 11:24:18 [initandlisten] preallocateIsFaster=true 5.36
+Tue Jul 23 11:24:20 [initandlisten] waiting for connections on port 27017
+Tue Jul 23 11:24:20 [websvr] admin web console waiting for connections on port 28017
+Tue Jul 23 11:25:39 [initandlisten] connection accepted from 127.0.0.1:51763 #1 (1 connection now open)
+Tue Jul 23 11:26:52 [conn1] end connection 127.0.0.1:51763 (0 connections now open)
+Tue Jul 23 11:31:19 [initandlisten] connection accepted from 127.0.0.1:51945 #2 (1 connection now open)
+Tue Jul 23 11:37:13 [conn2] end connection 127.0.0.1:51945 (0 connections now open)
+Tue Jul 23 11:37:28 [initandlisten] connection accepted from 127.0.0.1:51982 #3 (1 connection now open)
+Tue Jul 23 11:38:27 [initandlisten] connection accepted from 127.0.0.1:51989 #4 (2 connections now open)
+Tue Jul 23 11:38:28 [conn4] insert mymobile.menu keyUpdates:0 locks(micros) w:401959 464ms
+Tue Jul 23 11:38:38 [initandlisten] connection accepted from 127.0.0.1:51991 #5 (3 connections now open)
+Tue Jul 23 19:29:46 [conn5] end connection 127.0.0.1:51991 (2 connections now open)
+Tue Jul 23 19:29:48 [conn4] end connection 127.0.0.1:51989 (1 connection now open)
+Tue Jul 23 19:29:48 [conn3] end connection 127.0.0.1:51982 (0 connections now open)
+Tue Jul 23 19:29:51 CTRL_CLOSE_EVENT signal
+Tue Jul 23 19:29:51 [consoleTerminate] got CTRL_CLOSE_EVENT, will terminate after current cmd ends
+Tue Jul 23 19:29:51 [consoleTerminate] now exiting
+Tue Jul 23 19:29:51 dbexit: 
+Tue Jul 23 19:29:51 [consoleTerminate] shutdown: going to close listening sockets...
+Tue Jul 23 19:29:51 [consoleTerminate] closing listening socket: 504
+Tue Jul 23 19:29:51 [consoleTerminate] closing listening socket: 520
+Tue Jul 23 19:29:51 [consoleTerminate] shutdown: going to flush diaglog...
+Tue Jul 23 19:29:51 [consoleTerminate] shutdown: going to close sockets...
+Tue Jul 23 19:29:51 [consoleTerminate] shutdown: waiting for fs preallocator...
+Tue Jul 23 19:29:51 [consoleTerminate] shutdown: lock for final commit...
+Tue Jul 23 19:29:51 [consoleTerminate] shutdown: final commit...
+Tue Jul 23 19:29:51 [consoleTerminate] shutdown: closing all files...
+Tue Jul 23 19:29:51 [consoleTerminate] closeAllFiles() finished
+Tue Jul 23 19:29:51 [consoleTerminate] journalCleanup...
+Tue Jul 23 19:29:51 [consoleTerminate] removeJournalFiles
+Tue Jul 23 19:29:51 [consoleTerminate] shutdown: removing fs lock...
+Tue Jul 23 19:29:51 dbexit: really exiting now
+
+
+***** SERVER RESTARTED *****
+
+
+Tue Sep 03 07:15:56 [initandlisten] MongoDB starting : pid=3932 port=27017 dbpath=db 64-bit host=jamesmo-PC
+Tue Sep 03 07:15:56 [initandlisten] db version v2.2.0, pdfile version 4.5
+Tue Sep 03 07:15:56 [initandlisten] git version: f5e83eae9cfbec7fb7a071321928f00d1b0c5207
+Tue Sep 03 07:15:56 [initandlisten] build info: windows sys.getwindowsversion(major=6, minor=1, build=7601, platform=2, service_pack='Service Pack 1') BOOST_LIB_VERSION=1_49
+Tue Sep 03 07:15:56 [initandlisten] options: { dbpath: "db", logappend: true, logpath: "logs/r0.log", oplogSize: 32, rest: true }
+Tue Sep 03 07:15:56 [initandlisten] journal dir=db/journal
+Tue Sep 03 07:15:56 [initandlisten] recover : no journal files present, no recovery needed
+Tue Sep 03 07:15:57 [initandlisten] waiting for connections on port 27017
+Tue Sep 03 07:15:57 [websvr] admin web console waiting for connections on port 28017
+Tue Sep 03 07:16:50 [initandlisten] connection accepted from 127.0.0.1:50012 #1 (1 connection now open)
+Tue Sep 03 07:16:52 [conn1] end connection 127.0.0.1:50012 (0 connections now open)
+Tue Sep 03 07:18:53 [initandlisten] connection accepted from 127.0.0.1:50029 #2 (1 connection now open)
+Tue Sep 03 07:18:54 [conn2] end connection 127.0.0.1:50029 (0 connections now open)
+Tue Sep 03 07:25:44 [initandlisten] connection accepted from 127.0.0.1:50081 #3 (1 connection now open)
+Tue Sep 03 07:25:44 [conn3] end connection 127.0.0.1:50081 (0 connections now open)
+Tue Sep 03 07:27:07 [initandlisten] connection accepted from 127.0.0.1:50097 #4 (1 connection now open)
+Tue Sep 03 07:46:29 [conn4] end connection 127.0.0.1:50097 (0 connections now open)
+Tue Sep 03 07:54:17 [initandlisten] connection accepted from 127.0.0.1:50392 #5 (1 connection now open)
+Tue Sep 03 07:58:22 [conn5] end connection 127.0.0.1:50392 (0 connections now open)
+Tue Sep 03 07:58:35 [initandlisten] connection accepted from 127.0.0.1:50437 #6 (1 connection now open)
+Tue Sep 03 07:59:42 [conn6] end connection 127.0.0.1:50437 (0 connections now open)
+Tue Sep 03 07:59:57 [initandlisten] connection accepted from 127.0.0.1:50460 #7 (1 connection now open)
+Tue Sep 03 08:03:54 [conn7] end connection 127.0.0.1:50460 (0 connections now open)
+Tue Sep 03 08:04:07 [initandlisten] connection accepted from 127.0.0.1:50509 #8 (1 connection now open)
+Tue Sep 03 08:05:17 [conn8] end connection 127.0.0.1:50509 (0 connections now open)
+Tue Sep 03 08:05:31 [initandlisten] connection accepted from 127.0.0.1:50540 #9 (1 connection now open)
+Tue Sep 03 08:06:23 [conn9] end connection 127.0.0.1:50540 (0 connections now open)
+Tue Sep 03 08:06:35 [initandlisten] connection accepted from 127.0.0.1:50566 #10 (1 connection now open)
+Tue Sep 03 08:07:10 [conn10] end connection 127.0.0.1:50566 (0 connections now open)
+Tue Sep 03 08:07:17 CTRL_CLOSE_EVENT signal
+Tue Sep 03 08:07:17 [consoleTerminate] got CTRL_CLOSE_EVENT, will terminate after current cmd ends
+Tue Sep 03 08:07:17 [consoleTerminate] now exiting
+Tue Sep 03 08:07:17 dbexit: 
+Tue Sep 03 08:07:17 [consoleTerminate] shutdown: going to close listening sockets...
+Tue Sep 03 08:07:17 [consoleTerminate] closing listening socket: 512
+Tue Sep 03 08:07:17 [consoleTerminate] closing listening socket: 520
+Tue Sep 03 08:07:17 [consoleTerminate] shutdown: going to flush diaglog...
+Tue Sep 03 08:07:17 [consoleTerminate] shutdown: going to close sockets...
+Tue Sep 03 08:07:17 [consoleTerminate] shutdown: waiting for fs preallocator...
+Tue Sep 03 08:07:17 [consoleTerminate] shutdown: lock for final commit...
+Tue Sep 03 08:07:17 [consoleTerminate] shutdown: final commit...
+Tue Sep 03 08:07:17 [consoleTerminate] shutdown: closing all files...
+Tue Sep 03 08:07:17 [consoleTerminate] closeAllFiles() finished
+Tue Sep 03 08:07:17 [consoleTerminate] journalCleanup...
+Tue Sep 03 08:07:17 [consoleTerminate] removeJournalFiles
+Tue Sep 03 08:07:17 [consoleTerminate] shutdown: removing fs lock...
+Tue Sep 03 08:07:17 dbexit: really exiting now
+
+
+***** SERVER RESTARTED *****
+
+
+Sun Oct 06 21:00:14 [initandlisten] MongoDB starting : pid=6976 port=27017 dbpath=db 64-bit host=jamesmo-PC
+Sun Oct 06 21:00:14 [initandlisten] db version v2.2.0, pdfile version 4.5
+Sun Oct 06 21:00:14 [initandlisten] git version: f5e83eae9cfbec7fb7a071321928f00d1b0c5207
+Sun Oct 06 21:00:14 [initandlisten] build info: windows sys.getwindowsversion(major=6, minor=1, build=7601, platform=2, service_pack='Service Pack 1') BOOST_LIB_VERSION=1_49
+Sun Oct 06 21:00:14 [initandlisten] options: { dbpath: "db", logappend: true, logpath: "logs/r0.log", oplogSize: 32, rest: true }
+Sun Oct 06 21:00:14 [initandlisten] journal dir=db/journal
+Sun Oct 06 21:00:14 [initandlisten] recover : no journal files present, no recovery needed
+Sun Oct 06 21:00:14 [initandlisten] 
+Sun Oct 06 21:00:14 [initandlisten] ERROR: Insufficient free space for journal files
+Sun Oct 06 21:00:14 [initandlisten] Please make at least 3379MB available in db/journal or use --smallfiles
+Sun Oct 06 21:00:14 [initandlisten] 
+Sun Oct 06 21:00:14 [initandlisten] exception in initAndListen: 15926 Insufficient free space for journals, terminating
+Sun Oct 06 21:00:14 dbexit: 
+Sun Oct 06 21:00:14 [initandlisten] shutdown: going to close listening sockets...
+Sun Oct 06 21:00:14 [initandlisten] shutdown: going to flush diaglog...
+Sun Oct 06 21:00:14 [initandlisten] shutdown: going to close sockets...
+Sun Oct 06 21:00:14 [initandlisten] shutdown: waiting for fs preallocator...
+Sun Oct 06 21:00:14 [initandlisten] shutdown: lock for final commit...
+Sun Oct 06 21:00:14 [initandlisten] shutdown: final commit...
+Sun Oct 06 21:00:14 [initandlisten] shutdown: closing all files...
+Sun Oct 06 21:00:14 [initandlisten] closeAllFiles() finished
+Sun Oct 06 21:00:14 [initandlisten] journalCleanup...
+Sun Oct 06 21:00:14 [initandlisten] removeJournalFiles
+Sun Oct 06 21:00:14 [initandlisten] shutdown: removing fs lock...
+Sun Oct 06 21:00:14 dbexit: really exiting now
+
+
+***** SERVER RESTARTED *****
+
+
+Sun Oct 06 21:01:41 [initandlisten] MongoDB starting : pid=8060 port=27017 dbpath=db 64-bit host=jamesmo-PC
+Sun Oct 06 21:01:41 [initandlisten] db version v2.2.0, pdfile version 4.5
+Sun Oct 06 21:01:41 [initandlisten] git version: f5e83eae9cfbec7fb7a071321928f00d1b0c5207
+Sun Oct 06 21:01:41 [initandlisten] build info: windows sys.getwindowsversion(major=6, minor=1, build=7601, platform=2, service_pack='Service Pack 1') BOOST_LIB_VERSION=1_49
+Sun Oct 06 21:01:41 [initandlisten] options: { dbpath: "db", logappend: true, logpath: "logs/r0.log", oplogSize: 32, rest: true }
+Sun Oct 06 21:01:41 [initandlisten] journal dir=db/journal
+Sun Oct 06 21:01:41 [initandlisten] recover : no journal files present, no recovery needed
+Sun Oct 06 21:01:41 [initandlisten] 
+Sun Oct 06 21:01:41 [initandlisten] ERROR: Insufficient free space for journal files
+Sun Oct 06 21:01:41 [initandlisten] Please make at least 3379MB available in db/journal or use --smallfiles
+Sun Oct 06 21:01:41 [initandlisten] 
+Sun Oct 06 21:01:41 [initandlisten] exception in initAndListen: 15926 Insufficient free space for journals, terminating
+Sun Oct 06 21:01:41 dbexit: 
+Sun Oct 06 21:01:41 [initandlisten] shutdown: going to close listening sockets...
+Sun Oct 06 21:01:41 [initandlisten] shutdown: going to flush diaglog...
+Sun Oct 06 21:01:41 [initandlisten] shutdown: going to close sockets...
+Sun Oct 06 21:01:41 [initandlisten] shutdown: waiting for fs preallocator...
+Sun Oct 06 21:01:41 [initandlisten] shutdown: lock for final commit...
+Sun Oct 06 21:01:41 [initandlisten] shutdown: final commit...
+Sun Oct 06 21:01:41 [initandlisten] shutdown: closing all files...
+Sun Oct 06 21:01:41 [initandlisten] closeAllFiles() finished
+Sun Oct 06 21:01:41 [initandlisten] journalCleanup...
+Sun Oct 06 21:01:41 [initandlisten] removeJournalFiles
+Sun Oct 06 21:01:41 [initandlisten] shutdown: removing fs lock...
+Sun Oct 06 21:01:41 dbexit: really exiting now
+
+
+***** SERVER RESTARTED *****
+
+
+Sun Oct 06 21:02:30 [initandlisten] MongoDB starting : pid=2468 port=27017 dbpath=db 64-bit host=jamesmo-PC
+Sun Oct 06 21:02:30 [initandlisten] db version v2.2.0, pdfile version 4.5
+Sun Oct 06 21:02:30 [initandlisten] git version: f5e83eae9cfbec7fb7a071321928f00d1b0c5207
+Sun Oct 06 21:02:30 [initandlisten] build info: windows sys.getwindowsversion(major=6, minor=1, build=7601, platform=2, service_pack='Service Pack 1') BOOST_LIB_VERSION=1_49
+Sun Oct 06 21:02:30 [initandlisten] options: { dbpath: "db", logappend: true, logpath: "logs/r0.log", oplogSize: 32, rest: true }
+Sun Oct 06 21:02:30 [initandlisten] journal dir=db/journal
+Sun Oct 06 21:02:30 [initandlisten] recover : no journal files present, no recovery needed
+Sun Oct 06 21:02:30 [initandlisten] 
+Sun Oct 06 21:02:30 [initandlisten] ERROR: Insufficient free space for journal files
+Sun Oct 06 21:02:30 [initandlisten] Please make at least 3379MB available in db/journal or use --smallfiles
+Sun Oct 06 21:02:30 [initandlisten] 
+Sun Oct 06 21:02:30 [initandlisten] exception in initAndListen: 15926 Insufficient free space for journals, terminating
+Sun Oct 06 21:02:30 dbexit: 
+Sun Oct 06 21:02:30 [initandlisten] shutdown: going to close listening sockets...
+Sun Oct 06 21:02:30 [initandlisten] shutdown: going to flush diaglog...
+Sun Oct 06 21:02:30 [initandlisten] shutdown: going to close sockets...
+Sun Oct 06 21:02:30 [initandlisten] shutdown: waiting for fs preallocator...
+Sun Oct 06 21:02:30 [initandlisten] shutdown: lock for final commit...
+Sun Oct 06 21:02:30 [initandlisten] shutdown: final commit...
+Sun Oct 06 21:02:30 [initandlisten] shutdown: closing all files...
+Sun Oct 06 21:02:30 [initandlisten] closeAllFiles() finished
+Sun Oct 06 21:02:30 [initandlisten] journalCleanup...
+Sun Oct 06 21:02:30 [initandlisten] removeJournalFiles
+Sun Oct 06 21:02:30 [initandlisten] shutdown: removing fs lock...
+Sun Oct 06 21:02:30 dbexit: really exiting now
+
+
+***** SERVER RESTARTED *****
+
+
+Sun Oct 06 21:28:52 [initandlisten] MongoDB starting : pid=7340 port=27017 dbpath=db 64-bit host=jamesmo-PC
+Sun Oct 06 21:28:52 [initandlisten] db version v2.2.0, pdfile version 4.5
+Sun Oct 06 21:28:52 [initandlisten] git version: f5e83eae9cfbec7fb7a071321928f00d1b0c5207
+Sun Oct 06 21:28:52 [initandlisten] build info: windows sys.getwindowsversion(major=6, minor=1, build=7601, platform=2, service_pack='Service Pack 1') BOOST_LIB_VERSION=1_49
+Sun Oct 06 21:28:52 [initandlisten] options: { dbpath: "db", logappend: true, logpath: "logs/r0.log", oplogSize: 32, rest: true }
+Sun Oct 06 21:28:52 [initandlisten] journal dir=db/journal
+Sun Oct 06 21:28:52 [initandlisten] recover : no journal files present, no recovery needed
+Sun Oct 06 21:28:52 [initandlisten] 
+Sun Oct 06 21:28:52 [initandlisten] ERROR: Insufficient free space for journal files
+Sun Oct 06 21:28:52 [initandlisten] Please make at least 3379MB available in db/journal or use --smallfiles
+Sun Oct 06 21:28:52 [initandlisten] 
+Sun Oct 06 21:28:52 [initandlisten] exception in initAndListen: 15926 Insufficient free space for journals, terminating
+Sun Oct 06 21:28:52 dbexit: 
+Sun Oct 06 21:28:52 [initandlisten] shutdown: going to close listening sockets...
+Sun Oct 06 21:28:52 [initandlisten] shutdown: going to flush diaglog...
+Sun Oct 06 21:28:52 [initandlisten] shutdown: going to close sockets...
+Sun Oct 06 21:28:52 [initandlisten] shutdown: waiting for fs preallocator...
+Sun Oct 06 21:28:52 [initandlisten] shutdown: lock for final commit...
+Sun Oct 06 21:28:52 [initandlisten] shutdown: final commit...
+Sun Oct 06 21:28:52 [initandlisten] shutdown: closing all files...
+Sun Oct 06 21:28:52 [initandlisten] closeAllFiles() finished
+Sun Oct 06 21:28:52 [initandlisten] journalCleanup...
+Sun Oct 06 21:28:52 [initandlisten] removeJournalFiles
+Sun Oct 06 21:28:52 [initandlisten] shutdown: removing fs lock...
+Sun Oct 06 21:28:52 dbexit: really exiting now
+
+
+***** SERVER RESTARTED *****
+
+
+Sun Oct 06 21:29:36 [initandlisten] MongoDB starting : pid=5152 port=27017 dbpath=db 64-bit host=jamesmo-PC
+Sun Oct 06 21:29:36 [initandlisten] db version v2.2.0, pdfile version 4.5
+Sun Oct 06 21:29:36 [initandlisten] git version: f5e83eae9cfbec7fb7a071321928f00d1b0c5207
+Sun Oct 06 21:29:36 [initandlisten] build info: windows sys.getwindowsversion(major=6, minor=1, build=7601, platform=2, service_pack='Service Pack 1') BOOST_LIB_VERSION=1_49
+Sun Oct 06 21:29:36 [initandlisten] options: { dbpath: "db", logappend: true, logpath: "logs/r0.log", oplogSize: 32, rest: true }
+Sun Oct 06 21:29:36 [initandlisten] journal dir=db/journal
+Sun Oct 06 21:29:36 [initandlisten] recover : no journal files present, no recovery needed
+Sun Oct 06 21:29:36 [initandlisten] 
+Sun Oct 06 21:29:36 [initandlisten] ERROR: Insufficient free space for journal files
+Sun Oct 06 21:29:36 [initandlisten] Please make at least 3379MB available in db/journal or use --smallfiles
+Sun Oct 06 21:29:36 [initandlisten] 
+Sun Oct 06 21:29:36 [initandlisten] exception in initAndListen: 15926 Insufficient free space for journals, terminating
+Sun Oct 06 21:29:36 dbexit: 
+Sun Oct 06 21:29:36 [initandlisten] shutdown: going to close listening sockets...
+Sun Oct 06 21:29:36 [initandlisten] shutdown: going to flush diaglog...
+Sun Oct 06 21:29:36 [initandlisten] shutdown: going to close sockets...
+Sun Oct 06 21:29:36 [initandlisten] shutdown: waiting for fs preallocator...
+Sun Oct 06 21:29:36 [initandlisten] shutdown: lock for final commit...
+Sun Oct 06 21:29:36 [initandlisten] shutdown: final commit...
+Sun Oct 06 21:29:36 [initandlisten] shutdown: closing all files...
+Sun Oct 06 21:29:36 [initandlisten] closeAllFiles() finished
+Sun Oct 06 21:29:36 [initandlisten] journalCleanup...
+Sun Oct 06 21:29:36 [initandlisten] removeJournalFiles
+Sun Oct 06 21:29:36 [initandlisten] shutdown: removing fs lock...
+Sun Oct 06 21:29:36 dbexit: really exiting now

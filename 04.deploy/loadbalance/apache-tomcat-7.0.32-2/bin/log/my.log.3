@@ -1,0 +1,45 @@
+2012-12-28 01:33:27:INFO localhost-startStop-1 org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization started
+2012-12-28 01:33:27:INFO localhost-startStop-1 org.springframework.web.context.support.XmlWebApplicationContext - Refreshing Root WebApplicationContext: startup date [Fri Dec 28 13:33:27 CST 2012]; root of context hierarchy
+2012-12-28 01:33:32:ERROR localhost-startStop-1 org.springframework.web.context.ContextLoader - Context initialization failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in URL [jar:file:/I:/html5examples/mobile-portal/03-server-rest-api/mobile-portal-rest/webapp/WEB-INF/lib/bonc-mobile-rest-1.0.2-SNAPSHOT.jar!/spring/datasource.xml]: Cannot create inner bean 'net.sf.log4jdbc.tools.Log4JdbcCustomFormatter#54fbfcb8' of type [net.sf.log4jdbc.tools.Log4JdbcCustomFormatter] while setting bean property 'logFormatter'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'net.sf.log4jdbc.tools.Log4JdbcCustomFormatter#54fbfcb8' defined in URL [jar:file:/I:/html5examples/mobile-portal/03-server-rest-api/mobile-portal-rest/webapp/WEB-INF/lib/bonc-mobile-rest-1.0.2-SNAPSHOT.jar!/spring/datasource.xml]: Error setting property values; nested exception is org.springframework.beans.PropertyBatchUpdateException; nested PropertyAccessExceptions (1) are:
+PropertyAccessException 1: org.springframework.beans.MethodInvocationException: Property 'margin' threw exception; nested exception is java.util.FormatFlagsConversionMismatchException: Conversion = s, Flags = #
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveInnerBean(BeanDefinitionValueResolver.java:281)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:120)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1360)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1118)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:456)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:294)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:225)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:291)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:193)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:585)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:913)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:464)
+	at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext(ContextLoader.java:385)
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:284)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:111)
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4791)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5285)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1559)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1549)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:334)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:166)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1110)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:603)
+	at java.lang.Thread.run(Thread.java:722)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'net.sf.log4jdbc.tools.Log4JdbcCustomFormatter#54fbfcb8' defined in URL [jar:file:/I:/html5examples/mobile-portal/03-server-rest-api/mobile-portal-rest/webapp/WEB-INF/lib/bonc-mobile-rest-1.0.2-SNAPSHOT.jar!/spring/datasource.xml]: Error setting property values; nested exception is org.springframework.beans.PropertyBatchUpdateException; nested PropertyAccessExceptions (1) are:
+PropertyAccessException 1: org.springframework.beans.MethodInvocationException: Property 'margin' threw exception; nested exception is java.util.FormatFlagsConversionMismatchException: Conversion = s, Flags = #
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1396)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1118)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:456)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveInnerBean(BeanDefinitionValueResolver.java:270)
+	... 25 more
+Caused by: org.springframework.beans.PropertyBatchUpdateException; nested PropertyAccessExceptions (1) are:
+PropertyAccessException 1: org.springframework.beans.MethodInvocationException: Property 'margin' threw exception; nested exception is java.util.FormatFlagsConversionMismatchException: Conversion = s, Flags = #
+	at org.springframework.beans.AbstractPropertyAccessor.setPropertyValues(AbstractPropertyAccessor.java:102)
+	at org.springframework.beans.AbstractPropertyAccessor.setPropertyValues(AbstractPropertyAccessor.java:58)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1393)
+	... 29 more

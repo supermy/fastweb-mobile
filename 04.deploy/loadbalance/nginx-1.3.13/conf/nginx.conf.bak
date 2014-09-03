@@ -1,0 +1,226 @@
+
+#user  nobody;
+worker_processes  1;
+
+#error_log  logs/error.log;
+#error_log  logs/error.log  notice;
+#error_log  logs/error.log  info;
+
+#pid        logs/nginx.pid;
+
+events {
+    worker_connections  1024;
+}
+
+
+http {
+    include       mime.types;
+    default_type  application/octet-stream;
+
+	log_format  json  '{'
+						'"remote_addr": "$remote_addr",'
+						'"remote_user": "$remote_user",'
+						'"time_local": "$time_local",'
+						'"request": "$request",'
+						'"status": $status,'
+						'"body_bytes_sent": $body_bytes_sent,'
+						'"http_referer": "$http_referer",'
+						'"http_user_agent": "$http_user_agent",'
+						'"http_x_forwarded_for": "$http_x_forwarded_for"'
+					  '}';
+				  
+#	log_format main '$remote_addr - $remote_user [$time_local] "$request" '
+#					'$status $body_bytes_sent "$http_referer" '
+#					'"$http_user_agent" $request_length $bytes_sent '
+#					'"$http_x_forwarded_for"';
+	
+    log_format  main  '$remote_addr - $remote_user [$time_local] "$request" '
+                      '$status $body_bytes_sent "$http_referer" '
+                      '"$http_user_agent" "$http_x_forwarded_for"';
+
+    access_log  logs/access.log  main;
+	access_log  logs/access.log.json json;
+
+    sendfile        on;
+    #tcp_nopush     on;
+
+    #keepalive_timeout  0;
+    keepalive_timeout  65;
+
+    gzip  on;
+	gzip_comp_level  2;                        # 压缩比例，比例越大，压缩时间越长。默认是1
+	gzip_types       text/css text/javascript application/x-javascript application/xml application/json text/json; #哪些文件可以被压缩
+	gzip_disable     "MSIE [1-6]\.";           # 无视IE6这个笨蛋~
+	
+
+upstream backend {
+	ip_hash;
+	server 127.0.0.1:8180 weight=10;
+	server 127.0.0.1:8280 weight=10;
+}
+
+	#limit_req_zone $binary_remote_addr zone=allips:10m rate=20r/s;
+	
+    server {
+        listen       80;
+        server_name  localhost;
+
+        #charset koi8-r;
+
+        #access_log  logs/host.access.log  main;
+
+        location /rest-api/ {
+			#后端程序可以从Server变量HTTP_X_REAL_IP和HTTP_X_FORWARDED_FOR中获取用户的ip地址。HTTP_X_REAL_IP的值是nginx得到的用户REMOTE_ADDR
+			proxy_set_header        Host            $host;
+			proxy_set_header        X-Real-IP       $remote_addr;
+			proxy_set_header        X-Forwarded-For $proxy_add_x_forwarded_for;		
+		
+			proxy_pass http://backend/;
+			
+			
+			
+            root   html;
+            index  index.html index.htm;
+			
+        }
+
+        location / {
+            #root   html;
+			alias I:\env-myopensource\fastweb-mobile\02.client\01.html5\\;
+            index  index.html index.htm;
+			
+        }
+
+        location /cnubefore {
+            #root   html;
+			alias  I:\html5examples\10.mobile-cnu\02-client\01-html5\version20140526before\\;
+            index  index.html index.htm;
+        }
+        location /cnubefore {
+            #root   html;
+			alias  I:\html5examples\10.mobile-cnu\02-client\01-html5\version20140526\\;
+            index  index.html index.htm;
+        }
+		
+		#extjs project auto gen page and js 
+        location /my1 {
+			alias C:\Users\jamesmo\extjs-auto\my1\\;
+            index  index.html index.htm;
+			
+			#limit_req zone=allips burst=5 nodelay;
+	    }
+		
+        location /CarListings {
+			alias C:\Users\jamesmo\extjs-auto\CarListings\\;
+            index  index.html index.htm;
+        }
+		
+        location /BookReviews {
+			alias C:\Users\jamesmo\extjs-auto\BookReviews\\;
+            index  index.html index.htm;
+        }
+		
+		
+        location /rest-nosql-api/treemenu {
+			alias C:/Users/jamesmo/extjs-auto/treemenu/;
+            index  index.html index.htm;
+        }
+		
+        location /rest-nosql-api/ {
+			error_page 405 =200 $uri;
+			proxy_pass http://localhost:8080/fastweb-mongodb/;
+			index  index.html index.htm;
+        }
+		
+		
+        location /demo {
+			alias C:\Users\jamesmo\extjs-auto\my2\\;
+            index  index.html index.htm;
+        }
+		
+		
+        location /extjs4 {
+			alias I:/env-jsmvc/ext-4.2.1.883/;
+            index  index.html index.htm;
+        }
+		
+		
+        location /extjs4mvc {
+			alias I:/env-jsmvc/extjs-mvc-examples3/ExtJS4MVC/;
+            index  index.html index.htm;
+        }
+
+		
+        #error_page  404              /404.html;
+
+        # redirect server error pages to the static page /50x.html
+        #
+        error_page   500 502 503 504  /50x.html;
+        location = /50x.html {
+            root   html;
+        }
+
+        # proxy the PHP scripts to Apache listening on 127.0.0.1:80
+        #
+        #location ~ \.php$ {
+        #    proxy_pass   http://127.0.0.1;
+        #}
+
+        # pass the PHP scripts to FastCGI server listening on 127.0.0.1:9000
+        #
+        location ~ \.php$ {
+            #root           html;
+			#root           I:\\env-myopensource\\fastweb-mobile\\04.deploy\\loadbalance\\nginx-1.3.13\\html;
+			root           html;
+            fastcgi_pass   127.0.0.1:9000;
+            fastcgi_index  index.php;
+            fastcgi_param  SCRIPT_FILENAME  $document_root$fastcgi_script_name;
+            include        fastcgi_params;
+        }
+
+        # deny access to .htaccess files, if Apache's document root
+        # concurs with nginx's one
+        #
+        #location ~ /\.ht {
+        #    deny  all;
+        #}
+    }
+
+
+    # another virtual host using mix of IP-, name-, and port-based configuration
+    #
+    #server {
+    #    listen       8000;
+    #    listen       somename:8080;
+    #    server_name  somename  alias  another.alias;
+
+    #    location / {
+    #        root   html;
+    #        index  index.html index.htm;
+    #    }
+    #}
+
+
+    # HTTPS server
+    #
+    #server {
+    #    listen       443;
+    #    server_name  localhost;
+
+    #    ssl                  on;
+    #    ssl_certificate      cert.pem;
+    #    ssl_certificate_key  cert.key;
+
+    #    ssl_session_timeout  5m;
+
+    #    ssl_protocols  SSLv2 SSLv3 TLSv1;
+    #    ssl_ciphers  HIGH:!aNULL:!MD5;
+    #    ssl_prefer_server_ciphers   on;
+
+    #    location / {
+    #        root   html;
+    #        index  index.html index.htm;
+    #    }
+    #}
+
+}
