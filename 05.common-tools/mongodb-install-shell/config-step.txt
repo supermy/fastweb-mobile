@@ -1,0 +1,92 @@
+﻿系统优化
+* soft nproc 65536
+* hard nproc 65536
+* soft nofile 65536
+* hard nofile 65536
+
+内存配置,一般情况下不限制内存，与其他应用同时存在的时候限制。
+ulimit -s 4096
+ulimit -m 15728640
+
+
+1.杀掉所有的mongodb进程：sh kill-mongodb.sh 
+2.初始化并且启动mongodb: sh start-mn.sh (sync-mongodb.sh  start-shard.sh)
+3.设置：shard1 and shard2;
+4.增加：add shard
+
+
+用mongo连接其中一个mongod，执行
+ mongo 192.168.0.1:27021
+cfg= {_id: 'shard1', members: [
+    {_id: 0, host: '192.168.0.1:27021'},
+    {_id: 1, host: '192.168.0.2:27021'}
+	]
+  }
+rs.initiate(cfg)
+rs.status()
+
+
+用mongo连接其中一个mongod，执行
+ mongo 192.168.0.3:27022
+cfg = {_id: 'shard2', members: [
+    {_id: 2, host: '192.168.0.3:27022'},
+    {_id: 4, host: '192.168.0.5:27022'}
+	]
+  }
+rs.initiate(cfg)
+rs.status()
+
+config节点只能是一个或者三个
+
+route节点配置
+mongo 192.168.0.4:30000/admin
+mongos> db.runCommand({addshard:"shard1/192.168.0.1:27021,192.168.0.2:27021",name:"shard1", maxsize:20480} )
+
+mongos> db.runCommand({addshard:"shard2/192.168.0.3:27022,192.168.0.5:27022",name:"shard2", maxsize:20480} )
+
+db.runCommand( {listshards : 1 } )
+db.runCommand({ismaster:1});
+
+激活数据库分片(通过执行以上命令，可以让数据库跨shard，如果不执行这步，数据库只会存放在一个shard，一旦激活数据库分片，数据库中不同的collection 将被存放在不同的shard上，但一个collection仍旧存放在同一个shard上，要使单个collection也分片，还需单独对 collection作些操作!
+)
+use admin
+//db.runCommand( { enablesharding : "use nosql" } );
+db.runCommand( { enablesharding : "nosql" } );
+use nosql
+for(var i=0;i<1000;i++)db.fans.insert({uid:i,uname:'nosqlfans'+i});
+
+db.fans.stats()
+db.fans.ensureIndex({"uid":1})
+db.fans.find({uid:10}).explain()
+
+use admin
+db.runCommand({shardcollection : "nosql.fans",key : {uid:1}})
+
+use nosql
+#再次插入数据，数据分布到不同的shard1 shard2
+for(var i=0;i<1000;i++)db.fans.insert({uid:i,uname:'nosqlfans'+i});
+db.fans.stats()
+
+查看分片状态
+printShardingStatus()
+
+
+db.setProfilingLevel(2)
+
+
+
+插入1000万文档，这些文档中包含了介于0和100万之间的单一整数值，这意味着，平均每10个文档具有相同的值。
+
+
+db.runCommand({shardcollection : "nosql.uniques",key : {dim0:1}})
+use nosql
+db.uniques.ensureIndex({dim0: 1})
+for (var i = 0; i < 10000000; ++i){ db.uniques.insert({ dim0: Math.floor(Math.random()*1000000) });}
+db.uniques.stats()
+
+得到文档中唯一值的计数，可以通过下面的MR任务来轻松完成：
+ db.runCommand(
+{ mapreduce: "uniques",map: function () { emit(this.dim0, 1); },reduce: function (key, values) { return Array.sum(values); },out: "mrout",sort: {dim0: 1} })
+
+
+

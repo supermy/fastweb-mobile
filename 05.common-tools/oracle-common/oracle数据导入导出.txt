@@ -1,0 +1,13 @@
+exp qwer/qwer@dbserver/orcl statistics=none compress=n consistent=y file=qwer_data.dmp log=qwer_data.log tables=activity_area,commission_info,product_info
+imp qwer/qwer@orcl file=qwer_data.dmp full=y ignore=y commit=n
+
+ORCL_LOCAL =
+  (DESCRIPTION =
+    (ADDRESS_LIST =
+      (ADDRESS = (PROTOCOL = TCP)(HOST = 127.0.0.1)(PORT = 1521))
+    )
+    (CONNECT_DATA =
+      (SERVICE_NAME = orcl)
+    )
+  )
+  

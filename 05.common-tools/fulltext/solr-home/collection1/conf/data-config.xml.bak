@@ -1,0 +1,14 @@
+<dataConfig>
+    <dataSource driver="oracle.jdbc.driver.OracleDriver" url="jdbc:oracle:thin:@127.0.0.1:1528:orcl" user="gbjwo" password="gbjwo"/>
+    <document>
+		<!--transformer="ClobTransformer" 
+		deltaImportQuery="select * from VIEW_DETAIL where DETAIL_ID='${dih.delta.DETAIL_ID}'"
+        deltaQuery="select DETAIL_ID from VIEW_DETAIL where PUBLISH_TIME &gt; to_date('${dih.last_index_time}','yyyy-mm-dd hh:mi:ss')"
+		-->
+        <entity name="contact" query="select pkid,name from contact">
+            <field column="TEXT" name="pkid"/>
+            <field column="TEXT" name="name"/>
+			<!--clob="true"-->
+		</entity>
+    </document>
+</dataConfig>

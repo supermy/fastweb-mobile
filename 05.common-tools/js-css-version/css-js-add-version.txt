@@ -1,0 +1,4 @@
+
+startTime=`date +%s%N`;
+find /home/deploy/client/  -name "*.html"|xargs -I @  sed -i 's/\.js?/.js?v='$startTime'/'  @
+find /home/deploy/client/  -name "*.html"|xargs -I @  sed -i 's/\.css/.css?v='$startTime'/'  @

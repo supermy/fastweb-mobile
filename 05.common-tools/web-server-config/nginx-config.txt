@@ -1,0 +1,71 @@
+#cpu的数量乘以2
+worker_processes  10;
+
+events {
+    use epoll;
+    worker_connections   10240;
+}
+
+
+#前端有f5或者squid的，ip地址透传
+set_real_ip_from   192.1.10.0/24;
+real_ip_header     X-Forwarded-For;
+real_ip_recursive on;
+
+#json日志配置
+    log_format  json  '{'
+                                                '"remote_addr": "$remote_addr",'
+                                                '"remote_user": "$remote_user",'
+                                                '"time_local": "$time_local",'
+                                                '"request": "$request",'
+                                                '"status": $status,'
+                                                '"body_bytes_sent": $body_bytes_sent,'
+                                                '"http_referer": "$http_referer",'
+                                                '"http_user_agent": "$http_user_agent",'
+                                                '"http_x_forwarded_for": "$http_x_forwarded_for"'
+                                          '}';
+
+    access_log  /var/log/nginx/access.log.json json;
+
+
+    limit_conn_zone $binary_remote_addr zone=perip:160m;
+    limit_conn_zone $server_name zone=perserver:160m;
+#并发数量控制
+    limit_conn perip 150;
+    limit_conn perserver 60000;
+
+#
+    client_max_body_size    500m;
+
+    proxy_redirect off ;
+    proxy_set_header Host $host;
+    proxy_set_header X-Real-IP $remote_addr;
+    proxy_set_header REMOTE-HOST $remote_addr;
+    proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+
+
+
+
+#集群配置
+upstream server{
+                        #ip_hash;
+                        sticky;
+                        server   192.168.0.1:8180 ;
+                        server   192.168.0.1:8280 ;
+                        server   192.168.0.1:8380 ;
+                        server   192.168.0.1:8480 ;
+
+                        server   192.168.0.2:8180 ;
+                        server   192.168.0.2:8280 ;
+                        server   192.168.0.2:8380 ;
+                        server   192.168.0.2:8480 ;
+
+                        server   192.168.0.3:8180 ;
+                        server   192.168.0.3:8280 ;
+                        server   192.168.0.3:8380 ;
+                        server   192.168.0.3:8480 ;
+}
+
+#文件缓存处理
+add_header Cache-Control no-cache;
+add_header Cache-Control private;

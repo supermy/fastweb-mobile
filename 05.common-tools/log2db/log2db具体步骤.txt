@@ -1,0 +1,92 @@
+1.web是集群，nginx日志分布在不同的服务器上；
+2.建立共享目录，在多台服务器之间共享；
+	安装nfs
+	服务器端：more /etc/exports 
+	/home/deploy/nginx-logs/           192.168.0.2(rw,sync) 192.168.0.3(rw,sync) 192.168.0.4(rw,sync) 192.168.0.5(rw,sync)
+	客户端：命令
+	192.168.0.1:/home/deploy/nginx-logs/ on /home/oracle/nginx-logs type nfs (rw,addr=192.168.0.1)
+
+3.建立指定用户deploy的定时任务,凌晨4点同步日志【日志时间是每天凌晨3天生成一个文件】
+	crontab -u deploy -e
+	0 4 * * * /bin/sh /home/deploy/sync-logs.sh
+	crontab -u deploy -l
+
+[deploy@localhost ecommerce]$ more /home/deploy/sync-logs.sh 
+yesterday=`date -d yesterday +%Y%m%d`
+echo $yesterday
+
+today=`date +%Y%m%d`
+
+#第二天日志
+rsync -vzrtopgu -progress /var/log/nginx/log/*.gz /home/deploy/nginx-logs/log-1/
+rsync -avz -e ssh  192.168.0.2:/var/log/nginx/log/*.gz  /home/deploy/nginx-logs/log-2/
+rsync -avz -e ssh  192.168.0.3:/var/log/nginx/log/*.gz  /home/deploy/nginx-logs/log-3/
+#昨天日志
+rsync -vzrtopgu -progress /var/log/nginx/log/*.log-$today /home/deploy/nginx-logs/log-1/
+rsync -avz -e ssh  192.168.0.2:/var/log/nginx/log/*.log-$today  /home/deploy/nginx-logs/log-2/
+rsync -avz -e ssh  192.168.0.3:/var/log/nginx/log/*.log-$today  /home/deploy/nginx-logs/log-3/
+#昨天日志
+rsync -vzrtopgu -progress /var/log/nginx/log/*.json-$today /home/deploy/nginx-logs/log-1/
+rsync -avz -e ssh  192.168.0.2:/var/log/nginx/log/*.json-$today  /home/deploy/nginx-logs/log-2/
+rsync -avz -e ssh  192.168.0.3:/var/log/nginx/log/*.json-$today  /home/deploy/nginx-logs/log-3/
+
+4.建立指定用户oracle的定时任务,凌晨5点导入日志到数据库[oracle and mongodb]
+[oracle ~]$ crontab -l
+30 4 * * *  sh /home/oracle/nginx-logs/process-log.sh
+10 4 * * *  sh /home/oracle/nginx-logs/process-json.sh
+
+[oracle ~]$ more  /home/oracle/nginx-logs/process-log.sh
+source  /home/oracle/.bash_profile 
+
+export NLS_LANG=AMERICAN_AMERICA.ZHS16GBK
+yesterday=`date -d yesterday +%Y%m%d` 
+today=`date +%Y%m%d` 
+echo $yesterday
+echo $today
+
+find /home/oracle/nginx-logs/  -name server.access.log-$today|xargs -I @ cat @ > /home/oracle/nginx-logs/day/full-$today.log
+grep "GET /server/page/index" /home/oracle/nginx-logs/day/full-$today.log|awk -F'[ [?]' '{print day FNR,$1,$5,$9}' day=$today>/home/oracle/nginx-logs/day/p-$today-list.log
+grep "GET /server/page/detail" /home/oracle/nginx-logs/day/full-$today.log|awk -F'[ [?&]' '{print day FNR,$1,$5,$10}' day=$today>/home/oracle/nginx-logs/day/p-$today-detail.log
+cat /home/oracle/nginx-logs/day/p-$today-list.log /home/oracle/nginx-logs/day/p-$today-detail.log > /home/oracle/nginx-logs/day/p-$today.db
+sqlldr userid=qwer/qwer control=/home/oracle/nginx-logs/log.ctl data=/home/oracle/nginx-logs/day/p-$today.db log=/home/oracle/nginx-logs/day/p-$today.log bad=/home/oracle/nginx-logs/day/p-$today.bad
+
+[oracle ~]$ more  /home/oracle/nginx-logs/process-json.sh
+#export NLS_LANG=AMERICAN_AMERICA.ZHS16GBK
+yesterday=`date -d yesterday +%Y%m%d`
+today=`date  +%Y%m%d` 
+echo $yesterday
+echo $today
+cd  /home/oracle/nginx-logs/
+find /home/oracle/nginx-logs/  -name *.access.log.json-$today|xargs -I @ cat @ > /home/oracle/nginx-logs/json/full-$today.log
+mongoimport --host 192.168.0.4 --port 30000 --collection weblogs --db marketing --file /home/oracle/nginx-logs/json/full-$today.log
+
+5.配置nginx日志json格式
+       log_format  json  '{'
+							'"remote_addr": "$remote_addr",'
+							'"remote_user": "$remote_user",'
+							'"time_local": "$time_local",'
+							'"request": "$request",'
+							'"status": $status,'
+							'"body_bytes_sent": $body_bytes_sent,'
+							'"http_referer": "$http_referer",'
+							'"http_user_agent": "$http_user_agent",'
+							'"http_x_forwarded_for": "$http_x_forwarded_for"'
+                                          '}';
+
+    access_log  /var/log/nginx/access.log.json json;
+	
+6.配置nginx日志分卷
+	[deploy@localhost logrotate.d]$ more /etc/logrotate.d/nginx-json 
+/var/log/nginx/log/*.json {
+        daily
+        missingok
+        rotate 52
+        compress
+        delaycompress
+        notifempty
+        create 640 nginx adm
+        sharedscripts
+        postrotate
+                [ -f /var/run/nginx.pid ] && kill -USR1 `cat /var/run/nginx.pid`
+        endscript
+}

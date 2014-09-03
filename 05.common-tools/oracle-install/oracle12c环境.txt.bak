@@ -1,0 +1,70 @@
+
+
+./runInstaller oracle.install.option=INSTALL_DB_SWONLY \
+    ORACLE_BASE=/home/data/oracle/product/base \
+    ORACLE_HOME=/home/data/oracle/product/base/12.1.0.1 \
+    UNIX_GROUP_NAME=oinstall \
+    oracle.install.db.DBA_GROUP=dba \
+    oracle.install.db.OPER_GROUP=oper \
+    oracle.install.db.BACKUPDBA_GROUP=dba \
+    oracle.install.db.DGDBA_GROUP=dba \
+    oracle.install.db.KMDBA_GROUP=dba \
+	oracle.install.db.config.starterdb.characterSet=AL32UTF8 \
+	oracle.install.db.config.starterdb.memoryOption=true \
+    FROM_LOCATION=../stage/products.xml \
+    INVENTORY_LOCATION=/home/data/oracle/oraIventory \
+    SELECTED_LANGUAGES=en,zh_CN \
+    oracle.install.db.InstallEdition=EE \
+    DECLINE_SECURITY_UPDATES=true  -silent -ignoreSysPrereqs -ignorePrereq -waitForCompletion
+	
+	
+	sed -n '/^[^#]/p' response/netca.rsp
+
+2014年3月6日-----------------------------------
+   54   ./runInstaller oracle.install.option=INSTALL_DB_AND_CONFIG \    ORACLE_BASE=/home/data/oracle/product/base \    ORACLE_HOME=/home/da
+ta/oracle/product/base/12.1.0.1 \    UNIX_GROUP_NAME=oinstall \    oracle.install.db.DBA_GROUP=dba \    oracle.install.db.OPER_GROUP=oper \ 
+   oracle.install.db.BACKUPDBA_GROUP=dba \    oracle.install.db.DGDBA_GROUP=dba \    oracle.install.db.KMDBA_GROUP=dba \\oracle.install.db.c
+onfig.starterdb.characterSet=AL32UTF8 \\oracle.install.db.config.starterdb.memoryOption=true \    FROM_LOCATION=../stage/products.xml \    I
+NVENTORY_LOCATION=/home/data/oracle/oraIventory \    SELECTED_LANGUAGES=en,zh_CN \    oracle.install.db.InstallEdition=EE \    DECLINE_SECUR
+ITY_UPDATES=true  -silent -ignoreSysPrereqs -ignorePrereq -waitForCompletion
+   55   ./runInstaller oracle.install.option=INSTALL_DB_SWONLY \    ORACLE_BASE=/home/data/oracle/product/base \    ORACLE_HOME=/home/data/o
+racle/product/base/12.1.0.1 \    UNIX_GROUP_NAME=oinstall \    oracle.install.db.DBA_GROUP=dba \    oracle.install.db.OPER_GROUP=oper \    o
+racle.install.db.BACKUPDBA_GROUP=dba \    oracle.install.db.DGDBA_GROUP=dba \    oracle.install.db.KMDBA_GROUP=dba \\oracle.install.db.confi
+g.starterdb.characterSet=AL32UTF8 \\oracle.install.db.config.starterdb.memoryOption=true \    FROM_LOCATION=../stage/products.xml \    INVEN
+TORY_LOCATION=/home/data/oracle/oraIventory \    SELECTED_LANGUAGES=en,zh_CN \    oracle.install.db.InstallEdition=EE \    DECLINE_SECURITY_
+UPDATES=true  -silent -ignoreSysPrereqs -ignorePrereq -waitForCompletion
+   56  id
+   57  exit
+   58  id
+   59  sqlplus / as sysdba
+   60  lsnrctl status
+   61  ps -ef|grep oracle
+   62  lsnrctl status
+   63  sqlplus / as sysdba
+   64  source .bash_profile
+   65  sqlplus / as sysdba
+   66  netca -silent -responseFile /home/oracle/database/response/netca.rsp  
+   67  lnstat status
+   68  lsnrctl status
+   69  dbca -silent -createDatabase -responseFile /home/oracle/database/response/dbca.rsp 
+   70  tail -f /home/data/oracle/product/base/cfgtoollogs/dbca/orcl12c.log
+   71  find /  -name  "orcl12c"
+   72  oradim -delete -sid orcl12c
+   
+
+
+
+
+
+##安装
+mkdir -p /home/oracle_12/app/oracle/diag
+mkdir -p /home/oracle_12/app/oracle/products/12.1.0/
+mkdir -p /home/oracle_12/app/oraInventory
+
+chown -Rf oracle.oinstall  /home/oracle_12/app/oracle
+chown -Rf oracle.dba /home/oracle_12/app/oraInventory
+
+
+##建库 su - oracle
+mkdir –p /home/oracle_12/app/oracle/oradata
+mkdir –p /home/oracle_12/app/oracle/flash_recovery_area

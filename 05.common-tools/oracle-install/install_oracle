@@ -1,0 +1,221 @@
+#!/bin/sh
+
+#step()函数说明
+#数字为步骤
+#a 为正确输出
+#b 为错误输出
+function step(){
+	case $1 in
+	1) 
+		echo "1.安装必要包，请先配好yum";;
+	1a) 
+		echo_color 1 "  yum 安装成功";;
+	1b) 
+		echo_color 2 "  yum 安装失败";;
+	2) 
+		echo "2.修改内核 /etc/sysctl.conf 文件";;
+	2a)
+		echo_color 1 "  内核文件修改，成功";;
+	2b)
+		echo_color 2 "  内核文件己修改，忽略此步";;
+	3) 
+		echo "3.修改 /etc/security/limits.conf 文件";;
+	3a)
+		echo_color 1 "  limits 修改，成功";;
+	3b)
+		echo_color 2 "  limits 己修改，忽略此步";;
+	4) 
+		echo "4.修改 /etc/pam.d/login 文件";;
+	4a)
+		echo_color 1 "  login 修改，成功";;
+	4b)
+		echo_color 2 "  login 己修改，忽略此步";;
+	5) 
+		echo "5.修改 /etc/selinux/config 文件";;
+	5a)
+		echo_color 1 "  config 修改，成功";;
+	5b)
+		echo_color 2 "  config 己修改，忽略此步";;
+	6) 
+		echo "6.添加 oinstall dba oper组 用户oracle";;
+	6a)
+		echo_color 1 "  添加 oinstall dba oper组 用户oracle，成功";;
+	6b)
+		echo_color 2 "  oinstall dba oper组 用户oracle己存在，忽略此步";;
+	7) 
+		echo "7.修改 /home/oracle/.bash_profile 文件";;
+	7a)
+		echo_color 1 "  修改 /home/oracle/.bash_profile 文件，成功";;
+	7b)
+		echo_color 2 "  /home/oracle/.bash_profile己修改，忽略此步";;
+	8) 
+		echo "9.修改  /etc/redhat-release 版本";;
+	8a)
+		echo_color 1 "  修改/etc/redhat-release版本，成功";;
+	esac
+}
+function echo_color(){
+	case $1 in
+	1)
+		echo -e '\033[0;32m' $2 '\033[0m';;
+	2)
+		echo -e '\033[0;31m' $2 '\033[0m';;
+	esac
+}
+step 1
+
+yum install compat-libcap1-1.10 compat-libstdc++-33 libstdc++-devel gcc-c++ ksh libaio-devel
+
+if [ $? -eq 0 ]; then
+	step 1a
+else
+	step 1b
+fi
+
+step 2
+grep define_for_oracle /etc/sysctl.conf &> /dev/null
+if [ $? -eq 0 ]; then
+	sysctl -p &> /dev/null
+	step 2b
+else
+
+cat >> /etc/sysctl.conf <<eof
+#######define_for_oracle#########################
+kernel.msgmax = 65536
+kernel.shmall = 4294967296
+fs.file-max = 6815744
+kernel.sem = 250 32000 100 128
+kernel.shmmni = 4096
+kernel.shmmax = 4398046511104
+net.core.rmem_default = 262144
+net.core.rmem_max = 4194304
+net.core.wmem_default = 262144
+net.core.wmem_max = 1048576
+fs.aio-max-nr = 1048576
+net.ipv4.ip_local_port_range = 9000 65500
+eof
+
+	sysctl -p &> /dev/null
+	step 2a	
+fi
+
+step 3
+grep define_for_oracle /etc/security/limits.conf &> /dev/null
+if [ $? -eq 0 ]; then
+	step 3b
+else
+cat >> /etc/security/limits.conf <<bof
+###############define_for_oracle############################
+oracle soft nproc 2047
+oracle hard nproc 16384
+oracle soft nofile 1024
+oracle hard nofile 65536
+oracle hard memlock unlimited
+oracle soft memlock unlimited
+oracle soft nstack 10240
+oracle hard nstack 32768
+bof
+	step 3a
+fi
+
+step 4
+grep define_for_oracle /etc/pam.d/login &> /dev/null
+if [ $? -eq 0 ]; then
+	step 4b
+else
+cat >> /etc/pam.d/login <<bof
+###############define_for_oracle############################
+session    required     /lib64/security/pam_limits.so
+session    required     pam_limits.so
+bof
+	step 4a
+fi
+
+step 5
+grep SELINUX=disabled /etc/selinux/config &> /dev/null
+if [ $? -eq 0 ]; then
+	step 5b
+else
+sed '/^SELINUX/d' /etc/selinux/config > /etc/selinux/config
+cat >> /etc/selinux/config <<bof
+###############define_for_oracle############################
+SELINUX=disabled
+bof
+	step 5a
+fi
+
+step 6
+grep oinstall /etc/group &> /dev/null
+if [ $? -eq 0 ]; then
+	step 6b
+else
+
+groupadd oinstall
+groupadd dba
+groupadd oper
+useradd -g oinstall -G dba oracle oper
+passwd oracle
+	step 6a
+fi
+
+step 7
+grep define_for_oracle /home/oracle/.bash_profile &> /dev/null
+if [ $? -eq 0 ]; then
+	step 7b
+else
+cat >> /home/oracle/.bash_profile <<bof
+###############define_for_oracle############################
+# Oracle Settings
+TMP=/tmp; export TMP
+TMPDIR=\$TMP; export TMPDIR
+
+
+ORACLE_SID=orcl12c.us.oracle.com; export ORACLE_SID
+export NLS_LANG="Simplified Chinese_china".UTF8
+NLS_DATE_FORMAT="yyyy-mm-dd hh24:mi:ss";
+export NLS_DATE_FORMAT
+
+ORACLE_BASE=/home/data/oracle/product/base; export ORACLE_BASE
+ORACLE_HOME=\$ORACLE_BASE/12.1.0.1; export ORACLE_HOME
+
+TNS_ADMIN=\$ORACLE_HOME/network/admin; export TNS_ADMIN
+ORA_NLS33=\$ORACLE_HOME/ocommon/nls/admin/data; export ORA_NLS33
+
+
+PATH=\$PATH:\$ORACLE_HOME/bin:\$ORACLE_HOME/oracm/bin:\$ORACLE_HOME/OPatch:\$ORACLE_HOME/jdbc
+LD_LIBRARY_PATH=\$ORACLE_HOME/lib:\$ORACLE_HOME/ctx/lib:\$ORACLE_HOME/oracm/lib:/usr/lib
+CLASSPATH=\$ORACLE_HOME/JRE:\$ORACLE_HOME/jlib:\$ORACLE_HOME/rdbms/jlib:\$ORACLE_HOME/network/jlib:\$ORACLE_HOME/jdbc/lib
+SQLPATH=\$ORACLE_HOME/sqlplus/admin:/home/oracle/admin/sql:\$ORACLE_HOME/rdbms/admin
+export ORACLE_BASE ORACLE_HOME ORA_NLS33 ORACLE_SID PATH LD_LIBRARY_PATH CLASSPATH TNS_ADMIN SQLPATH
+NLS_DATE_FORMAT="yyyy-mm-dd hh24:mi:ss";
+export NLS_DATE_FORMAT
+
+export LANG="zh_CN.UTF-8"
+alias sqlplus="rlwrap sqlplus"
+
+if [ \$USER = "oracle" ]; then
+ if [ \$SHELL = "/bin/ksh" ]; then
+    ulimit -p 16384
+    ulimit -n 65536
+ else
+    ulimit -u 16384 -n 65536
+ fi
+fi
+bof
+
+	step 7a
+fi
+
+step 8
+#cat > /etc/redhat-release <<bof
+#redhat-4
+#bof
+step 8a
+
+
+mkdir -p /home/data/oracle/product/base/12.1.0.1
+mkdir -p /home/data/oracle/oraIventory
+chown oracle:oinstall -R /home/data/
+
+xhost +
+export DISPLAY='0.0'

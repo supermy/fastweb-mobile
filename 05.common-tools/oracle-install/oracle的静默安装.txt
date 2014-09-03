@@ -1,0 +1,154 @@
+1.必备软件
+yum install gcc make binutils openmotif setarch glibc libaio compat-libstdc++-33 compat-gcc-34 compat-gcc-34-c++ libXp compat-db
+
+2.环境准备
+/etc/sysctl.conf
+#######define_for_oracle#########################
+kernel.shmall = 2097152
+kernel.shmmax = 2147483648
+kernel.shmmni = 4096
+# semaphores: semmsl, semmns, semopm, semmni
+kernel.sem = 250 32000 100 128
+fs.file-max = 65536
+net.ipv4.ip_local_port_range = 1024 65000
+net.core.rmem_default=262144
+net.core.rmem_max=262144
+net.core.wmem_default=262144
+net.core.wmem_max = 262144
+
+
+/etc/security/limits.conf
+*               soft    nproc   65536
+
+*               hard    nproc   65536
+
+*               soft    nofile 	65536
+
+*               hard    nofile 	65536
+
+
+/etc/pam.d/login
+session    required     pam_limits.so
+
+/etc/selinux/config
+SELINUX=disabled
+
+/etc/redhat-release
+redhat-4
+
+
+#oracle安装用户
+groupadd oinstall
+
+groupadd dba
+
+groupadd oper
+
+useradd -g oinstall -G dba oracle oper
+
+passwd oracle
+
+
+
+oracle .bash_profile
+###############define_for_oracle############################
+# Oracle Settings
+TMP=/tmp; export TMP
+TMPDIR=$TMP; export TMPDIR
+
+ORACLE_BASE=/opt/oracle; export ORACLE_BASE
+ORACLE_HOME=/opt/oracle/product/10.2.0/db_1; export ORACLE_HOME
+#ORACLE_SID=TSH1; export ORACLE_SID # TSH1 报错 could not open parameter file '...initTSH1.ora'
+ORACLE_SID=orcl; export ORACLE_SID
+ORACLE_TERM=xterm; export ORACLE_TERM
+PATH=/usr/sbin:$PATH; export PATH
+PATH=$ORACLE_HOME/bin:$PATH; export PATH
+
+LD_LIBRARY_PATH=$ORACLE_HOME/lib:/lib:/usr/lib; export LD_LIBRARY_PATH
+CLASSPATH=$ORACLE_HOME/JRE:$ORACLE_HOME/jlib:$ORACLE_HOME/rdbms/jlib; export CLASSPATH
+
+#NLS_LANG参数由以下部分组成:
+#NLS_LANG=<Language>_<Territory>.<Clients Characterset>
+#export NLS_LANG=AMERICAN_AMERICA.UTF8 #选择语言,字符集应和数据库字符集对应
+export NLS_LANG="Simplified Chinese_china.AL32UTF8"
+export LANG="zh_CN.UTF-8"
+alias sqlplus="rlwrap sqlplus"
+
+if [ $USER = "oracle" ]; then
+ if [ $SHELL = "/bin/ksh" ]; then
+    ulimit -p 65536
+    ulimit -n 65536
+ else
+    ulimit -u 65536 -n 65536
+ fi
+fi
+
+
+mkdir -p /opt/oracle/product/10.2.0/db_1
+
+chown oracle:oinstall -R /opt/oracle/product
+
+
+
+mkdir -p /opt/oracle/oraInventory
+
+chown oracle:oinstall -R /opt/oracle
+
+
+
+xhost +
+
+export DISPLAY='0.0'
+
+export LANG="zh_CN.UTF-8"
+
+
+3.静默文件设定
+在安装软件install/response目录下有如下文件：custom.rsp， dbca.rsp，emca.rsp，enterprise.rsp，netca.rsp，standard.rsp。 看到文件的名字就知道他的作用了。  我们选择enterprise.rsp，修改相关参数后即可安装。 
+ORACLE_HOME=/opt/oracle/product/10.2.0/db_1
+ORACLE_HOME_NAME=ORACLE_HOME
+s_globalDBName=orcl
+s_dbSid=orcl
+s_dlgRBORecoveryLocation="/opt/oracle/flash_recovery_area"
+s_dlgRBOPassword="abc1q2w3e"
+s_dbRetChar="AL32UTF8"
+
+4.开始安装
+  ./runInstaller  -silent -responseFile /home/orainstall/enterprise.rsp
+   /opt/oracle/oraInventory/orainstRoot.sh
+   /opt/oracle/product/10.2.0/db_1/root.sh
+
+注意：重新安装的时候需要清除/tmp  临时目录的文件内容，这个很重要。
+
+5.oracle数据文件的迁移
+5.1创建一个oracle用户
+/*创建临时表空间*/
+CREATE TEMPORARY TABLESPACE mobile_tmp
+       TEMPFILE '/home/oracle/oradata/mobile/mobile_temp_01.dbf' SIZE 50M AUTOEXTEND ON NEXT 50M MAXSIZE 5120M, 
+                '/home/oracle/oradata/mobile/mobile_temp_02.dbf' SIZE 50M AUTOEXTEND ON NEXT 50M MAXSIZE 5120M 
+       EXTENT MANAGEMENT LOCAL;
+/*创建表空间*/
+CREATE SMALLFILE 
+    TABLESPACE "mobile"
+    LOGGING 
+    DATAFILE '/home/oracle/oradata/mobile/mobile_01.dbf' SIZE 50M AUTOEXTEND ON NEXT  5120K MAXSIZE  5120M
+            ,'/home/oracle/oradata/mobile/mobile_02.dbf' SIZE 50M AUTOEXTEND ON NEXT  5120K MAXSIZE  5120M 
+    EXTENT MANAGEMENT LOCAL SEGMENT
+    SPACE MANAGEMENT  AUTO;
+/*创建用户*/
+CREATE USER mobile IDENTIFIED BY "mobile" 
+       DEFAULT TABLESPACE "mobile"
+       TEMPORARY TABLESPACE "MOBILE_TMP";
+/*用户授权*/
+
+GRANT UNLIMITED TABLESPACE, CONNECT, RESOURCE, CREATE TABLE, CREATE VIEW, CREATE PROCEDURE, CREATE SEQUENCE, CREATE ANY INDEX TO  mobile;
+
+5.2 数据的导入语导出
+在现有数据的的服务器上进行操作
+导出原有数据库的数据
+exp mobile/mobile@oracledb/orcl statistics=none compress=y consistent=y file=log_data_all.dmp log=log_data_all.log tables=log%,sys%
+导入到现有数据库
+imp mobile/mobile@orcl file=log_data_all.dmp full=y ignore=y commit=n
+
+
+5.3 加入cron进行定时备份
