@@ -1,0 +1,138 @@
+[
+        {
+            "subtitle": "新闻..",		
+            "items": [
+                {
+                    "title": "热点",
+                    "id": "1001",
+                    "url": "index.html?type=hotspot"
+                },
+                {
+                    "title": "互联网",
+                    "id": "1002",
+                    "url": "index.html?type=internet"
+                },
+                {
+                    "title": "财经",
+                    "id": "1003",
+                    "url": "index.html?type=finance"
+                },
+                {
+                    "title": "科技",
+                    "id": "1004",
+                    "url": "index.html?type=technology"
+                }
+            ]
+        },
+        {
+            "subtitle": "活动",
+            "items": [
+                {
+                    "title": "精选",
+                    "id": "1101",
+                    "url": "actives.html"
+                },
+                {
+                    "title": "今天",
+                    "id": "1102",
+                    "url": "actives.html"
+                },
+                {
+                    "title": "电影",
+                    "id": "1103",
+                    "url": "actives.html"
+                },
+                {
+                    "title": "剧场",
+                    "id": "1104",
+                    "url": "actives.html"
+                },
+                {
+                    "title": "旅游",
+                    "id": "1104",
+                    "url": "actives.html"
+                },
+                {
+                    "title": "音乐",
+                    "id": "1104",
+                    "url": "actives.html"
+                }
+            ]
+        },
+        {
+            "subtitle": "运动",
+            "items": [
+                {
+                    "title": "篮球",
+                    "id": "1201",
+                    "url": "#"
+                },
+                {
+                    "title": "足球",
+                    "id": "1202",
+                    "url": "#"
+                },
+                {
+                    "title": "网球",
+                    "id": "1203",
+                    "url": "#"
+                },
+                {
+                    "title": "乒乓球",
+                    "id": "1204",
+                    "url": "#"
+                }
+            ]
+        },
+        {
+            "subtitle": "地图",
+            "items": [
+                {
+                    "title": "首都体育场",
+                    "id": "1301",
+                    "url": "#"
+                },
+                {
+                    "title": "朝阳体育场",
+                    "id": "1302",
+                    "url": "#"
+                },
+                {
+                    "title": "工人体育场",
+                    "id": "1303",
+                    "url": "#"
+                },
+                {
+                    "title": "奥林匹克公园",
+                    "id": "1304",
+                    "url": "#"
+                }
+            ]
+        },
+        {
+            "subtitle": "联系人1",
+            "data-collapsed": true,
+            "items": [
+                {
+                    "title": "朋友",
+                    "id": "1401",
+                    "url": "persons.html?type=friend"
+                },
+                {
+                    "title": "同学",
+                    "id": "1402",
+                    "url": "persons.html?type=student"
+                },
+                {
+                    "title": "同事",
+                    "id": "1403",
+                    "url": "persons.html?type=colleague"
+                },
+                {
+                    "title": "邻居",
+                    "id": "1404",
+                    "url": "persons.html?type=neighbor"
+                }
+            ]
+        }
+    ]

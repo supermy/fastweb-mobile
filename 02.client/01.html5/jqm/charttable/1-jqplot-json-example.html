@@ -1,0 +1,51 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>jqplot-图标示例</title>
+<script type="text/javascript" src="../js/jquery.js"></script>
+<script type="text/javascript" src="lib/jquery.jqplot.min.js"></script>
+<script type="text/javascript" src="lib/plugins/jqplot.json2.min.js"></script>
+<link rel="stylesheet" type="text/css" href="lib/jquery.jqplot.min.css" />
+</head>
+
+<body>
+<script>
+$(document).ready(function(){
+  // Our ajax data renderer which here retrieves a text file.
+  // it could contact any source and pull data, however.
+  // The options argument isn't used in this renderer.
+  var ajaxDataRenderer = function(url, plot, options) {
+    var ret = null;
+    $.ajax({
+      // have to use synchronous here, else the function 
+      // will return before the data is fetched
+      async: false,
+      url: url,
+      dataType:"json",
+      success: function(data) {
+        ret = data;
+      }
+    });
+    return ret;
+  };
+ 
+  // The url for our json data
+  var jsonurl = "jsondata.txt";
+ 
+  // passing in the url string as the jqPlot data argument is a handy
+  // shortcut for our renderer.  You could also have used the
+  // "dataRendererOptions" option to pass in the url.
+  var plot2 = $.jqplot('chart1', jsonurl,{
+    title: "AJAX JSON Data Renderer",
+    dataRenderer: ajaxDataRenderer,
+    dataRendererOptions: {
+      unusedOptionalUrl: jsonurl
+    }
+  });
+});
+</script>
+
+<div id="chart1"></div>
+</body>
+</html>

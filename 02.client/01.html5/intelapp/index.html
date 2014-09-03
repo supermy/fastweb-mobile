@@ -1,0 +1,405 @@
+﻿<!DOCTYPE html><!--HTML5 doctype-->
+<html>
+  <head>
+  <title>html5</title>
+  <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <link rel="stylesheet" type="text/css" href="styles/icons.css" />
+  <link rel="stylesheet"  type="text/css" href="themes/jq.ui.css" title="default" />
+  
+  <style>
+#menu ul > li {
+	width: 100%;
+	height: 48px;
+}
+#menu ul > li > a {
+	display: block;
+	width: 100%;
+	height: 48px;
+	line-height: 48px;
+}
+</style>
+<style type="text/css">
+.content-width {MARGIN: auto;WIDTH: 300px;}
+.content-width img{MAX-WIDTH: 100%!important;HEIGHT: auto!important;width:expression(this.width > 300 ? "300px" : this.width)!important;}
+</style>
+
+  <!-- uncomment for AppMobi apps
+  <script type="text/javascript" charset="utf-8" src="http://localhost:58888/_appMobi/appmobi.js"></script> 
+  <script type="text/javascript" charset="utf-8" src="http://localhost:58888/_appMobi/xhr.js"></script> 	
+  -->
+
+  <script type="text/javascript" charset="utf-8" src="./js/jq.ui.min.js"></script>
+  <!-- include touch.js on desktop browsers only -->
+  <script>
+  
+  
+  if(!((window.DocumentTouch&&document instanceof DocumentTouch)||'ontouchstart' in window)){
+      var script=document.createElement("script");
+      script.src="js/jq.desktopBrowsers.js";
+      var tag=$("head").append(script);
+  }
+  
+  $(document).ready(function(){
+  
+  });
+  
+  </script>
+  <script type="text/javascript">
+      /* This function runs once the page is loaded, but appMobi is not yet active */
+      var webRoot="./";
+      $.ui.autoLaunch=false;
+      $.ui.resetScrollers=false;
+      var init = function(){
+         $.ui.backButtonText="返回";  
+         window.setTimeout(function(){$.ui.launch();},1500);
+         //$.ui.removeFooterMenu(); This would remove the bottom nav menu
+      };
+      
+      document.addEventListener("DOMContentLoaded",init,false);  
+      $.ui.ready(function(){console.log('ready');});
+      
+      /* This code is used to run as soon as appMobi activates */
+      var onDeviceReady=function(){
+          AppMobi.device.setRotateOrientation("portrait");
+          AppMobi.device.setAutoRotate(false);
+          webRoot=AppMobi.webRoot+"/";
+          //$.ui.blockPageScroll(); //block the page from scrolling at the header/footer
+  
+          //hide splash screen
+          AppMobi.device.hideSplashScreen();	
+          
+      };
+      document.addEventListener("appMobi.device.ready",onDeviceReady,false);    
+      
+  </script>
+  <script type="text/javascript" charset="utf-8" src="./plugins/jq.carousel.js"></script>
+  <script src="js/mustache.js"></script>
+  <script src="pagejs/index.js"></script>
+  <script src="pagejs/common.js"></script>
+  </head>
+  <body>
+  <div id="jQUi">
+    <!-- this is the header div -->
+    <div id="header">
+      <a id='menubadge' onclick='jq.ui.toggleSideMenu()' style='float:right;margin-top:4px' class='menuButton'></a>
+    </div>
+    <div id="content">
+      
+      <!-- jqPlugins > jQ.carousel -->
+      <div title="首页" id="main" class="panel" >
+      
+      <div style="overflow:hidden;height:180px;" >
+        <style>
+                  .carousel_paging2 {
+                      border-radius: 10px;
+                      
+                      background: #ccc;
+                      width: 10px;
+                      height: 10px;
+                      display:inline-block;
+                  }
+          
+                  .carousel_paging2_selected {
+                      border-radius: 10px;
+                      
+                      background: #000;
+                      width: 10px;
+                      height: 10px;
+                      display:inline-block;
+                  }
+          
+                  .spacer {
+                      width: 10px;
+                      float: left;
+                  }
+          
+                  .carousel_content {
+                      -webkit-transform: translate3d(0, 0, 0);
+                  }
+                  
+                  
+                  </style>
+        <script>
+                   var carousel;
+                      function init_carousel() {
+                          carousel=$("#carousel").carousel({
+                              pagingDiv: "carousel_dots",
+                              pagingCssName: "carousel_paging2",
+                              pagingCssNameSelected: "carousel_paging2_selected",
+                              preventDefaults:false
+                          });
+                      }
+                      window.addEventListener("load", init_carousel, false);
+                  
+                  </script>
+                  
+        <div id="carousel_dots" style="text-align: center; margin:auto;  display : table; clear: both; position: relative; top: 90%; z-index: 200">
+        </div>
+        
+        <div id="carousel" style="display:block;height:100%;">
+          <div style="background: yellow;">
+            <img src="images/a.jpg" alt="图片1">
+          </div>
+          <div style="background: green;">
+            <img src="images/b.jpg" alt="图片2">
+          </div>
+          <div style="background: blue;">
+            <img src="images/c.jpg" alt="图片3">
+          </div>
+          <div style="background: pink;">
+            <img src="images/d.jpg" alt="图片四">
+          </div>
+        </div>
+        
+        </div>
+        
+        <script type="text/html" id="news-template">		
+                  {{#news}}
+                        <li ><a href="{{url}}" class="icon big {{icon}}">{{name}}</a></li>
+                  {{/news}}
+                  </script>
+                  <br/>
+       
+          <ul id="news-listview">
+            <li >
+              <a href="#" class="icon home">Home</a>
+            </li>
+            <li>
+              <a href="#"  class="icon home mini">Home Mini</a>
+            </li>
+            <li >
+              <a href="#" class="icon pencil big">Pencil</a>
+            </li>
+          </ul>
+      
+       
+      </div>
+      <!-- carousel end -->
+      
+      <div id="jqmforms" title="表单样式" class="panel" selected="true">
+        <form>
+          <fieldset>
+            <legend>字段元素</legend>
+            <input type="text" id="name" class='jq-ui-forms'  placeholder="姓名"/>
+            <input type="text" id="email" class='jq-ui-forms'  placeholder="E-mail"/>
+            <span>
+            <input type="password" id="password" class='jq-ui-forms'  placeholder="口令"/>
+            </span>
+            <!-- span is needed for android password fix -->
+            <span>
+            <!-- span is needed for android select box fix -->
+            <select id="country" class='jq-ui-forms'  title="国别">
+              <option value='1'>中国</option>
+              <option value='2'>美国</option>
+              <option value='3'>日本</option>
+              <option value='4'>韩国</option>
+              <option value='5'>法国</option>
+            </select>
+            </span>
+            <textarea name="web" class='jq-ui-forms' placeholder="说明"></textarea>
+            <br/>
+          </fieldset>
+          <fieldset>
+            <legend>单选和多选框</legend>
+            <h4>性别:</h4>
+            <br>
+            <p>
+              <input type="radio" value="male" id="male" name="gender" class="jq-ui-forms"
+                              />
+              <label for="male">男性</label>
+            </p>
+            <p>
+              <input type="radio" value="Female" id="female" name="gender" class="jq-ui-forms"
+                              />
+              <label for="female">女性</label>
+            </p>
+            <h4>你常用的代码:</h4>
+            <br>
+            <p>
+              <input type="checkbox" value="CSS3" id="css3" class="jq-ui-forms" />
+              <label for="css3">CSS3</label>
+              <input type="checkbox" value="HTML5" id="html5" class="jq-ui-forms" />
+              <label for="html5">HTML5</label>
+            </p>
+            <p>
+              <input type="checkbox" value="JavaScript" id="javascript" class="jq-ui-forms"
+                              />
+              <label for="javascript">JavaScript</label>
+            </p>
+            <p>
+              <input type="checkbox" value="Other" id="other" class="jq-ui-forms" />
+              <label for="other">Other</label>
+            </p>
+          </fieldset>
+          <fieldset>
+            <legend>禁用和单选输入</legend>
+            <h4>禁止选择:</h4>
+            <br>
+            <p>
+              <input type="radio" value="disabled" id="disabled" name="disabled" disabled
+                              class="jq-ui-forms" />
+              <label for="disabled">禁用</label>
+            </p>
+            <p>
+              <input type="radio" value="check" id="check" name="check" checked class="jq-ui-forms"
+                              />
+              <label for="check">选择</label>
+            </p>
+            <h4>禁用和多选输入:</h4>
+            <br>
+            <p>
+              <input type="checkbox" value="disabled" id="disabled2" disabled class="jq-ui-forms"
+                              />
+              <label for="disabled2">禁用</label>
+            </p>
+            <p>
+              <input type="checkbox" value="check" id="check2" checked class="jq-ui-forms"
+                              />
+              <label for="check2">选择</label>
+            </p>
+            <p>
+              <input type="checkbox" value="Stop" id="disablecheck" disabled checked
+                              class="jq-ui-forms" />
+              <label for="disablecheck">选择禁止更改</label>
+            </p>
+            <p>
+              <input type="checkbox" value="Other" id="other2" class="jq-ui-forms" />
+              <label for="other2">其他</label>
+            </p>
+          </fieldset>
+          <fieldset>
+            <legend>滑动</legend>
+            <h4>性别:</h4>
+            <p>
+              <input type="radio" value="maleslider" id="slidermale" name="gender" class="jq-ui-slider"
+                              />
+              <label for="slidermale">男性</label>
+            </p>
+            <p>
+              <input type="radio" value="femaleslider" id="sliderfemale" name="gender"
+                              class="jq-ui-slider" />
+              <label for="sliderfemale">女性</label>
+            </p>
+            <h4>这个也许是你喜欢的:</h4>
+            <p>
+              <input type="checkbox" value="CSS3" id="css3slider" class="jq-ui-slider"
+                              />
+              <label for="css3slider">CSS3</label>
+            </p>
+            <p>
+              <input type="checkbox" value="HTML5" id="html5slider" class="jq-ui-slider"
+                              />
+              <label for="html5slider">HTML5</label>
+            </p>
+            <p>
+              <input type="checkbox" value="JavaScript" id="javascriptslider" class="jq-ui-slider"
+                              />
+              <label for="javascriptslider">JavaScript</label>
+            </p>
+            <p>
+              <input type="checkbox" value="Other" id="otherslider" class="jq-ui-slider"
+                              />
+              <label for="otherslider">Other</label>
+            </p>
+            <p>
+              <input type="checkbox" value="Other" id="otherd" class="jq-ui-slider"
+                              disabled />
+              <label for="otherd">Disabled</label>
+            </p>
+            <p>
+              <input type="checkbox" value="Other" id="otherdc" class="jq-ui-slider"
+                              disabled checked />
+              <label for="otherdc">Disabled</label>
+            </p>
+          </fieldset>
+          <fieldset>
+            <legend>HTML5输入</legend>
+            <label for="date">日期</label>
+            <br/>
+            <input type="date" id="date" class='jq-ui-forms' />
+            <br/>
+            <label for="month">月份</label>
+            <br/>
+            <input type="month" id="month" class='jq-ui-forms' />
+            <br/>
+            <label for="datetime">日期/时间</label>
+            <br/>
+            <input type="datetime" id="datetime" class='jq-ui-forms' />
+            <br/>
+            <label for="datetime-local">日期/本地时间</label>
+            <br/>
+            <input type="datetime-local" id="datetime-local" class='jq-ui-forms' />
+            <br/>
+            <label for="time">时间</label>
+            <br/>
+            <input type="time" id="time" class='jq-ui-forms' />
+            <br/>
+            <label for="range">范围</label>
+            <br/>
+            <input type="range" id="range" class='jq-ui-forms' />
+            <br/>
+          </fieldset>
+        </form>
+        <br>
+      </div>
+      <div title="面板切换" id="jqmtransitions" class="panel" data-footer='footerui'>
+        <h2 class='expanded' onclick='showHide(this,"jqui_transitions");'>显示隐藏</h2>
+        <p id='jqui_transitions'>
+	          内容1
+        </p>
+        <br />
+        <h2 class='collapsed' onclick='showHide(this,"jqui_transitions1");'>显示隐藏</h2>
+        <p id='jqui_transitions1'>
+    	      内容2
+        </p>
+        <br/>
+      </div>
+      <div title='欢迎来宾' id="main3" class="panel" selected="true" >
+        简单页面例子3
+      </div>
+      <div title='欢迎来宾' id="main4" class="panel" selected="true" >
+        简单页面例子4
+      </div>
+      <div title='欢迎来宾' id="main5" class="panel" selected="true" >
+        简单页面例子5
+      </div>
+      <div title='欢迎来宾' id="main6" class="panel" selected="true" >
+        简单页面例子6
+      </div>
+    </div>
+    <!-- content end -->
+    
+    <!-- bottom navbar.  Add additional tabs here -->
+    <div id="navbar">
+      <a href="#main" id='navbar_home' class='icon home' >首页</a>
+    </div>
+    
+    <!-- this is the default left side nav menu -->
+    <nav>
+		  <script type="text/html" id="left-menu-template">
+                      {{#items}}
+                           <li class="icon big {{icon}}">
+                                  <a href="{{url}}" >{{title}}</a>
+                           </li>
+                      {{/items}}
+          </script>
+          <ul id="menuitem">
+            <li class="icon big home">
+              <a href="#main" >章节1</a>
+            </li>
+            <li class="icon big basket">
+              <a href="#main2">章节2</a>
+            </li>
+          </ul>
+    </nav>
+    
+    <footer id='footerui'>
+          <a href="#main" id='navbar_home' class='icon home' >Home <span class='jq-badge lr'>6</span></a>
+          <a href="#jqmtransitions" id='navbar_js' class="icon stack" >Trans</a>
+    </footer>
+    
+  </div>
+</body>
+</html>

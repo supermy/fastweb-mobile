@@ -1,0 +1,30 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">        
+          
+<a href="#left-panel" data-icon="bars" data-iconpos="notext" data-shadow="false" data-iconshadow="false">菜单 </a>
+          
+<script type="text/html" id="login-template">
+	{{name}},你好! 
+</script>
+
+<!--采用外部链接可以完成页面的正常刷新，两个按钮会正常显示，不会出现折行的情况。-->
+         
+	<a href="#popupLogin" id="login" data-rel="popup" data-position-to="window" data-role="button" data-inline="true" data-icon="check"  data-transition="pop">登录</a> 
+
+		<div data-role="popup" id="popupLogin"  class="ui-corner-all" >
+                    
+			<a href="#" id="signin" data-rel="back" data-role="button" data-icon="delete" data-iconpos="notext" data-shadow="false" data-iconshadow="false"  data-dismissible="false" class="ui-btn-right">关闭</a>
+            <form>
+                <div style="padding:10px 20px;">
+                  <h3>请登录</h3>
+                  <label for="un" class="ui-hidden-accessible">姓名:</label>
+                  <input type="text" name="user" id="un" value="" placeholder="用户名称" />
+    
+                  <label for="pw" class="ui-hidden-accessible">口令:</label>
+                  <input type="password" name="pass" id="pw" value="" placeholder="口令" />
+    
+                  <button type="submit" data-icon="check" id="signinform">登录</button>
+                </div>
+            </form>
+		</div>
+
+        <!-- /header -->

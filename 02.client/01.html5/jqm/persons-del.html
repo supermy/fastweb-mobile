@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html><!-- InstanceBegin template="/Templates/fashion-page.dwt" codeOutsideHTMLIsLocked="false" -->
+	  <head>
+      
+	  <meta charset="utf-8">
+	  <meta name="viewport" content="width=device-width, initial-scale=1">
+	  <!-- InstanceBeginEditable name="doctitle" -->
+	  <title>人员管理</title>
+	  <!-- InstanceEndEditable -->
+      <link rel="stylesheet" type="text/css" href="css/themes/default/jquery.mobile-1.4.2.min.css">
+	
+      
+	  <link rel="shortcut icon" href="_assets/favicon.ico">
+<!--	  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
+-->      
+		<script src="js/jquery-1.11.1.min.js"></script>
+        
+	
+
+ <script src="js/jquery.mobile-1.4.2.min.js"></script>     
+	  <script>
+		$( document ).on( "pageinit", "#home-page", function() {
+
+			$( document ).on( "swipeleft swiperight", "#home-page", function( e ) {
+				// We check if there is no open panel on the page because otherwise
+				// a swipe to close the left panel would also open the right panel (and v.v.).
+				// We do this by checking the data that the framework stores on the page element (panel: open).
+				if ( $.mobile.activePage.jqmData( "panel" ) !== "open" ) {
+					if ( e.type === "swipeleft"  ) {
+						$( "#right-panel" ).panel( "open" );
+					} else if ( e.type === "swiperight" ) {
+						$( "#left-panel" ).panel( "open" );
+					}
+				}
+			});
+			
+		});
+	 </script>
+     <script src="js/underscore-min.js"></script>
+     <script src="js/mustache.js"></script>
+     <script src="pagejs/common.js"></script>
+     
+<!--	 <link rel="stylesheet" href="css/menu.css">-->
+    
+	  <!-- InstanceBeginEditable name="head" -->
+      
+	  <script src="pagejs/persons-del.js"></script>
+
+	  <!-- InstanceEndEditable -->
+      
+	  </head>
+	  <body>
+      <div data-role="page" id="home-page">
+      <!-- InstanceBeginEditable name="footer" -->
+	  <div data-role="header" data-position="fixed" > 
+          <h1 id="head-title"> 
+            首页示例 
+          </h1><!-- #BeginLibraryItem "/Library/body-header.lbi" -->        
+          
+<a href="#left-panel" data-icon="bars" data-iconpos="notext" data-shadow="false" data-iconshadow="false">菜单 </a>
+          
+<script type="text/html" id="login-template">
+	{{name}},你好! 
+</script>
+
+<!--采用外部链接可以完成页面的正常刷新，两个按钮会正常显示，不会出现折行的情况。-->
+         
+	<a href="#popupLogin" id="login" data-rel="popup" data-position-to="window" data-role="button" data-inline="true" data-icon="check"  data-transition="pop">登录</a> 
+
+		<div data-role="popup" id="popupLogin"  class="ui-corner-all" >
+                    
+			<a href="#" id="signin" data-rel="back" data-role="button" data-icon="delete" data-iconpos="notext" data-shadow="false" data-iconshadow="false"  data-dismissible="false" class="ui-btn-right">关闭</a>
+            <form>
+                <div style="padding:10px 20px;">
+                  <h3>请登录</h3>
+                  <label for="un" class="ui-hidden-accessible">姓名:</label>
+                  <input type="text" name="user" id="un" value="" placeholder="用户名称" />
+    
+                  <label for="pw" class="ui-hidden-accessible">口令:</label>
+                  <input type="password" name="pass" id="pw" value="" placeholder="口令" />
+    
+                  <button type="submit" data-icon="check" id="signinform">登录</button>
+                </div>
+            </form>
+		</div>
+
+        <!-- /header --><!-- #EndLibraryItem --></div><!-- #BeginLibraryItem "/Library/body-footer.lbi" --> 
+<div data-role="footer" data-position="fixed">
+        <h1>
+          底部导航
+        </h1>
+      </div><!-- #EndLibraryItem --><div id="confirm" class="ui-content" data-role="popup" >
+
+        <p id="question">确认是否删除</p>
+
+        <div class="ui-grid-a">
+            <div class="ui-block-a">
+                <a id="yes" data-role="button" data-mini="true" data-shadow="false" data-rel="back">删除</a>
+            </div>
+            <div class="ui-block-b">
+                <a id="cancel" data-role="button" data-mini="true" data-shadow="false" data-rel="back">取消</a>
+            </div>
+        </div>
+
+	</div><!-- /popup -->
+        
+		<!-- InstanceEndEditable -->
+        
+      
+        
+        <div data-role="content" class="jqm-content">
+        
+        <!-- InstanceBeginEditable name="content" -->
+<script type="text/html" id="persons-del-template">
+		{{#persons}}
+              <li>
+                <a href="{{url}}" id="{{id}}"> 
+				<img src="{{img}}" alt="{{name}}">
+				<h3>{{name}}</h3>
+				<p class="topic"><strong>{{type}}</strong></p>
+				<p class="ui-li-aside"><strong>{{date}}</strong></p>
+				</a>
+				<a href="#" class="delete">删除</a>
+				</li>
+		{{/persons}}
+</script>
+
+        
+        <ul id="person-del-listview" class="touch" data-inset="true"
+        	data-role="listview" data-icon="false" 
+            data-split-icon="delete" >
+            <li>
+                <a href="#demo-mail">
+                    <h3>一起去散步</h3>
+                    <p class="topic"><strong>明天晚上一起午餐</strong></p>
+                    <p>不见不散</p>
+                    <p class="ui-li-aside"><strong>4:48</strong>下午</p>
+                </a>
+                <a href="#" class="delete">删除</a>
+            </li>
+            <li>
+                <a href="#demo-mail">
+                    <h3>亚马逊</h3>
+                    <p class="topic"><strong>儿童书籍</strong></p>
+                    <p>在4层库房</p>
+                    <p class="ui-li-aside"><strong>4:37</strong>下午</p>
+                </a>
+                <a href="#" class="delete">删除</a>
+            </li>
+        </ul>
+        
+
+            
+        <!-- InstanceEndEditable -->
+        </div>
+        <!-- /content --><!-- #BeginLibraryItem "/Library/left-panel-menu.lbi" -->
+
+<div data-role="panel" data-display="overlay" id="left-panel" >
+  <ul data-role="listview" data-inset="true" >
+    <li data-icon="delete">
+      <a href="#" data-rel="close">隐藏</a>
+    </li>
+<!--    <li data-role="list-divider">菜单</li>-->
+    <li data-icon="home">
+      <a href="index.html" rel="external">首页</a>
+    </li>
+  </ul>
+  <div  data-role="collapsible"   data-collapsed="false" data-inset="true" data-iconpos="right" >
+    <h3>导航</h3> 
+    <div id="menuitem" data-role="collapsible-set" data-inset="false" data-iconpos="right" >
+      <div data-role="collapsible">
+        <h3>新闻</h3>
+        <ul data-role="listview">
+          <li>
+            <a href="index.html?type=hotspot" rel="external">热点</a>
+          </li>
+          <li>
+            <a href="index.html?type=internet" rel="external">互联网</a>
+          </li>
+          <li>
+            <a href="index.html?type=finance" rel="external">财经</a>
+          </li>
+          <li>
+            <a href="index.html?type=technology" rel="external">科技</a>
+          </li>
+        </ul>
+      </div>
+      <!-- /collapsible -->
+      
+      <div data-role="collapsible">
+        <h3>活动</h3>
+        <ul data-role="listview">
+          <li>
+            <a href="#">精选</a>
+          </li>
+          <li>
+            <a href="#">今天</a>
+          </li>
+          <li>
+            <a href="#">电影</a>
+          </li>
+          <li>
+            <a href="#">剧场</a>
+          </li>
+          <li>
+            <a href="#">旅游</a>
+          </li>
+          <li>
+            <a href="#">音乐</a>
+          </li>
+        </ul>
+      </div>
+      <!-- /collapsible -->
+      
+      <div data-role="collapsible">
+        <h3>运动</h3>
+        <ul data-role="listview">
+          <li>
+            <a href="#">篮球</a>
+          </li>
+          <li>
+            <a href="#">足球</a>
+          </li>
+          <li>
+            <a href="#">网球</a>
+          </li>
+          <li>
+            <a href="#">乒乓球</a>
+          </li>
+        </ul>
+      </div>
+      <!-- /collapsible -->
+      
+      <div data-role="collapsible">
+        <h3>地图</h3>
+        <ul data-role="listview">
+          <li>
+            <a href="#">首都体育场</a>
+          </li>
+          <li>
+            <a href="#">朝阳体育场</a>
+          </li>
+          <li>
+            <a href="#">工人体育场</a>
+          </li>
+          <li>
+            <a href="#">奥林匹克公园</a>
+          </li>
+        </ul>
+      </div>
+      <!-- /collapsible -->
+      
+      <div data-role="collapsible" data-collapsed="false">
+        <h3>联系人</h3>
+        <ul data-role="listview">
+          <li>
+            <a href="persons.html?type=friend" rel="external">朋友</a>
+          </li>
+          <li>
+            <a href="persons.html?type=student" rel="external">同学</a>
+          </li>
+          <li>
+            <a href="persons.html?type=colleague" rel="external">同事</a>
+          </li>
+          <li>
+            <a href="persons.html?type=neighbor" rel="external">邻居</a>
+          </li>
+        </ul>
+      </div>
+      <!-- /collapsible -->
+    </div>
+    <!-- /collapsible-set -->
+    
+  </div>
+  <!-- /collapsible -->
+  
+</div>
+<!-- /panel -->
+
+<script type="text/html" id="left-menu-template">
+    {{#data}}
+		{{#data-collapsed}}
+		  <div data-role="collapsible" data-collapsed="false">
+		{{/data-collapsed}}
+		
+		{{^data-collapsed}}
+		  <div data-role="collapsible"  data-collapsed="true">
+		{{/data-collapsed}}
+		  
+			<h3>{{subtitle}}</h3>
+			<ul data-role="listview">
+			{{#items}}
+			  <li>
+				<a href="{{url}}" id="{{id}}" rel="external">{{title}}</a>
+			  </li>
+			{{/items}}
+			</ul>
+		  </div>
+	{{/data}}
+</script>
+<!-- #EndLibraryItem --><!-- #BeginLibraryItem "/Library/right-panel-share.lbi" -->        <div data-role="panel" id="right-panel" data-display="overlay" data-position="right">
+          <ul data-role="listview" data-icon="false">
+            <li data-icon="delete">
+              <a href="#" data-rel="close">隐藏</a>
+            </li>
+            <li data-role="list-divider">分享当前页</li>
+            <li>
+              <a href="#">新浪微博</a>
+            </li>
+            <li>
+              <a href="#">腾讯QQ</a>
+            </li>
+            <li>
+              <a href="#">短信</a>
+            </li>
+            <li>
+              <a href="#">邮箱</a>
+            </li>
+          </ul>
+        </div>
+        <!-- /panel --><!-- #EndLibraryItem --></div>
+      <!-- /page -->
+
+      </body>
+<!-- InstanceEnd --></html>

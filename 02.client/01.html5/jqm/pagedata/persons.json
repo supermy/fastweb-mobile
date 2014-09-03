@@ -1,0 +1,37 @@
+{
+	"title":"person list",
+    "persons": [
+        {
+            "id":"bmw",
+			"name":"宝马my",
+			"type":"5系列",
+            "img": "_assets/img/bmw-thumb.jpg",
+			"date": "2013-03-04",
+            "url": "#"
+        },
+        {
+            "id":"landrover",
+			"name":"路虎",
+			"type":"路虎",
+            "img": "_assets/img/landrover-thumb.jpg",
+			"date": "2013-03-04",
+            "url": "#"
+        },
+        {
+            "id":"tesla",
+			"name":"探索者my",
+			"type":"模特S",
+            "img": "_assets/img/tesla-thumb.jpg",
+			"date": "2013-03-04",
+            "url": "#"
+        },
+        {
+            "id":"tesla",
+			"name":"探索者",
+			"type":"建议在页面中使用 HTML5 标准的页面声明和标签，因为移动设备浏览器对 HTML5 标准的支持程度要远远优于 PC 设备，因此使用简洁的 HTML5 标准可以更加高效的进行开发，免去了因为声明错误出现的兼容性问题。S",
+            "img": "_assets/img/tesla-thumb.jpg",
+			"date": "2013-03-04",
+            "url": "#"
+        }
+    ]
+}

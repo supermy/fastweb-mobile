@@ -1,0 +1,289 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="mustache.js"></script>
+<script type="text/javascript" src="../pagejs/common.js"></script>
+</head>
+
+<body>
+
+
+<textarea class="template">
+<h1>{{header}}</h1>
+{{#bug}}
+{{/bug}}
+
+{{#items}}
+  {{#first}}
+    <li><strong>{{name}}</strong></li>
+  {{/first}}
+  {{#link}}
+    <li><a href="{{url}}">{{name}}</a></li>
+  {{/link}}
+{{/items}}
+
+{{#empty}}
+  <p>The list is empty.</p>
+{{/empty}}
+</textarea>
+
+<textarea class="json">{
+  "header": "Colors",
+  "items": [
+      {"name": "red", "first": true, "url": "#Red"},
+      {"name": "green", "link": true, "url": "#Green"},
+      {"name": "blue", "link": true, "url": "#Blue"}
+  ],
+  "empty": false
+}</textarea>
+
+<p><input type="button" class="run" value="Render Template"/></p>
+
+        <label>HTML</label>
+        <pre class="html sh_html"></pre>
+        
+<script>
+
+$(function() {
+  return $('.run').click(function() {
+	  
+    var html, json, template;
+    template = $('.template').val();
+    json = $.parseJSON($('.json').val());
+	
+	
+    html = Mustache.to_html(template, json).replace(/^\s*/mg, '');
+    $('.html').text(html).scrollTo(1);
+	
+    return Highlight.highlightDocument();
+  });
+});
+</script>
+
+<textarea class="jsonnest">
+{
+    "subtitle":"分类",
+	"items": [
+        {
+            "title": "新闻1",
+            "data": [
+                {
+                    "name": "热点",
+                    "id": "1001",
+                    "url": "index.html?type=hotspot"
+                },
+                {
+                    "name": "互联网",
+                    "id": "1002",
+                    "url": "index.html?type=internet"
+                },
+                {
+                    "name": "财经",
+                    "id": "1003",
+                    "url": "index.html?type=finance"
+                },
+                {
+                    "name": "科技",
+                    "id": "1004",
+                    "url": "index.html?type=technology"
+                }
+            ]
+        },
+        {
+            "title": "活动",
+            "data": [
+                {
+                    "name": "精选",
+                    "id": "1101",
+                    "url": "#"
+                },
+                {
+                    "name": "今天",
+                    "id": "1102",
+                    "url": "#"
+                },
+                {
+                    "name": "电影",
+                    "id": "1103",
+                    "url": "#"
+                },
+                {
+                    "name": "剧场",
+                    "id": "1104",
+                    "url": "#"
+                },
+                {
+                    "name": "旅游",
+                    "id": "1104",
+                    "url": "#"
+                },
+                {
+                    "name": "音乐",
+                    "id": "1104",
+                    "url": "#"
+                }
+            ]
+        },
+        {
+            "title": "运动",
+            "data": [
+                {
+                    "name": "篮球",
+                    "id": "1201",
+                    "url": "#"
+                },
+                {
+                    "name": "足球",
+                    "id": "1202",
+                    "url": "#"
+                },
+                {
+                    "name": "网球",
+                    "id": "1203",
+                    "url": "#"
+                },
+                {
+                    "name": "乒乓球",
+                    "id": "1204",
+                    "url": "#"
+                }
+            ]
+        },
+        {
+            "title": "地图",
+            "data": [
+                {
+                    "name": "首都体育场",
+                    "id": "1301",
+                    "url": "#"
+                },
+                {
+                    "name": "朝阳体育场",
+                    "id": "1302",
+                    "url": "#"
+                },
+                {
+                    "name": "工人体育场",
+                    "id": "1303",
+                    "url": "#"
+                },
+                {
+                    "name": "奥林匹克公园",
+                    "id": "1304",
+                    "url": "#"
+                }
+            ]
+        },
+        {
+            "title": "联系人",
+            "data-collapsed":true,
+            "data": [
+                {
+                    "name": "朋友",
+                    "id": "1401",
+                    "url": "persons.html?type=friend"
+                },
+                {
+                    "name": "同学",
+                    "id": "1402",
+                    "url": "persons.html?type=student"
+                },
+                {
+                    "name": "同事",
+                    "id": "1403",
+                    "url": "persons.html?type=colleague"
+                },
+                {
+                    "name": "邻居",
+                    "id": "1404",
+                    "url": "persons.html?type=neighbor"
+                }
+            ]
+        }
+    ]
+}</textarea>
+
+<textarea class="templatenest">
+
+ <h3>分类</h3>
+ <div id="menuitem"  data-role="collapsible-set" data-inset="false" data-iconpos="right" data-theme="b" data-content-theme="d">
+    {{#items}}
+    
+    {{#data-collapsed}}
+	  <div data-role="collapsible" data-collapsed="false">
+    {{/data-collapsed}}
+    
+    {{^data-collapsed}}
+	  <div data-role="collapsible">
+    {{/data-collapsed}}
+    
+      
+		<h3>{{ title }}</h3>
+		<ul data-role="listview">
+		{{#data}}
+		  <li>
+			<a href="{{url}}">{{name}}</a>
+		  </li>
+		{{/data}}
+		</ul>
+	  </div>
+	{{/items}}
+  </div>
+</textarea>
+
+
+<script type="text/html" id="ul-template">
+    <ul id="list">
+        {{> li-templ}}
+    </ul>
+</script>  
+
+<script type="text/html" id="ul-template2">
+    <div id="list2">
+        {{> li-templ}}
+    </div>
+</script>    
+
+<script type="text/html" id="ul-template3">
+    <div id="list2">
+        <p>{{ name }}</p>
+    </div>
+</script>  
+
+<script type="text/html" id="li-templ">
+    <p>{{ name }}</p>
+</script>  
+
+
+<script>
+var view = {"name" : "You"},
+li = $('#li-templ').html(), 
+partials = {"li-templ": li},
+ul1 = Mustache.to_html($('#ul-template').html(), view, partials),
+ul2 = Mustache.to_html($('#ul-template2').html(), view, partials);
+
+document.write(ul1, ul2);
+
+//jquery plugin call template engine
+myul=$('#ul-template').mustache(view,partials);
+
+document.write(myul.html());
+
+myul=$('#ul-template').mustache(view);
+
+document.write("one param :"+myul.html());
+
+
+
+    
+    template = $('.templatenest').val();
+    json = $.parseJSON($('.jsonnest').val());	
+    html = Mustache.to_html(template, json).replace(/^\s*/mg, '');
+	console.debug(html);
+
+</script>
+</body>
+</html>

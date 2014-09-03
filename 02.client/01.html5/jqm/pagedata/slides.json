@@ -1,0 +1,25 @@
+{
+    "title":"列表",
+	"slides": [
+        {
+            "img":"slidejs/img/example-slide-1.jpg",
+            "desc": "Photo 1"
+        },
+        {
+            "img":"slidejs/img/example-slide-2.jpg",
+            "desc": "Photo 2"
+        },
+        {
+            "img":"slidejs/img/example-slide-3.jpg",
+            "desc": "Photo 3"
+        },
+        {
+            "img":"slidejs/img/example-slide-4.jpg",
+            "desc": "Photo 4"
+        },
+        {
+            "img":"slidejs/img/example-slide-4.jpg",
+            "desc": "Photo 5"
+        }
+    ]
+}

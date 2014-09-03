@@ -1,0 +1,69 @@
+{
+    "title":"新闻列表",
+	"news": [
+        {
+            "name":"斯蒂芬·韦伯1",
+			"icon":"home",
+            "title": "会议邀请",
+            "url": "index-detail.html",
+            "desc": "Jquery开发讨论",
+            "time":"下午3:24"
+        },
+        {
+            "name":"jQuery团队1",
+			"icon":"download",			
+            "title": "计划",
+            "url": "index-detail.html",
+            "desc": "收集课程...",
+            "time":"上午9:18"
+        },
+        {
+            "name":"jQuery团队1",
+			"icon":"download",			
+            "title": "计划",
+            "url": "index-detail.html",
+            "desc": "收集课程...",
+            "time":"上午9:18"
+        },
+        {
+            "name":"jQuery团队1",
+			"icon":"download",			
+            "title": "计划",
+            "url": "index-detail.html",
+            "desc": "收集课程...",
+            "time":"上午9:18"
+        },
+        {
+            "name":"jQuery团队1",
+			"icon":"download",			
+            "title": "计划",
+            "url": "index-detail.html",
+            "desc": "收集课程...",
+            "time":"上午9:18"
+        },
+        {
+            "name":"jQuery团队1",
+			"icon":"download",			
+            "title": "计划",
+            "url": "index-detail.html",
+            "desc": "收集课程...",
+            "time":"上午9:18"
+        },
+        {
+            "name":"jQuery团队1",
+			"icon":"download",			
+            "title": "计划",
+            "url": "index-detail.html",
+            "desc": "收集课程...",
+            "time":"上午9:18"
+        },
+        {
+            "name":"jQuery团队1",
+			"icon":"download",			
+            "title": "计划",
+            "url": "index-detail.html",
+            "desc": "收集课程...",
+            "time":"上午9:18"
+        }
+    ]
+}

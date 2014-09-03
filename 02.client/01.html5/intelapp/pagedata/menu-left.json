@@ -1,0 +1,53 @@
+{
+    "subtitle": "分类",
+    "items": [
+        {
+            "title": "首页",		
+            "icon": "home",
+            "url": "index.html#main"
+        },
+        {
+            "title": "表单",
+            "icon": "refresh",
+                    "url": "index.html#jqmforms"
+        },
+        {
+            "title": "面板切换",
+            "icon": "download",
+                    "url": "index.html#jqmtransitions"
+        },
+        {
+            "title": "图片轮询",
+            "icon": "location",
+                    "url": "index.html#webcarousel"
+        },
+        {
+            "title": "联系人1",
+            "icon": "basket",
+                    "url": "persons.html?type=friend",
+            "data-collapsed": true,
+            "data": [
+                {
+                    "name": "朋友",
+                    "id": "1401",
+                    "url": "persons.html?type=friend"
+                },
+                {
+                    "name": "同学",
+                    "id": "1402",
+                    "url": "persons.html?type=student"
+                },
+                {
+                    "name": "同事",
+                    "id": "1403",
+                    "url": "persons.html?type=colleague"
+                },
+                {
+                    "name": "邻居",
+                    "id": "1404",
+                    "url": "persons.html?type=neighbor"
+                }
+            ]
+        }
+    ]
+}

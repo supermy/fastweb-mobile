@@ -1,0 +1,21 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">        <div data-role="panel" id="right-panel" data-display="overlay" data-position="right">
+          <ul data-role="listview" data-icon="false">
+            <li data-icon="delete">
+              <a href="#" data-rel="close">隐藏</a>
+            </li>
+            <li data-role="list-divider">分享当前页</li>
+            <li>
+              <a href="#">新浪微博</a>
+            </li>
+            <li>
+              <a href="#">腾讯QQ</a>
+            </li>
+            <li>
+              <a href="#">短信</a>
+            </li>
+            <li>
+              <a href="#">邮箱</a>
+            </li>
+          </ul>
+        </div>
+        <!-- /panel -->
